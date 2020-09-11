@@ -37,11 +37,8 @@ h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
     transition: height 0.3s border-color 0.3s background-color 0.3s; 
 }
 
-.h1NavTopWrap { 
-    border-bottom: 1px solid rgba(255,255,255,0.15); 
-    font-family: 'Titillium Web', sans-serif; }
 
-.h1NavTop { position: relative; color: #fff; }
+.h1NavTop { position: relative; color: #fff; background: transparent; }
 .h1NavTop .logo { font-size: 25px; padding: 15px 30px; }
 .h1NavTop .nav { 
     position: absolute; 
@@ -51,7 +48,7 @@ h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
     z-index: 99999; }
     
 
-.nav .depth1 { position: relative; }
+.nav .depth1 { position: relative; font-family: 'Titillium Web', sans-serif; }
 .depth1 > li:hover .decoBox  { color: #653811; background: #fff; transition: all 0.5s; }
 .nav .depth1 > li { display: inline-block; position: relative; }
 .nav .depth1 > li:hover a:after { width: 100%; height: 2px; display: block; }

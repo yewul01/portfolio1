@@ -2,19 +2,25 @@
 @import "reset.css";
 @import "common.css";
 
+
 .log_slide .log_slideInner { 
     background-size: cover;
     background-repeat: no-repeat;
-    height: 331px; }
+    height: 394px;
+    position: relative; }
 .log_slide .log_slideInner { background-image: url(../images/sub_hero_img1.jpg);}
-#login_section { padding:69px 0 130px; }
+#login_section { padding: 0 0 130px; }
+#login_section .log_inner_text {
+    position: absolute; top: 53%; left: 50%;
+    transform: translate(-50%,-50%); }
 #login_section h2 { 
-    font-size: 38px; color: #fff;
-    text-align: center; padding-top: 80px; }
+    font-size: 36px; color: #fff;
+    text-align: center; }
 #login_section p {
     font-size: 15px; color: #ffffffbf; 
     text-align: center;  padding-top: 15px; }
 
+#login_section .login_box { padding-top: 100px; }
 #login_section .login_box h2 { font-size: 38px; color: #222; }
 #login_section .login_form { width: 38%; margin: 0 auto; }
 #login_section .login_content { padding: 50px 0; text-align: center;}
