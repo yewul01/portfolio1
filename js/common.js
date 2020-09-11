@@ -15,6 +15,16 @@
         $('#joContainer').remove()
         $('#joBox').load(url)
     })
+
+    // 헤더 자연스럽게 열기
+    $('.depth1 > li').hover(
+        function(){
+            $(this).find('.depth2').stop().slideDown(500)
+        },
+        function(){
+            $(this).find('.depth2').stop().slideUp(500)
+        }
+    )
     
 
 
