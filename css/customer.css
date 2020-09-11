@@ -67,6 +67,6 @@
     font-size:14px; color:#666; padding:4px 12px;
     height:38px; border:1px solid #dee2e6; border-radius:3px }
 .search_box input[type=text] { width:160px }
-.customer-button {
+.search_box input[type=submit] {
     display: inline-block; padding: 8px 14px; background: #adb5bd; 
     border-color: #adb5bd; color: #fff; }
