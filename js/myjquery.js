@@ -8,9 +8,27 @@
         var product = $('.product').offset().top
 
         if ( sct >= company ) {
-            $('.company').addClass('on')
+            $('.section .company').addClass('on')
         } else {
-            $('.company').removeClass('on')
+            $('.section .company').removeClass('on')
+        }
+
+        if (sct >= banner ) {
+            $('.section .Quality_banner').addClass('on')
+        } else {
+            $('.section .Quality_banner').removeClass('on')
+        }
+
+        if ( sct >= news ) {
+            $('section .news').addClass('on')
+        } else {
+            $('section .news').removeClass('on')
+        }
+
+        if ( sct >= product ) {
+            $('section .product').addClass('on')
+        } else {
+            $('section .product').removeClass('on')
         }
     })
 
