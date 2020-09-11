@@ -1,16 +1,16 @@
 (function($){
 
-    $('.slide').on('mousewheel', function(event, wh) {
-        if (wh > 0) {
-            var prev = $(this).prev().offset().top
-            $('html,body').stop().animate({
-                scrollTop:prev
-            }, 800)
-        } else if (wh < 0) {
-            var next = $(this).next().offset().top
-            $('html, body').stop().animate({
-                scrollTop:next
-            }, 800)
+    $(window).scroll(function (){
+        var sct = $(this).scrollTop()
+        var company = $('.company').offset().top
+        var banner = $('.Quality_banner').offset().top
+        var news = $('.news').offset().top
+        var product = $('.product').offset().top
+
+        if ( sct >= company ) {
+            $('.company').addClass('on')
+        } else {
+            $('.company').removeClass('on')
         }
     })
 
