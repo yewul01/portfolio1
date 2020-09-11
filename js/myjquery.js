@@ -1,7 +1,6 @@
 (function($){
 
-
-    $('.section').on('mousewheel', function(e, wh) {
+    $('.section').on('mousewheel', function(event, wh) {
         if (wh > 0) {
             var prev = $(this).prev().offset().top
             $('html,body').stop().animate({
@@ -9,7 +8,7 @@
             }, 800)
         } else if (wh < 0) {
             var next = $(this).next().offset().top
-            $('html,body').stop().animate({
+            $('html, body').stop().animate({
                 scrollTop:next
             }, 800)
         }
