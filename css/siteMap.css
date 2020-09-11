@@ -59,4 +59,20 @@
 
 
 /* siteMap 지도 */
-.map_container { width: 1048px; margin: 0 auto; padding: 40px 66px 89px; }
+.map_container { 
+    width: 1140px; margin: 0 auto; padding: 40px 0 89px; }
+
+/* siteMap 텍스트 */
+.siteTable { 
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+.siteTable td { height: 35px; line-height: 35px; }
+.siteTable table { 
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #e5e5e5; }
+.siteTable table tr td:first-child { color: #333; width: 22%;}
+.siteTable table tr td:last-child { color: #777; }
+
+.site_left_text h3 {
+    font-size: 38px; font-weight: 300; color: #333; line-height: 1.3; }
