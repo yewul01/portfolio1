@@ -1,6 +1,6 @@
 (function($){
 
-    $('.section').on('mousewheel', function(event, wh) {
+    $('.slide').on('mousewheel', function(event, wh) {
         if (wh > 0) {
             var prev = $(this).prev().offset().top
             $('html,body').stop().animate({
