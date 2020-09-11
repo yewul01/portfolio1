@@ -1,0 +1,103 @@
+@charset "utf-8";
+@import "reset.css";
+@import "common.css";
+
+
+/* 헤더구역, 푸터구역 등 기타 공통구역에 대한 스타일 */
+
+a { color:inherit; text-decoration:none }
+img { vertical-align:middle }    
+ul { list-style:none }
+table { width: 100%; table-layout: fixed; }
+
+.skip a { display:block;
+    background:#000; color:#fff;
+    text-align:center; width: 1px;  height: 1px;
+    overflow:hidden; position:absolute; 
+    top:-100px }
+.skip a:focus { width: 100%;  height:auto;
+    padding:10px 0px; position:fixed;
+    top:0px; z-index:9999999; }
+.row { max-width:1170px; margin:0 auto}
+.cf:after { content:''; display:block; clear:both }
+.blind { 
+    width:0; height:0; 
+    position:absolute; 
+    text-indent:-9999px;
+    font-size:0px; 
+    overflow:hidden; 
+    line-height:0;
+}
+h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
+
+#header { 
+    position: fixed; width: 100%; z-index: 999999;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1); }
+
+.h1NavTopWrap { 
+    border-bottom: 1px solid rgba(255,255,255,0.15); 
+    font-family: 'Titillium Web', sans-serif; }
+
+.h1NavTop { position: relative; color: #000; background: #fff; }
+.h1NavTop .logo { font-size: 25px; padding: 15px 30px; }
+.h1NavTop .nav { 
+    position: absolute; 
+    top: 0; left: 50%;
+    transform: translate(-50%); 
+    letter-spacing: 2px;
+    z-index: 99999; }
+    
+
+.nav .depth1 { position: relative; }
+.depth1 > li:hover { color: #653811; background: #fff; transition: all 0.5s; }
+.nav .depth1 > li { display: inline-block; position: relative; }
+.nav .depth1 > li:hover a:after { width: 100%; height: 2px; display: block; }
+.nav .depth1 > li > a { display: inline-block; padding: 21px 33px;  position: relative;}
+.nav .depth1 > li > a:after {     
+    content: '';
+    position: absolute; display: none;
+    bottom: 0; left: 50%;
+    transform: translate(-50%);
+    width: 1px; height: 2px;
+    background: #653811; }
+
+.nav .depth2 { 
+    position: absolute; top: 100%; 
+    width: 100%; padding: 20px 5px;
+    background: transparent; display: none; }
+
+
+.depth2 > li > a:hover { color: #653811; }
+.nav .depth2 > li { 
+    text-align: center; line-height: 2;
+    font-size: 14px; color: #8a8a8a; }
+
+
+.nav .depth1:hover .depth2 { display: block; }
+.nav:hover +.decoBox { display: block; }
+.decoBox { 
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%; 
+        background: #fff;
+        height: 151px;
+        display: none;
+        z-index: 999; }
+
+.h1NavTop .topmenu {  
+    position: absolute; top: 0; right: 0;
+    text-align: right; line-height: 59px;
+    padding-right: 15px; }
+.h1NavTop .topmenu > a { display: inline-block; font-size: 14px; padding: 5px 8px; opacity: 0.8;}
+
+
+#footer { background: #31353e; color: #fff; font-size: 14px; padding: 45px 0 60px; }
+.footerMenu { text-align: center; font-size: 15px; }
+.footerMenu a { display: inline-block; padding: 0 15px; }
+.sns { text-align: center; padding: 40px 0 30px; }
+.sns a { font-size: 25px; padding: 0 15px; opacity: 0.5; }
+.sns a:hover { opacity: 0.8; }
+.companyInfo { text-align: center; opacity: 0.7; line-height: 1.5;}
+.companyInfo span { margin: 0 10px; opacity: 0.5; }
+.copyright { margin: 20px 0 0; text-align: center; opacity: 0.7;}

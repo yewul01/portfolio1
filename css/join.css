@@ -1,0 +1,60 @@
+@charset "utf-8";
+@import "reset.css";
+@import "common.css";
+
+.join_slide .join_slideInner { 
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 331px; }
+.join_slide .join_slideInner { background-image: url(../images/sub_hero_img1.jpg);}
+#join_section .join_inner_text h2 { 
+    font-size: 38px; color: #fff;
+    text-align: center; padding-top: 80px; }
+#join_section .join_inner_text p {
+    font-size: 15px; color: #ffffffbf; 
+    text-align: center;  padding-top: 15px; }
+#join_section { padding: 69px 0 100px; }
+
+.resister_steps { margin: 0 auto; padding-top: 100px; text-align: center;}
+.resister_steps .main_head h2 { font-size: 38px; color: #222; margin-bottom: 50px; }
+
+.resister_steps .active { color: #3e78ff; }
+
+.resister_steps ul li { 
+    display: inline-block; padding: 20px 10px; 
+    text-align: center; color: #ccc; position: relative; }
+.resister_steps ul li:nth-child(1):before { background: #3e78ff; }
+.resister_steps ul li:before { 
+    content: '';
+    position: absolute;
+    bottom: 0; left: 50%;
+    transform: translate(-50%);
+    width: 120%; height: 3px;
+    background: #ccc; }
+
+.resister_steps ul li:after {  
+    content: '\f105';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color:#ccc; padding: 0 30px; }
+
+.resister_steps li span:first-child { 
+    font-size: 13px; font-family: 'Titillium Web', sans-serif;
+    display: inline-block; margin-bottom: 2px; margin-right: 65px;
+    letter-spacing: 2px; font-weight: bold; }
+
+#join_section .join_form { width: 40%; margin: 0 auto; }
+#join_section .join_content { padding: 80px 0; text-align: center; }
+#join_section .join_content .nameEmail_box { text-align: center; }
+#join_section .join_content .nameEmail_box input { 
+    width: 440px; height: 54px; line-height: 54px;
+    border: 1px solid transparent; padding: 12px 16px;
+    margin-bottom: 15px; background: #f8f9fa;
+    border-radius: 4px; }
+#join_section .join_content button:hover { background: #588aff; }
+#join_section .join_content button { 
+    color: #fff; background: #3e78ff;
+    width: 440px; height: 51px;
+    border-radius: 4px; font-size: 16px; 
+    transition: all 0.5s;
+}

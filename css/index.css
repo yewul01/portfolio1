@@ -1,0 +1,205 @@
+@charset "utf-8";
+@import "reset.css";
+@import "common.css";
+
+
+/* 공통구역을 제외한 메인페이지 스타일 */
+
+.slide { width: 1903px; height: 900px; overflow: hidden; }
+.slide .slideInner { 
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 900px;
+    position: relative; }
+.slide .slideInner:nth-child(1) { background-image: url(../images/main_hero_img1.jpg); }
+.slide .slideInner:nth-child(2) { background-image: url(../images/main_hero_img2.jpg); }
+.slide .slideInner:nth-child(3) { background-image: url(../images/main_hero_img3.jpg); }
+.slideInner:before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    bottom: 0; right: 0;
+    background:rgba(0,0,0,0.3); }
+.slide .Inner_text {
+    width: 100%; 
+    text-align: left;
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%,-50%); 
+    color: #fff; font-family: sans-serif; }
+.slide .Inner_text span { font-size: 20px; letter-spacing: 2px; font-family: 'Titillium Web', sans-serif; }
+.slide .Inner_text h2 { font-size: 42px; font-weight: 200; line-height: 1.4; font-family: sans-serif; }
+.slide .Inner_text p { font-size: 19px; line-height: 1.6; margin-top: 30px; opacity: 0.8; }
+.slide .Inner_text strong { font-weight: normal; }
+
+.slideOuter { position: relative; }
+
+.slideOuter .dotBox { 
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align: center; }
+.slideOuter .dotBox a { 
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    opacity: 0.5;
+    border-radius: 50%;
+    margin: 0 5px; }
+.slideOuter .dotBox a.active { background: #653811; }
+
+.slideOuter .arr:hover { background: #000000bf; }
+.slideOuter .arr { 
+    font-size: 36px; color: #fff;
+    position: absolute; top: 50%;
+    transform: translateY(-50%);
+    background: #00000080;
+    width: 50px; height: 50px;
+    opacity: 0.9; }
+.slideOuter .prev { left: 0px; }
+.slideOuter .next { right: 0px; }
+
+
+
+.company { padding: 100px 0; }
+.company h2 { text-align: center;  margin-bottom: 40px;}
+.company span { display: block; }
+.company h2 span:first-child { font-size: 42px; color: #222; }
+.company h2 span:last-child { color: #777; margin-top: 10px; }
+
+
+.company ul li { float: left; width: 23%; margin: 0 1%; }
+.company ul li div { overflow: hidden; transition: all 0.5s; position: relative; }
+.company img { transition: all 0.5s; }
+.company .imgBox { overflow: hidden; position: relative; }
+.company ul li:hover .overlay { opacity: 1; }
+.company .imgBox .overlay { 
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: all 0.5s; }
+.company ul li .button { transition: all 0.5s; }
+.company ul li .button:hover { color: #fff; background: #8a2727; }
+.company ul li:hover img { transform: scale(1.2); }
+
+.company ul li h3 { 
+    font-size: 25px;
+    color: #333;
+    margin: 20px 0 15px;
+    font-weight: normal; }
+.company ul li p { 
+    font-size: 15px;
+    color: #7a7a7a;
+    min-height: 60px; 
+}
+.company ul li span {
+    display: inline-block; 
+    border: 1px solid #ddd;
+    font-size: 15px;
+    padding: 12px 28px 12px 18px;
+    margin: 30px 0 0; 
+
+}
+.company ul li a:after { 
+    content: '\f061';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #ddd;
+    position: relative; top: 0; right: 23px;
+}
+.Quality_banner { 
+    background: url(../images/main_parallax_bg.jpg) no-repeat;
+    background-size: cover; 
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    position: relative;
+}
+.Quality_banner .Quality_text { padding-top: 200px; }
+.Quality_banner .Quality_text h2 { font-size: 62px; }
+.Quality_banner .Quality_text p { font-size: 17px; display: inline-block; margin: 15px 0 0; }
+.Quality_banner .overlay { 
+    position: absolute;
+    top: 0; left: 0; 
+    right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.65); 
+}
+
+
+
+.news { padding: 100px 0; position: relative; }
+
+.news .news_intr { text-align: center; border-bottom: 1px solid #eaeaea; }
+.news_intr h2 { font-size: 42px; color: #222; font-family: 'Titillium Web', sans-serif; }
+.news_intr p { color: #777; display: inline-block; margin: 10px 0 40px; }
+
+
+.news .news_box_text:hover h3 { color: #000; transform: translateY(-50%); }
+.news .news_box_text:hover p { transform: translateY(-50%); }
+.news .news_box_text { border-bottom: 1px solid #eaeaea; padding: 42px 0; }
+.news .news_box_text h3 { font-size: 24px; color: #6a6a6a; transition: all 0.5s; }
+.news .news_box_text p { font-size: 15px; color: #aaa; margin: 8px 0 0; transition: all 0.5s; }
+.news .button { 
+    transition: all 0.5s;
+    border: 1px solid #8a2727; display: inline-block; 
+    padding: 12px 28px;
+    background: #8a2727; color: #fff;
+    position: absolute; bottom: 0; left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 30px;
+}
+.news .button a:after { 
+    content: '\f061';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #ddd;
+    position: relative; top: 0; left: 15px; }
+    
+.news .button{ transition: all 0.5s; }
+.news .button:hover { color: #8a2727; background: #fff; }
+
+
+.product { padding: 100px 0; background: #f7f7f7; }
+.prod_intr { text-align: center; }
+.prod_intr h2 { font-size: 42px; color: #222; font-family: 'Titillium Web', sans-serif; }
+.prod_intr p { color: #777; margin: 10px 0 40px; }
+
+.product ul li { float: left; width: 31.3333%; margin: 0 1%; background: #fff; }
+.product ul li div { overflow: hidden; transition: all 0.5s; position: relative; }
+.product ul li img { height: 270px; width: 100%;  transition: all 0.5s; }
+.product ul li:hover img { transform: scale(1.1); } 
+.product .imgBox { overflow: hidden; position: relative; transition: all 0.5s; }
+.product ul li .prod_text { transition: all 0.5s; }
+.product ul li:hover .overlay { opacity: 1; }
+.product ul li:hover .imgBox { transform: translateY(-10%); }
+.product ul li:hover .prod_text { transform: translateY(-10%); }
+.product .imgBox .overlay { 
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: all 0.5s; }
+.prod_text { padding: 35px 30px; }
+.prod_text a { font-size: 17px; color: #333; }
+.prod_text span { 
+    font-size: 14px; color: #333; 
+    display: inline-block;
+    margin: 20px 0 0; }
+
+
+
+
+
+
+
+

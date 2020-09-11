@@ -1,0 +1,62 @@
+@charset "utf-8";
+@import "reset.css";
+@import "common.css";
+
+.cust_slide .cust_slideInner { 
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 331px;
+}
+.cust_slideInner { background-image: url(../images/sub_hero_img4.jpg); }
+#customer_section { padding: 69px 0 373px; }
+#customer_section .cust_slideInner h2 { 
+    font-size: 38px; color: #fff;
+    text-align: center; padding-top: 130px; }
+#customer_section .cust_slideInner p { 
+    font-size: 15px; color: #ffffffbf; 
+    text-align: center;  padding-top: 15px; }
+.sectMenu_box { border-bottom: 1px solid #e9e9e9; }    
+.sectMenu_box a:nth-child(1) { 
+    display: inline-block;
+    padding: 20px 20px;
+    margin-left: 382px;
+    height: 60px;
+    border-left: 1px solid #e9e9e9;
+    border-right: 1px solid #e9e9e9; }
+.sectMenu_box a:nth-child(2) {
+    display: inline-block;
+    padding: 20px 25px;
+    border-right: 1px solid #e9e9e9;
+    font-family: 'Titillium Web', sans-serif;
+    color: #7a7a7a;
+}
+.sectMenu_box a:nth-child(2):after {
+    content: '\f107';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #ccc;
+    position: relative; left: 13px; }
+.sectMenu_box a:nth-child(3) {
+    display: inline-block;
+    padding: 20px 25px;
+    border-right: 1px solid #e9e9e9; 
+    color: #653811;}
+.sectMenu_box a:nth-child(3):after {
+    content: '\f107';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #ccc;
+    position: relative; left: 13px; }
+
+.notice h2 { 
+    font-size: 38px; color: #222; 
+    text-align: center; padding: 100px 0; }
+.notice table { font-size: 15px; color: #777; text-align: center; }
+.notice table caption { display: none; }
+.notice table tr:nth-child(1) { color: #000; border-top: 1px solid #000; }
+.notice table td { padding: 17px 15px; border-bottom: 1px solid #e9e9e9; }
+.notice .table_text { text-align: left; }
+
+
+.notice table col:nth-child(1) { width:15% }
+.notice table col:nth-child(2) { width:60% }
