@@ -20,6 +20,9 @@
     top: 0; left: 0;
     bottom: 0; right: 0;
     background:rgba(0,0,0,0.3); }
+
+    
+/* 메인 슬라이드 텍스트 */
 .slide .Inner_text {
     width: 100%; 
     text-align: left;
@@ -31,8 +34,10 @@
 .slide .Inner_text p { font-size: 19px; line-height: 1.6; margin-top: 30px; opacity: 0.8; }
 .slide .Inner_text strong { font-weight: normal; }
 
-.slide-outer { position: relative; }
 
+
+/* 메인 슬라이드 도트버튼 */
+.slide-outer { position: relative; }
 .slide-outer .slick-dots { 
     position: absolute;
     bottom: 30px;
@@ -50,7 +55,9 @@
     background: none; text-indent: -999999px; }
 .slide-outer .slick-dots li.slick-active { background: #653811; }
 
-.slide-outer .arr:hover { background: #000000bf; }
+
+
+/* 메인 슬라이드 화살표 */
 .slide-outer .arr { 
     font-size: 36px; color: #fff;
     position: absolute; top: 50%;
@@ -58,12 +65,13 @@
     background: rgba(0,0,0,0.5);
     width: 80px; height: 100px;
     transition: opacity 0.3s;
-    opacity: 0.9; background: none; }
+    opacity: 0.9; }
+.slide-outer .arr:hover { background: #000000bf; }
 .slide-outer .prev { left: 0px; z-index: 999999; }
 .slide-outer .next { right: 0px; }
 
 
-
+/* Company 섹션 */
 .company { padding: 100px 0; }
 .company h2 { text-align: center;  margin-bottom: 40px;}
 .company span { display: block; }
@@ -114,6 +122,11 @@
     color: #ddd;
     position: relative; top: 0; right: 23px;
 }
+
+
+
+
+/* Quality 배너 섹션 */
 .Quality_banner { 
     background: url(../images/main_parallax_bg.jpg) no-repeat;
     background-size: cover; 
@@ -136,9 +149,8 @@
 }
 
 
-
+/* News 섹션 */
 .news { padding: 100px 0; position: relative; }
-
 .news .news_intr { text-align: center; border-bottom: 1px solid #eaeaea; }
 .news_intr h2 { font-size: 42px; color: #222; font-family: 'Titillium Web', sans-serif; }
 .news_intr p { color: #777; display: inline-block; margin: 10px 0 40px; }
@@ -169,6 +181,8 @@
 .news .button:hover { color: #8a2727; background: #fff; }
 
 
+
+/* Product 섹션 */
 .product { padding: 100px 0; background: #f7f7f7; }
 .prod_intr { text-align: center; }
 .prod_intr h2 { font-size: 42px; color: #222; font-family: 'Titillium Web', sans-serif; }
