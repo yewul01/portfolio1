@@ -61,8 +61,12 @@
 .notice table col:nth-child(1) { width:15% }
 .notice table col:nth-child(2) { width:60% }
 
-.search_box {padding-top:50px}
-.search_box select, .search_box input[type=text] { 
-    font-size:14px; color:#666; line-height:1.12; padding:4px 12px;
+.search_box { padding-top:50px; position: relative; left: 100px; }
+.search_box select,
+.search_box input[type=text] { 
+    font-size:14px; color:#666; padding:4px 12px;
     height:38px; border:1px solid #dee2e6; border-radius:3px }
 .search_box input[type=text] { width:160px }
+.search_box .botton {
+    display: inline-block; padding: 8px 14px; background: #adb5bd; 
+    border-color: #adb5bd; }
