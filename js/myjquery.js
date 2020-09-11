@@ -2,7 +2,7 @@
 
     $(window).scroll(function(){
         var sct = $(this).scrollTop()
-        var company = $('#section .company').offset().top
+        var company = $('.slide').offset().top
         var banner = $('#section .Quality_banner').offset().top
         var news = $('#section .news').offset().top
         var product = $('#section .product').offset().top
