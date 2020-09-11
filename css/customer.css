@@ -60,3 +60,9 @@
 
 .notice table col:nth-child(1) { width:15% }
 .notice table col:nth-child(2) { width:60% }
+
+.search_box {padding-top:50px}
+.search.box select, .search.box input[type=text] { 
+    font-size:14px; color:#666; line-height:1.12; padding:4px 12px;
+    height:38px; border:1px solid #dee2e6; border-radius:3px }
+.search.box input[type=text] { width:160px }
