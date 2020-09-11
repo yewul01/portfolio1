@@ -2,7 +2,7 @@
 @import "reset.css";
 @import "common.css";
 
-
+/* 로그인 슬라이드 & 텍스트*/
 .log_slide .log_slideInner { 
     background-size: cover;
     background-repeat: no-repeat;
@@ -20,6 +20,8 @@
     font-size: 15px; color: #ffffffbf; 
     text-align: center;  padding-top: 15px; }
 
+
+/* 로그인 박스 */
 #login_section .login_box { padding-top: 100px; }
 #login_section .login_box h2 { font-size: 38px; color: #222; }
 #login_section .login_form { width: 38%; margin: 0 auto; }
