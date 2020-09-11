@@ -198,7 +198,9 @@
 </div>
 
 <script>
-    $('.slide').slick({
+    (function($){
+
+        $('.slide').slick({
         autoplay:true,
         dots:true,
         autoplaySpeed:2000,
@@ -222,5 +224,9 @@
             }
         }]
 
+
+
     })
+    })(jQuery)
+    
 </script>
