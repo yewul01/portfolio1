@@ -45,8 +45,9 @@
     background: #fff;
     opacity: 0.5;
     border-radius: 50%;
-    margin: 0 5px; }
-.slide-outer .slick-dots li button { background: none; text-indent: -999999px; }
+    margin: 0 8.7px; }
+.slide-outer .slick-dots li button { 
+    background: none; text-indent: -999999px; }
 .slide-outer .slick-dots li.slick-active { background: #653811; }
 
 .slide-outer .arr:hover { background: #000000bf; }
