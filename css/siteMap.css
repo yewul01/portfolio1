@@ -1,0 +1,20 @@
+@charset "utf-8";
+@import "reset.css";
+@import "common.css";
+
+.siteMap_slide .siteMap_slideInner { 
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 394px;
+    position: relative; }
+.siteMap_slide .siteMap_slideInner { background-image: url(../images/sub_hero_img1.jpg);}
+#siteMap_section { padding: 0 0 130px; }
+#siteMap_section .siteMap_inner_text {
+    position: absolute; top: 53%; left: 50%;
+    transform: translate(-50%,-50%); }
+#siteMap_section .siteMap_inner_text h2 { 
+    font-size: 36px; color: #fff;
+    text-align: center; }
+#siteMap_section .siteMap_inner_text p {
+    font-size: 15px; color: #ffffffbf; 
+    text-align: center;  padding-top: 15px; }
