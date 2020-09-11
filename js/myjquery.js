@@ -2,25 +2,25 @@
 
     $(window).scroll(function(){
         var sct = $(this).scrollTop()
-        var company = $('.slide').offset().top
-        var banner = $('#section .Quality_banner').offset().top
-        var news = $('#section .news').offset().top
-        var product = $('#section .product').offset().top
+        var company = $('.company').offset().top
+        var banner = $('.Quality_banner').offset().top
+        var news = $('.news').offset().top
+        var product = $('.product').offset().top
 
         if ( sct >= company ) {
-            $('#section .company').addClass('on')
+            $('.company').addClass('on')
         } 
 
         if (sct >= banner ) {
-            $('#section .Quality_banner').addClass('on')
+            $('.Quality_banner').addClass('on')
         } 
 
         if ( sct >= news ) {
-            $('#section .news').addClass('on')
+            $('.news').addClass('on')
         } 
 
         if ( sct >= product ) {
-            $('#section .product').addClass('on')
+            $('.product').addClass('on')
         } 
     })
 
