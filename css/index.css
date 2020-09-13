@@ -21,18 +21,26 @@
     bottom: 0; right: 0;
     background:rgba(0,0,0,0.3); }
 
+
     
 /* 메인 슬라이드 텍스트 */
 .slide .Inner_text {
     width: 100%; 
     text-align: left;
-    position: absolute; top: 50%; left: 50%;
+    position: absolute; top: 37.8%; left: 20%;
     transform: translate(-50%,-50%); 
-    color: #fff; font-family: sans-serif; }
+    color: #fff; font-family: sans-serif;
+    animation: fadeInUp 1s both; }
 .slide .Inner_text span { font-size: 20px; letter-spacing: 2px; font-family: 'Titillium Web', sans-serif; }
 .slide .Inner_text h2 { font-size: 42px; font-weight: 200; line-height: 1.4; font-family: sans-serif; }
 .slide .Inner_text p { font-size: 19px; line-height: 1.6; margin-top: 30px; opacity: 0.8; }
 .slide .Inner_text strong { font-weight: normal; }
+
+/* 메인 슬라이드 텍스트 애니메이션 */
+@keyframes fadeInUp {
+    0% { transform: translateY(100px); opacity: 0; }
+    100% { transform: translateY(0px); opacity: 1; }
+}
 
 
 
@@ -149,6 +157,7 @@
     right: 0; bottom: 0;
     background: rgba(0, 0, 0, 0.65); 
 }
+/* Quality 배너 애니메이션  */
 @keyframes Quality_text {
     0% { transform: translateY(15%); opacity: 0; }
     100% { transform: translateY(0%); opacity: 1; }
@@ -164,7 +173,7 @@
 .news_intr h2 { font-size: 42px; color: #222; font-family: 'Titillium Web', sans-serif; }
 .news_intr p { color: #777; display: inline-block; margin: 10px 0 40px; }
 
-
+/* news 텍스트 애니메이션 */
 @keyframes news_intr {
     0% { transform: translateY(15%); opacity: 0; }
     100% { transform: translateY(0%); opacity: 1; }
@@ -199,6 +208,7 @@
 }
 .news .button.on { animation: news_botton 1s both; }
 
+/* news 더보기 버튼 애니메이션 */
 @keyframes news_botton {
     0% { transform: translateY(15%); opacity: 0; }
     100% { transform: translateY(0%); opacity: 1; }
@@ -223,6 +233,7 @@
 .prod_intr h2 { font-size: 42px; color: #222; font-family: 'Titillium Web', sans-serif; }
 .prod_intr p { color: #777; margin: 10px 0 40px; }
 
+/* product 텍스트 애니메이션 */
 @keyframes prod_intr {
     0% { transform: translateY(15%); opacity: 0; }
     100% { transform: translateY(0%); opacity: 1; }
