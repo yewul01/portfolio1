@@ -72,8 +72,8 @@
 
 
 /* Company 섹션 */
-.company { padding: 100px 0; opacity: 0; transition: all 0.5s; }
-.company.on { opacity: 1; }
+.company { padding: 100px 0; opacity: 0; transition: all 0.5s; transform: translateY(10%); }
+.company.on { opacity: 1; transform: translateY(0%) }
 .company h2 { text-align: center;  margin-bottom: 40px;}
 .company span { display: block; }
 .company h2 span:first-child { font-size: 42px; color: #222; }
@@ -139,7 +139,8 @@
     font-family: 'Titillium Web', sans-serif;
     position: relative;
 }
-.Quality_banner .Quality_text { padding-top: 200px; }
+.Quality_banner .Quality_text { padding-top: 200px; transition: all 0.5s; }
+.Quality_banner .Quality_text.on { animation: Quality_text 1s both; }
 .Quality_banner .Quality_text h2 { font-size: 62px; }
 .Quality_banner .Quality_text p { font-size: 17px; display: inline-block; margin: 15px 0 0; }
 .Quality_banner .overlay { 
@@ -148,18 +149,43 @@
     right: 0; bottom: 0;
     background: rgba(0, 0, 0, 0.65); 
 }
+@keyframes Quality_text {
+    0% { transform: translateY(15%); opacity: 0; }
+    100% { transform: translateY(0%); opacity: 1; }
+}
 
 
 /* News 섹션 */
-.news { padding: 100px 0; position: relative; }
-.news .news_intr { text-align: center; border-bottom: 1px solid #eaeaea; }
+.news { padding: 130px 0; position: relative; }
+.news .news_intr { 
+    text-align: center; 
+    transition: all 0.5s; }
+.news .news_intr.on { animation: news_intr 1s both; }
 .news_intr h2 { font-size: 42px; color: #222; font-family: 'Titillium Web', sans-serif; }
 .news_intr p { color: #777; display: inline-block; margin: 10px 0 40px; }
 
 
-.news .news_box_text:hover h3 { color: #000; transform: translateY(-50%); }
-.news .news_box_text:hover p { transform: translateY(-50%); }
-.news .news_box_text { border-bottom: 1px solid #eaeaea; padding: 42px 0; }
+@keyframes news_intr {
+    0% { transform: translateY(15%); opacity: 0; }
+    100% { transform: translateY(0%); opacity: 1; }
+}
+
+
+
+.news .news_box_text:nth-of-type(1) { border-top: 1px solid #eaeaea; }
+.news .news_box_text { 
+    border-bottom: 1px solid #eaeaea; padding: 42px 0;
+    transition: all 0.5s; position: relative; }
+.news .news_box_text:hover { color: #000; transform: scale(1.01); }
+.news .news_box_text:after { 
+    content: '\f061';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    right: 10px; top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #ccc; }
 .news .news_box_text h3 { font-size: 24px; color: #6a6a6a; transition: all 0.5s; }
 .news .news_box_text p { font-size: 15px; color: #aaa; margin: 8px 0 0; transition: all 0.5s; }
 .news .button { 
@@ -167,10 +193,17 @@
     border: 1px solid #8a2727; display: inline-block; 
     padding: 12px 28px;
     background: #8a2727; color: #fff;
-    position: absolute; bottom: 0; left: 50%;
+    position: absolute; bottom: 10px; left: 45%;
     transform: translate(-50%);
-    margin-bottom: 30px;
+    margin-bottom: 30px; transition: all 0.5s;
 }
+.news .button.on { animation: news_botton 1s both; }
+
+@keyframes news_botton {
+    0% { transform: translateY(15%); opacity: 0; }
+    100% { transform: translateY(0%); opacity: 1; }
+}
+
 .news .button a:after { 
     content: '\f061';
     font-family: 'Font Awesome 5 Free';
@@ -185,9 +218,15 @@
 
 /* Product 섹션 */
 .product { padding: 100px 0; background: #f7f7f7; }
-.prod_intr { text-align: center; }
+.prod_intr { text-align: center; transition: all 0.5s; }
+.prod_intr.on { animation: prod_intr 1s both; }
 .prod_intr h2 { font-size: 42px; color: #222; font-family: 'Titillium Web', sans-serif; }
 .prod_intr p { color: #777; margin: 10px 0 40px; }
+
+@keyframes prod_intr {
+    0% { transform: translateY(15%); opacity: 0; }
+    100% { transform: translateY(0%); opacity: 1; }
+}
 
 .product ul li { float: left; width: 31.3333%; margin: 0 1%; background: #fff; }
 .product ul li div { overflow: hidden; transition: all 0.5s; position: relative; }
