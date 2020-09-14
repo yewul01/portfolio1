@@ -103,7 +103,7 @@ h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
 .companyInfo span { margin: 0 10px; opacity: 0.5; }
 .copyright { margin: 20px 0 0; text-align: center; opacity: 0.7;}
 
-/* .introAni { 
+.introAni { 
     position: fixed; top: 0; left: 0; bottom: 0; right: 0;
     background: #000; z-index: 99999999;
     font-size: 100px; color: #fff;
@@ -121,12 +121,12 @@ h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
 .introAni h2 {
     color: #fff;
     font-size: 60px;
-    margin-top: -10px; } */
+    margin-top: -10px; }
 
 
 
 
-#loder {
+/* #loder {
     position: fixed; top: 0; left: 0; bottom: 0; right: 0;
     background: #8a2727; z-index: 99999999;
     font-size: 100px; color: #fff;  }
@@ -176,5 +176,5 @@ h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
 @keyframes line {
     10% { height: 20px; }
     100% { height: 20px; }
-}
+} */
 

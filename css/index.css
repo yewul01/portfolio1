@@ -80,19 +80,18 @@
 
 
 /* Company 섹션 */
-.company { padding: 100px 0; opacity: 0; transition: all 0.5s; transform: translateY(10%); }
-.company.on { opacity: 1; transform: translateY(0%) }
+.company { padding: 100px 0; }
 .company h2 { text-align: center;  margin-bottom: 40px;}
 .company span { display: block; }
 .company h2 span:first-child { font-size: 42px; color: #222; }
 .company h2 span:last-child { color: #777; margin-top: 10px; }
 
 
-.company ul li { float: left; width: 23%; margin: 0 1%; }
-.company ul li div { overflow: hidden; transition: all 0.5s; position: relative; }
+.company .comul .comli { float: left; width: 23%; margin: 0 1%; }
+.company .comul .comli div { overflow: hidden; transition: all 0.5s; position: relative; }
 .company img { transition: all 0.5s; }
 .company .imgBox { overflow: hidden; position: relative; }
-.company ul li:hover .overlay { opacity: 1; }
+.company .comul .comli:hover .overlay { opacity: 1; }
 .company .imgBox .overlay { 
     position: absolute;
     top: 0;
@@ -102,21 +101,21 @@
     background: rgba(0, 0, 0, 0.3);
     opacity: 0;
     transition: all 0.5s; }
-.company ul li .button { transition: all 0.5s; }
-.company ul li .button:hover { color: #fff; background: #8a2727; }
-.company ul li:hover img { transform: scale(1.2); }
+.company .comul .comli .button { transition: all 0.5s; }
+.company .comul .comli .button:hover { color: #fff; background: #8a2727; }
+.company .comul .comli:hover img { transform: scale(1.2); }
 
-.company ul li h3 { 
+.company .comul .comli h3 { 
     font-size: 25px;
     color: #333;
     margin: 20px 0 15px;
     font-weight: normal; }
-.company ul li p { 
+.company .comul .comli p { 
     font-size: 15px;
     color: #7a7a7a;
     min-height: 60px; 
 }
-.company ul li span {
+.company .comul .comli span {
     display: inline-block; 
     border: 1px solid #ddd;
     font-size: 15px;
@@ -124,12 +123,22 @@
     margin: 30px 0 0; 
 
 }
-.company ul li a:after { 
+.company .comul .comli a:after { 
     content: '\f061';
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     color: #ddd;
     position: relative; top: 0; right: 23px;
+}
+
+.company .comul .comli {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+.company .comul .comli.fadeInUp {
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
 
 
