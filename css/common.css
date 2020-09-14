@@ -103,7 +103,7 @@ h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
 .companyInfo span { margin: 0 10px; opacity: 0.5; }
 .copyright { margin: 20px 0 0; text-align: center; opacity: 0.7;}
 
-.introAni { 
+/* .introAni { 
     position: fixed; top: 0; left: 0; bottom: 0; right: 0;
     background: #000; z-index: 99999999;
     font-size: 100px; color: #fff;
@@ -121,5 +121,60 @@ h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
 .introAni h2 {
     color: #fff;
     font-size: 60px;
-    margin-top: -10px; }
+    margin-top: -10px; } */
+
+
+
+
+#loder {
+    position: fixed; top: 0; left: 0; bottom: 0; right: 0;
+    background: #8a2727; z-index: 99999999;
+    font-size: 100px; color: #fff;  }
+.loader {
+    animation: loader 5s cubic-bezier(.8,0,.2,1) infinite;
+    position: absolute; top: 40%; 
+    transform: translateY(-50%); width: 100%; text-align: center;
+    
+}
+@keyframes loader {
+    90% { transform: rotate(0deg); }
+    100% { transform: rotate(180deg); }
+}
+
+.top {
+    animation: top 5s linear infinite;
+    border-top: 20px solid #fff;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    height: 0; width: 1px;
+    transform-origin: 50% 100%; }
+@keyframes top {
+    90% { transform: scale(0) }
+    100% { transform: scale(0) }
+}
+
+.bottom {
+    animation: bottom 5s linear infinite;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #fff;
+    border-left: 20px solid transparent;
+    height: 0; width: 1px;
+    transform: scale(0);
+    transform-origin: 50% 100%; }
+@keyframes bottom {
+    10% { transform: scale(0); }
+    90% { transform: scale(1) }
+    100% { transform: scale(1) }
+}
+
+.line { 
+    animation: line 5s linear infinite;
+    border-left: 1px dotted #fff;
+    height: 0; width: 0;
+    position: absolute;
+    top: 20px; left: 20px; }
+@keyframes line {
+    10% { height: 20px; }
+    100% { height: 20px; }
+}
 
