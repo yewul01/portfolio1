@@ -8,7 +8,7 @@
 
 
         // company li 애니메이션 
-        var comNear = $('.company').offset().top - $(this).height()/2
+        var comNear = $('.company').offset().top - $(this).height()/2 
         if (sct >= comNear) {
             $('.company .comul .comli').addClass('fadeInUp')
             for (var i=0; i<$('.comul .comli').length; i++) {
@@ -19,23 +19,15 @@
         } else { $('.company .comul .comli').removeClass('fadeInUp') }
         
 
-
-        // 헤더, 컨텐츠 겹침현상 수정
-        var company = $('.company').offset().top
-        if (sct >= company) {
-            $('.h1NavTop').addClass('on')
-        } else {
-            $('.h1NavTop').removeClass('on')
-        }
         
 
 
         // company 텍스트 애니메이션
 
         if (sct >= comNear) {
-            $('.company h2').addClass('fadeInUp')
+            $('.company h2').addClass('on')
         } else {
-            $('.company h2').removeClass('fadeInUp')
+            $('.company h2').removeClass('on')
         }
 
 
