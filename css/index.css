@@ -101,7 +101,8 @@
     background: rgba(0, 0, 0, 0.3);
     opacity: 0;
     transition: all 0.5s; }
-.company .comul .comli .comBtn { transition: all 0.5s; position: relative; }
+
+
 .company .comul .comli .comBtn:hover { background: #8a2727; color: #fff;}
 .company .comul .comli:hover img { transform: scale(1.2); }
 
@@ -126,11 +127,13 @@
     margin: 30px 0 0; 
 
 }
+.company .comul .comli .comBtn { min-width: 200px; }
+.company .comul .comli a { transition: all 0.5s; }
 .company .comul .comli a:after { 
     content: '\f061';
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
-    color: #ddd;
+    color: #999;
     position: relative; top: 0; right: 23px;
 }
 
