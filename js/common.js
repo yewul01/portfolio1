@@ -50,7 +50,9 @@
         } else {
             $('.h1NavTop').removeClass('on')
         }
+        
 
+        // customer 페이지 헤더, 컨텐츠 겹침현상 수정
         var cust_slide = $('.cust_slide').offset().top
         if (sct >= cust_slide) {
             $('.h1NavTop').addClass('on')
