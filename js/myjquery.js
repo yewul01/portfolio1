@@ -18,6 +18,15 @@
             }
         } else { $('.company .comul .comli').removeClass('fadeInUp') }
         
+
+
+        // 헤더, 컨텐츠 겹침현상 수정
+        var company = $('.company').offset().top
+        if (sct >= company) {
+            $('.h1NavTop').addClass('on')
+        } else {
+            $('.h1NavTop').removeClass('on')
+        }
         
 
 

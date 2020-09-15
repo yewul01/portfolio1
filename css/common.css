@@ -19,6 +19,7 @@ table { width: 100%; table-layout: fixed; }
     padding:10px 0px; position:fixed;
     top:0px; z-index:9999999; }
 .row { max-width:1170px; margin:0 auto}
+.row1170 { max-width: 1170px; margin: 0 auto; position: relative; }
 .cf:after { content:''; display:block; clear:both }
 .blind { 
     width:0; height:0; 
@@ -32,14 +33,14 @@ h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
 
 #header { 
     position: fixed; width: 100%; z-index: 999999;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1); }
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1); 
+    border-bottom: 1px solid rgba(255,255,255,0.15);  
+    transition: height 0.3s border-color 0.3s background-color 0.3s; 
+}
 
-.h1NavTopWrap { 
-    border-bottom: 1px solid rgba(255,255,255,0.15); 
-    font-family: 'Titillium Web', sans-serif; }
 
-.h1NavTop { position: relative; color: #000; background: #fff; }
-.h1NavTop.on { background: #fff; color: #000; }
+.h1NavTop { position: relative; color: #fff; background: transparent; }
+.h1NavTop.on { color: #000; background: #fff; }
 .h1NavTop .logo { font-size: 25px; padding: 15px 30px; }
 .h1NavTop .nav { 
     position: absolute; 
@@ -49,8 +50,9 @@ h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
     z-index: 99999; }
     
 
-.nav .depth1 { position: relative; }
-.depth1 > li:hover { color: #653811; background: #fff; transition: all 0.5s; }
+.nav .depth1 { position: relative; font-family: 'Titillium Web', sans-serif; }
+.depth1 > li:hover .decoBox  { color: #653811; background: #fff; transition: all 0.5s; }
+.depth1 > li:hover .h1NavTop { color: #000; background: #fff; }
 .nav .depth1 > li { display: inline-block; position: relative; }
 .nav .depth1 > li:hover a:after { width: 100%; height: 2px; display: block; }
 .nav .depth1 > li > a { display: inline-block; padding: 21px 33px;  position: relative;}
@@ -65,7 +67,7 @@ h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
 .nav .depth2 { 
     position: absolute; top: 100%; 
     width: 100%; padding: 20px 5px;
-    background: transparent; display: none; }
+    display: none; }
 
 
 .depth2 > li > a:hover { color: #653811; }
@@ -103,18 +105,26 @@ h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
 .companyInfo span { margin: 0 10px; opacity: 0.5; }
 .copyright { margin: 20px 0 0; text-align: center; opacity: 0.7;}
 
-.introAni {
+.introAni { 
     position: fixed; top: 0; left: 0; bottom: 0; right: 0;
-    background: #000; z-index: 9999999;
-    font-size: 100px; color: #fff; }
+    background: #000; z-index: 99999999;
+    font-size: 100px; color: #fff;
+}
 .location_box {
-    position: absolute; top: 40%; transform: translateY(-50%);
-    width: 100%; text-align: center; }
+    position: absolute; top: 40%;
+    transform: translateY(-50%);
+    width: 100%; text-align: center;
+}
+
 .introAni p {
     font-size: 40px;
     font-weight: 100;
     color: #f60d54; }
 .introAni h2 {
-    color: #000;
+    color: #fff;
     font-size: 60px;
     margin-top: -10px; }
+
+
+
+

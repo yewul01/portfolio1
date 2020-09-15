@@ -3,6 +3,28 @@
 @import "common.css";
 
 #join2_section { padding: 69px 0 300px; }
+
+
+.join2_slide .join2_slideInner { 
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 394px;
+    position: relative; }
+.join2_slide .join2_slideInner { background-image: url(../images/sub_hero_img1.jpg);}
+
+#join2_section { padding: 0 0 130px; }
+
+.join2_inner_text {
+    position: absolute; top: 53%; left: 50%;
+    transform: translate(-50%,-50%); }
+.join2_inner_text h2 { 
+    font-size: 36px; color: #fff;
+    text-align: center; }
+.join2_inner_text p {
+    font-size: 15px; color: #ffffffbf; 
+    text-align: center;  padding-top: 15px; }
+
+
 .join2_box { margin-top: 30px; }
 .join2_form { width: 25%; margin: 0 auto; }
 
@@ -31,5 +53,3 @@
     background: #3e78ff; color: #fff;
     border: none; border-radius: 5px;
     font-size: 18px; }
-
-
