@@ -3,32 +3,32 @@
     // 메인 페이지 애니메이션
     $(window).scroll(function() {
 
-
         var sct = $(this).scrollTop()
 
-
-        // company li 애니메이션 
-        var comNear = $('.company').offset().top - $(this).height()/2 
-        if (sct >= comNear) {
-            $('.company .comul .comli').addClass('fadeInUp')
-            for (var i=0; i<$('.comul .comli').length; i++) {
-                $('.comul .comli').eq(i).css({
-                    animationDelay:i*0.1 + 's'
-                }).addClass('fadeInUp')
-            }
-        } else { $('.company .comul .comli').removeClass('fadeInUp') }
         
-
-        
-
-
         // company 텍스트 애니메이션
-
+        var comNear = $('.company').offset().top - $(this).height()/2
         if (sct >= comNear) {
             $('.company h2').addClass('on')
         } else {
             $('.company h2').removeClass('on')
         }
+
+
+
+        // company li 애니메이션 
+        var comNear = $('.company').offset().top - $(this).height()/2 
+        if (sct >= comNear) {
+            $('.company .comul .comli').addClass('animate__fadeInUp')
+            for (var i=0; i<$('.comul .comli').length; i++) {
+                $('.comul .comli').eq(i).css({
+                    animationDelay:i*0.1 + 's'
+                }).addClass('animate__fadeInUp')
+            }
+        } else { $('.company .comul .comli').removeClass('animate__fadeInUp') }
+        
+
+
 
 
 
@@ -43,8 +43,7 @@
 
 
         // news 텍스트 애니메이션
-        var news = $('.news').offset().top - $(this).height()/2
-        if (sct >= news) {
+        if (sct >= QualNear) {
             $('.news_intr').addClass('on')
         } else {
             $('.news_intr').removeClass('on')
