@@ -11,75 +11,56 @@
     background-repeat: no-repeat;
     height: 900px;
     position: relative; }
-.slide1 { background-image: url(../images/main_hero_img1.jpg); }
-.slide2 { background-image: url(../images/main_hero_img2.jpg); }
-.slide3 { background-image: url(../images/main_hero_img3.jpg); }
+.slide .slideInner:nth-child(1) { background-image: url(../images/main_hero_img1.jpg); }
+.slide .slideInner:nth-child(2) { background-image: url(../images/main_hero_img2.jpg); }
+.slide .slideInner:nth-child(3) { background-image: url(../images/main_hero_img3.jpg); }
 .slideInner:before {
     content: '';
     position: absolute;
     top: 0; left: 0;
     bottom: 0; right: 0;
     background:rgba(0,0,0,0.3); }
-
-
-    
-/* 메인 슬라이드 텍스트 */
 .slide .Inner_text {
     width: 100%; 
     text-align: left;
-    position: absolute; top: 37.8%; left: 20%;
+    position: absolute; top: 50%; left: 50%;
     transform: translate(-50%,-50%); 
-    color: #fff; font-family: sans-serif;
-    animation: fadeInUp 1s both; }
+    color: #fff; font-family: sans-serif; }
 .slide .Inner_text span { font-size: 20px; letter-spacing: 2px; font-family: 'Titillium Web', sans-serif; }
 .slide .Inner_text h2 { font-size: 42px; font-weight: 200; line-height: 1.4; font-family: sans-serif; }
 .slide .Inner_text p { font-size: 19px; line-height: 1.6; margin-top: 30px; opacity: 0.8; }
 .slide .Inner_text strong { font-weight: normal; }
 
-/* 메인 슬라이드 텍스트 애니메이션 */
-@keyframes fadeInUp {
-    0% { transform: translateY(100px); opacity: 0; }
-    100% { transform: translateY(0px); opacity: 1; }
-}
+.slideOuter { position: relative; }
 
-
-
-/* 메인 슬라이드 도트버튼 */
-.slide-outer { position: relative; }
-.slide-outer .slick-dots { 
+.slideOuter .dotBox { 
     position: absolute;
     bottom: 30px;
     width: 100%;
     text-align: center; }
-.slide-outer .slick-dots li { 
+.slideOuter .dotBox a { 
     display: inline-block;
     width: 10px;
     height: 10px;
     background: #fff;
     opacity: 0.5;
     border-radius: 50%;
-    margin: 0 8.7px; }
-.slide-outer .slick-dots li button { 
-    background: none; text-indent: -999999px; }
-.slide-outer .slick-dots li.slick-active { background: #653811; }
+    margin: 0 5px; }
+.slideOuter .dotBox a.active { background: #653811; }
 
-
-
-/* 메인 슬라이드 화살표 */
-.slide-outer .arr { 
+.slideOuter .arr:hover { background: #000000bf; }
+.slideOuter .arr { 
     font-size: 36px; color: #fff;
     position: absolute; top: 50%;
     transform: translateY(-50%);
-    background: rgba(0,0,0,0.5);
-    width: 80px; height: 100px;
-    transition: opacity 0.3s;
+    background: #00000080;
+    width: 50px; height: 50px;
     opacity: 0.9; }
-.slide-outer .arr:hover { background: #000000bf; }
-.slide-outer .prev { left: 0px; z-index: 999999; }
-.slide-outer .next { right: 0px; }
+.slideOuter .prev { left: 0px; }
+.slideOuter .next { right: 0px; }
 
 
-/* Company 섹션 */
+
 .company { padding: 100px 0; }
 .company h2 { text-align: center;  margin-bottom: 40px;}
 .company span { display: block; }
@@ -87,11 +68,11 @@
 .company h2 span:last-child { color: #777; margin-top: 10px; }
 
 
-.company .comul .comli { float: left; width: 23%; margin: 0 1%; }
-.company .comul .comli div { overflow: hidden; transition: all 0.5s; position: relative; }
+.company ul li { float: left; width: 23%; margin: 0 1%; }
+.company ul li div { overflow: hidden; transition: all 0.5s; position: relative; }
 .company img { transition: all 0.5s; }
 .company .imgBox { overflow: hidden; position: relative; }
-.company .comul .comli:hover .overlay { opacity: 1; }
+.company ul li:hover .overlay { opacity: 1; }
 .company .imgBox .overlay { 
     position: absolute;
     top: 0;
@@ -101,21 +82,21 @@
     background: rgba(0, 0, 0, 0.3);
     opacity: 0;
     transition: all 0.5s; }
-.company .comul .comli .button { transition: all 0.5s; }
-.company .comul .comli .button:hover { color: #fff; background: #8a2727; }
-.company .comul .comli:hover img { transform: scale(1.2); }
+.company ul li .button { transition: all 0.5s; }
+.company ul li .button:hover { color: #fff; background: #8a2727; }
+.company ul li:hover img { transform: scale(1.2); }
 
-.company .comul .comli h3 { 
+.company ul li h3 { 
     font-size: 25px;
     color: #333;
     margin: 20px 0 15px;
     font-weight: normal; }
-.company .comul .comli p { 
+.company ul li p { 
     font-size: 15px;
     color: #7a7a7a;
     min-height: 60px; 
 }
-.company .comul .comli span {
+.company ul li span {
     display: inline-block; 
     border: 1px solid #ddd;
     font-size: 15px;
@@ -123,37 +104,13 @@
     margin: 30px 0 0; 
 
 }
-.company .comul .comli a:after { 
+.company ul li a:after { 
     content: '\f061';
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     color: #ddd;
     position: relative; top: 0; right: 23px;
 }
-/* company 애니메이션 */
-.company h2 {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-}
-.company h2.fadeInUp {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-}
-.company .comul .comli {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-}
-.company .comul .comli.fadeInUp {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-}
-
-
-
-
-/* Quality 배너 섹션 */
 .Quality_banner { 
     background: url(../images/main_parallax_bg.jpg) no-repeat;
     background-size: cover; 
@@ -163,14 +120,9 @@
     color: #fff;
     text-align: center;
     font-family: 'Titillium Web', sans-serif;
-    position: relative; }
-
-
-/* Quality 배너 애니메이션 */
-.Quality_banner .Quality_text.on { animation: fadeInUp 1s both; }
-
-
-.Quality_banner .Quality_text { padding-top: 200px; transition: all 0.5s; }
+    position: relative;
+}
+.Quality_banner .Quality_text { padding-top: 200px; }
 .Quality_banner .Quality_text h2 { font-size: 62px; }
 .Quality_banner .Quality_text p { font-size: 17px; display: inline-block; margin: 15px 0 0; }
 .Quality_banner .overlay { 
@@ -182,47 +134,27 @@
 
 
 
-/* News 섹션 */
-.news { padding: 130px 0; position: relative; }
-.news .news_intr { text-align: center; }
+.news { padding: 100px 0; position: relative; }
+
+.news .news_intr { text-align: center; border-bottom: 1px solid #eaeaea; }
 .news_intr h2 { font-size: 42px; color: #222; font-family: 'Titillium Web', sans-serif; }
 .news_intr p { color: #777; display: inline-block; margin: 10px 0 40px; }
-/* news 텍스트 애니메이션 */
-.news .news_intr.on { animation: fadeInUp 1.3s both; }
 
 
-
-
-.news .news_box_text:nth-of-type(1) { border-top: 1px solid #eaeaea; }
-.news .news_box_text { 
-    border-bottom: 1px solid #eaeaea; padding: 42px 0;
-    transition: all 0.5s; position: relative; }
-.news .news_box_text:hover { color: #000; transform: scale(1.01); }
-.news .news_box_text:after { 
-    content: '\f061';
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    position: absolute;
-    right: 10px; top: 50%;
-    transform: translateY(-50%);
-    font-size: 30px;
-    color: #ccc; }
+.news .news_box_text:hover h3 { color: #000; transform: translateY(-50%); }
+.news .news_box_text:hover p { transform: translateY(-50%); }
+.news .news_box_text { border-bottom: 1px solid #eaeaea; padding: 42px 0; }
 .news .news_box_text h3 { font-size: 24px; color: #6a6a6a; transition: all 0.5s; }
 .news .news_box_text p { font-size: 15px; color: #aaa; margin: 8px 0 0; transition: all 0.5s; }
-.news .newsButton { 
+.news .button { 
     transition: all 0.5s;
     border: 1px solid #8a2727; display: inline-block; 
     padding: 12px 28px;
     background: #8a2727; color: #fff;
-    position: absolute; bottom: 10px; left: 45%;
+    position: absolute; bottom: 0; left: 50%;
     transform: translate(-50%);
-    margin-bottom: 30px; transition: all 0.5s;
+    margin-bottom: 30px;
 }
-/* news 더보기 버튼 애니메이션 */
-.news .newsButton.on { animation: fadeInUp 1.3s both; }
-
-
-
 .news .button a:after { 
     content: '\f061';
     font-family: 'Font Awesome 5 Free';
@@ -234,15 +166,10 @@
 .news .button:hover { color: #8a2727; background: #fff; }
 
 
-
-/* Product 섹션 */
 .product { padding: 100px 0; background: #f7f7f7; }
-.prod_intr { text-align: center; transition: all 0.5s; }
+.prod_intr { text-align: center; }
 .prod_intr h2 { font-size: 42px; color: #222; font-family: 'Titillium Web', sans-serif; }
 .prod_intr p { color: #777; margin: 10px 0 40px; }
-
-/* Product 텍스트 애니메이션 */
-.prod_intr.on { animation: fadeInUp 1.3s both; }
 
 .product ul li { float: left; width: 31.3333%; margin: 0 1%; background: #fff; }
 .product ul li div { overflow: hidden; transition: all 0.5s; position: relative; }
