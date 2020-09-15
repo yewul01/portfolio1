@@ -101,9 +101,12 @@
     background: rgba(0, 0, 0, 0.3);
     opacity: 0;
     transition: all 0.5s; }
-.company .comul .comli .button { transition: all 0.5s; }
-.company .comul .comli .button:hover { color: #fff; background: #8a2727; }
+.company .comul .comli .comBtn { transition: all 0.5s; position: relative; }
+.company .comul .comli .comBtn:hover { background: #8a2727; color: #fff;}
 .company .comul .comli:hover img { transform: scale(1.2); }
+
+
+
 
 .company .comul .comli h3 { 
     font-size: 25px;
