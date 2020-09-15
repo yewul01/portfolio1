@@ -40,6 +40,7 @@ h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
 
 
 .h1NavTop { position: relative; color: #fff; background: transparent; }
+.h1NavTop.on { color: #000; background: #fff; }
 .h1NavTop .logo { font-size: 25px; padding: 15px 30px; }
 .h1NavTop .nav { 
     position: absolute; 
