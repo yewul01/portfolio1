@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
     font-family: 'Titillium Web', sans-serif; }
 
 .h1NavTop { position: relative; color: #000; background: #fff; }
-.h1NavTop.on { background: #fff; color: #fff; }
+.h1NavTop.on { background: #fff; color: #000; }
 .h1NavTop .logo { font-size: 25px; padding: 15px 30px; }
 .h1NavTop .nav { 
     position: absolute; 

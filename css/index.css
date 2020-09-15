@@ -131,7 +131,8 @@
     right: 0; bottom: 0;
     background: rgba(0, 0, 0, 0.65); 
 }
-
+/* Quality 배너 애니메이션 */
+.Quality_banner .Quality_text.on { animation: fadeInUp 1s both; }
 
 
 .news { padding: 100px 0; position: relative; }
