@@ -51,8 +51,7 @@ h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
     
 
 .nav .depth1 { position: relative; font-family: 'Titillium Web', sans-serif; }
-.depth1 > li:hover .decoBox  { color: #653811; background: #fff; transition: all 0.5s; }
-.depth1 > li:hover .h1NavTop { color: #000; background: #fff; }
+.h1NavTop:hover { color: #000; background: #fff; transition: all 0.5s; }
 .nav .depth1 > li { display: inline-block; position: relative; }
 .nav .depth1 > li:hover a:after { width: 100%; height: 2px; display: block; }
 .nav .depth1 > li > a { display: inline-block; padding: 21px 33px;  position: relative;}
@@ -62,7 +61,14 @@ h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
     bottom: 0; left: 50%;
     transform: translate(-50%);
     width: 1px; height: 2px;
-    background: #653811; }
+    background: #653811;
+    animation: NavLiBar 0.5s both;
+}
+/* 네비게이션 li 막대 애니메이션 */
+@keyframes NavLiBar {
+    0% { width: 0%; }
+    100% { width: 100%; }
+}
 
 .nav .depth2 { 
     position: absolute; top: 100%; 
@@ -86,7 +92,9 @@ h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
         background: #fff;
         height: 151px;
         display: none;
-        z-index: 999; }
+        z-index: 999;
+        transition: all 1s;
+    }
 
 .h1NavTop .topmenu {  
     position: absolute; top: 0; right: 0;

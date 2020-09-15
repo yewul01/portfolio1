@@ -64,13 +64,15 @@
 
 /* siteMap 텍스트 */
 .siteTable { 
-    position: absolute; top: 50%; left: 50%;
+    position: absolute; top: 50%; left: 55%;
     transform: translate(-50%,-50%);
+    margin-top: 35px; border-top: 1px solid #555;
+    border-bottom: 1px solid #e5e5e5;
+    
+
 }
-.siteTable td { height: 35px; line-height: 35px; }
-.siteTable table { 
-    border-top: 1px solid #555;
-    border-bottom: 1px solid #e5e5e5; }
+.siteTable td { height: 35px; line-height: 35px; text-align: left; }
+
 .siteTable table tr td:first-child { color: #333; width: 22%;}
 .siteTable table tr td:last-child { color: #777; }
 
