@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
 
 .introAni {
     position: fixed; top: 0; left: 0; bottom: 0; right: 0;
-    background: #fff; z-index: 9999999;
+    background: #000; z-index: 9999999;
     font-size: 100px; color: #fff; }
 .location_box {
     position: absolute; top: 40%; transform: translateY(-50%);
@@ -115,6 +115,6 @@ h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
     font-weight: 100;
     color: #f60d54; }
 .introAni h2 {
-    color: #fff;
+    color: #000;
     font-size: 60px;
     margin-top: -10px; }
