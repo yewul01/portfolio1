@@ -63,8 +63,7 @@
 
 
         // Product 텍스트 애니메이션
-        var product = $('.news_intr').offset().top - $(this).height()/2
-        if (sct >= product) {
+        if (sct >= news_intr) {
             $('.prod_intr').addClass('on')
         } else {
             $('.prod_intr').removeClass('on')
