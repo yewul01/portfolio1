@@ -78,6 +78,8 @@
 .slide-outer .prev { left: 0px; z-index: 999999; }
 .slide-outer .next { right: 0px; }
 
+.open_nav { display: none; }
+.close_nav { display: none; }
 
 /* Company 섹션 */
 .company { padding: 100px 0; }
