@@ -101,3 +101,17 @@
     height: 38px; transition: all 0.5s; }
 .search-button input[type=submit]:hover { background: #c3cbd3; }
 
+@media screen and (max-width:800px) {
+    .notice .colgroup col:nth-child(1),
+    .notice .colgroup col:nth-child(4),
+    .notice .colgroup col:nth-child(5) { display: none; }
+
+    .notice th:nth-child(1),
+    .notice th:nth-child(4),
+    .notice th:nth-child(5) { display: none; }
+
+    .notice td:nth-child(1),
+    .notice td:nth-child(4),
+    .notice td:nth-child(5) { display: none; }
+}
+

@@ -1,11 +1,13 @@
 @charset "utf-8";
 @import "reset.css";
 @import "common.css";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 
 
 /* 공통구역을 제외한 메인페이지 스타일 */
 
-.slide { width: 1903px; height: 900px; overflow: hidden; }
+body { font-family: 'Titillium Web', sans-serif; }
+.slide { width: 100%; height: auto; overflow: hidden; }
 .slide .slideInner { 
     background-size: cover;
     background-repeat: no-repeat;
@@ -81,6 +83,8 @@
 .open_nav { display: none; }
 .close_nav { display: none; }
 
+
+
 /* Company 섹션 */
 .company { padding: 100px 0; }
 .company h2 { text-align: center;  margin-bottom: 40px; }
@@ -144,7 +148,8 @@
 
 /* company li 애니메이션 */
 .company .comul .comli { 
-    float: left; width: 23%; margin: 0 1%; opacity: 0;
+    float: left; width: 23%; margin: 0 1%; 
+    opacity: 0;
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
 }

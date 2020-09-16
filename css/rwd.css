@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+@media (max-width:991px) {
+    /* .row { width: 100%; } */
+    .h1NavTop .open_nav { display: block; position: absolute; top: 50%; right: 3%;
+        transform: translateY(-50%) }
+    .h1NavTop .nav .depth1 { display: none; }
+    .h1NavTop .topmenu { display: none; }
+
+
+
+    .slide .slideInner .Inner_text { position: relative; bottom: 150px; left: 82px; }
+    
+    
+    .company .comul .comli { text-align: center; padding: 50px 0 30px; }
+    .company .comul .comli:nth-child(1) { float: left; width: 45%; }
+    .company .comul .comli:nth-child(2) { float: right; width: 45%; }
+    .company .comul .comli:nth-child(3) { float: left; width: 45%; }
+    .company .comul .comli:nth-child(4) { float: right; width: 45%; }
+    .company .comul .comli p { text-align: left; }
+
+    
+    .product .row { margin: 0 auto; }
+    .product > ul > li:nth-child(1) { width: 25%; }
+    .product > ul > li:nth-child(2) { width: 25%; }
+    .product > ul > li:nth-child(3) { width: 25%; }
+    
+    
+    
+
+    
+    
+    
+}
