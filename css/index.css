@@ -103,7 +103,7 @@
     transition: all 0.5s; }
 
 
-.company .comul .comli .comBtn:hover { background: #8a2727; color: #fff;}
+.company .comul .comli .comBtn:hover { background: #8a2727; color: #fff; transition: all 0.5s; }
 .company .comul .comli:hover img { transform: scale(1.2); }
 
 

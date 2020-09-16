@@ -1,0 +1,103 @@
+@charset "utf-8";
+@import "reset.css";
+@import "common.css";
+
+.cust_slide .cust_slideInner { 
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 394px;
+}
+.cust_slideInner { background-image: url(../images/sub_hero_img4.jpg); }
+#customer_section { padding: 0 0 100px; position: relative; }
+#customer_section .cust_slideInner { position: relative; }
+#customer_section .cust_inner_text { 
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%,-50%); }
+#customer_section .cust_slideInner h2 { 
+    font-size: 38px; color: #fff;
+    text-align: center; padding-top: 130px; }
+#customer_section .cust_slideInner p { 
+    font-size: 15px; color: #ffffffbf; 
+    text-align: center;  padding-top: 15px; }
+.sectMenu_box { border-bottom: 1px solid #e9e9e9; }    
+.sectMenu_box a:nth-child(1) { 
+    display: inline-block;
+    padding: 20px 20px;
+    margin-left: 382px;
+    height: 60px;
+    border-left: 1px solid #e9e9e9;
+    border-right: 1px solid #e9e9e9; }
+.sectMenu_box a:nth-child(2) {
+    display: inline-block;
+    padding: 20px 25px;
+    border-right: 1px solid #e9e9e9;
+    font-family: 'Titillium Web', sans-serif;
+    color: #7a7a7a;
+}
+.sectMenu_box a:nth-child(2):after {
+    content: '\f107';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #ccc;
+    position: relative; left: 13px; }
+.sectMenu_box a:nth-child(3) {
+    display: inline-block;
+    padding: 20px 25px;
+    border-right: 1px solid #e9e9e9; 
+    color: #653811;}
+.sectMenu_box a:nth-child(3):after {
+    content: '\f107';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #ccc;
+    position: relative; left: 13px; }
+
+.notice { margin-top: 10px; }
+.notice h2 { 
+    font-size: 38px; color: #222; 
+    text-align: center; padding: 100px 0; }
+.notice table { font-size: 15px; color: #777; text-align: center; }
+.notice table caption { display: none; }
+.notice table th { padding: 17px 0; }
+.notice table tr:nth-child(1) { 
+    color: #000; border-top: 1px solid #000; 
+    border-bottom: 1px solid #e9e9e9; }
+.notice table td { padding: 17px 15px; border-bottom: 1px solid #e9e9e9; }
+.notice .table_text { text-align: left; }
+.notice .table_text a:hover { color: #6693fb; }
+
+
+.notice table col:nth-child(1) { width:15% }
+.notice table col:nth-child(2) { width:35% }
+.notice table col:nth-child(3) { width:25% }
+
+.notice .numlist { text-align: center; margin: 20px 0; font-size: 16px; }
+.notice .numlist span { padding: 5px 8px; display: inline-block; border: 1px solid #ddd; }
+.notice .numlist a { display: inline-block; padding: 5px 8px; border: 1px solid #ddd; }
+.notice .numlist a:hover { background: #ddd; }
+.notice .numlist .on { background: #ddd; }
+
+
+
+.board-write .board-btn { 
+    color: #fff; border-color: #adb5bd; background: #adb5bd;
+    padding: 8px 14px; font-size: 14px; border-radius: 3px; 
+    transition: all 0.5s; position: absolute; right: 19.5%;
+}
+.board-write .board-btn:hover { background: #c3cbd3; } 
+
+
+
+.search_box { padding-top:100px; position: relative; left: 367px; top: 40px; }
+.search_box select,
+.search_box input[type=text] { 
+    font-size:14px; color:#666; padding:4px 12px;
+    height:38px; border:1px solid #dee2e6; border-radius:3px }
+.search_box input[type=text] { width:160px }
+.search-button { position: relative; top: 3px; left: 628px; }
+.search-button input[type=submit] {
+    display: inline-block; padding: 8px 14px; background: #adb5bd; 
+    border-color: #adb5bd; color: #fff; border-radius: 3px;
+    height: 38px; transition: all 0.5s; }
+.search-button input[type=submit]:hover { background: #c3cbd3; }
+
