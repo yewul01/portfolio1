@@ -19,11 +19,17 @@
     border-top: 1px solid #000; 
     border-bottom: 1px solid #ddd }
 .site-map-wrap .site-list { 
-    padding: 27px 15px; border-bottom: 1px solid #eee }
+    padding: 27px 15px; border-bottom: 1px solid #eee; }
 .site-map-wrap .site-list:last-child { border-bottom: none }
-.site-map-wrap .site-list .list-tit-wrap { float: left; min-width: 120px }
+.red { color: #c22530; }
+.green { color: #5b9763; }
+.limegreen { color: #a5bf40; }
+.blue { color: #4389bc; }
+.purple { color: #843086; }
+.site-map-wrap .site-list .list-tit-wrap { 
+    float: left; min-width: 120px; text-align: center; }
 .site-map-wrap .site-list .list-tit-wrap .list-tit { 
-    display:block; font-size: 16px; line-height: 20px; color: #8a2727; }
+    display:block; font-size: 16px; line-height: 20px; }
 .site-map-wrap .site-list .list-cont-wrap { float: left; }
 .site-map-wrap .site-list .list-cont-wrap .sub-list > li + li { margin-top: 25px; }
 .site-map-wrap .site-list .list-cont-wrap .link-tit { 
@@ -60,6 +66,11 @@
     float: left; padding-bottom: 0; }
 .site-map-wrap .site-list.en .list-cont-wrap { 
     float: left; padding-left: 0; }
+.site-map-wrap .bg-deco { 
+    display: block; position: relative;  width: 222px; height: 110px;
+    background: url(../images/bg_circle.png) no-repeat;
+    top: 150px; left: 1200px;
+}
 
 .content-wrap { width: 100%; max-width: 1200px; margin: 0 auto; } 
 a .hide-txt { font-size: 1px; }

@@ -38,6 +38,39 @@ h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
     transition: height 0.3s border-color 0.3s background-color 0.3s; 
 }
 
+/* 헤더 스크롤바 */
+.scrollBar {
+    position: fixed;
+    top: 67px;
+    height: 3px;
+    width: 0%;
+    background: rgb(255, 217, 47);
+    transition: all 0.5s;
+    text-align: right;
+    color: #ff00bf; }
+
+.scrollBar span { 
+    position: absolute;
+    top: -10px;
+    right: 25px;
+    font-size: 25px;
+    font-weight: bold;
+    display: block;
+    text-align: center; }
+
+.scrollBar span:after { 
+    content: "%";
+    font-size: 18px;
+    line-height: 28px;
+    position: absolute;
+    right: -15px;
+    bottom: 4px;
+    font-weight: 700;
+    opacity: 0.4; }
+    
+     
+    
+  
 
 .h1NavTop { position: relative; color: #fff; background: transparent; }
 .h1NavTop.on { color: #000; background: #fff; }
