@@ -1,6 +1,5 @@
 @charset "utf-8";
-@import "reset.css";
-@import "common.css";
+
 
 .join_slide .join_slideInner { 
     background-size: cover;
