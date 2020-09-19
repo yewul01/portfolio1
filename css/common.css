@@ -42,10 +42,10 @@ h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
     top: 67px;
     height: 3px;
     width: 0%;
-    background: rgb(255, 217, 47);
+    background: rgb(20, 155, 53);
     transition: all 0.5s;
     text-align: right;
-    color: #00ffb3c5; }
+    color: #ff8a1cc5; }
 
 .scrollBar span { 
     position: absolute;
