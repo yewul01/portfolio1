@@ -62,6 +62,14 @@
         $('#joBox').load(url)
     })
 
+    // 사이트맵 화면로드
+    $('#footer .siteMap a').on('click', function(e) {
+        e.preventDefault()
+        var url = $(this).attr('href')
+        $('#joContainer').remove()
+        $('#joBox').load(url)
+    })
+
 
 
 
