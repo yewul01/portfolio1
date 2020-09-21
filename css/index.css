@@ -4,7 +4,32 @@
 
 /* 공통구역을 제외한 메인페이지 스타일 */
 
+
+
+/* toTop 버튼 */
 body { font-family: 'Titillium Web', sans-serif; }
+#section .toTop { 
+    height: 51px; width: 51px; position: fixed;
+    bottom: 20px; right: 30px; margin: 50px auto;
+    cursor: pointer; }
+#section .toTop .arrow:before , .arrow:after{
+    content: ''; width: 24px; height: 2px;
+    background: #999; position: absolute;
+    top: 0px; left: 0; transform-origin: 23px 1px;
+    transition:all 0.5s; }
+#section .toTop .arrow:before{ transform: rotateZ(-135deg); }
+#section .toTop .arrow:after{ transform: rotateZ(-45deg); }
+#section .toTop span{ 
+    height: 0; width: 2px; display: block;
+    background: #999; position: absolute;
+    left: 22px; transition: all 0.3s ease;
+    opacity: 0; top: 0; }
+#section .toTop:hover .arrow span{ opacity:1; height:50px; }
+
+
+
+
+
 .slide { width: 100%; height: auto; overflow: hidden; }
 .slide .slideInner { 
     background-size: cover;
