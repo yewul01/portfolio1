@@ -148,7 +148,7 @@
             }, 300)
         }
 
-        
+
 
         // toTop 버튼 이벤트
         $('.toTop').on('click',function () {
@@ -158,7 +158,7 @@
 
         })
 
-        
+
 
         // 메인페이지 헤더, 컨텐츠 겹침현상 수정
         var company = $('.company').offset().top
@@ -172,15 +172,9 @@
         // 오시는길
         var Map = $('.map_slide').offset().top
         if (sct >= Map) { 
-            $('.h1NavTop').css({
-                color: '#000',
-                background: '#fff'
-            }) 
+            $('.h1NavTop').addClass('on')
         } else {
-            $('.h1NavTop').css({
-                color: '#fff',
-                background: 'transparent'
-            })
+            $('.h1NavTop').removeClass('on')
         }
         
 
