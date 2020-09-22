@@ -9,7 +9,7 @@
     position: relative; }
 .map_slide .map_slideInner { background-image: url(../images/sub_hero_img1.jpg);}
 #map_section { padding: 0 0 130px; }
-.Map_inner_text {
+.map_inner_text {
     position: absolute; top: 53%; left: 50%;
     transform: translate(-50%,-50%); }
 .map_inner_text h2 { 
