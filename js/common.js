@@ -216,6 +216,32 @@
         
     });
 
+    $('.depth1').hover(
+        function(){
+            $(this).find('.depth2')
+            .stop().slideDown(500)
+        },
+        function(){
+            $(this).find('.depth2')
+            .stop().slideUp(500)
+        }
+    )
+
+    $('.nav').hover (
+        function(){
+            $(this).next()
+            .stop().slideDown(500)
+        },
+        function(){
+            $(this).next()
+            .stop().slideUp(250)
+        }
+    )
+
+    
+
+    
+
 
 
 

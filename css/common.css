@@ -113,8 +113,8 @@ h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
     font-size: 14px; color: #8a8a8a; }
 
 
-.nav .depth1:hover .depth2 { display: block; }
-.nav:hover +.decoBox { display: block; }
+/* .nav .depth1:hover .depth2 { display: block; } */
+/* .nav:hover +.decoBox { display: block; } */
 .decoBox { 
         position: absolute;
         top: 100%;
@@ -124,7 +124,7 @@ h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
         height: 151px;
         display: none;
         z-index: 999;
-        transition: all 1s;
+        transition: all 0.5s;
     }
 
 .h1NavTop .topmenu {  
