@@ -162,6 +162,7 @@
 
         // 메인페이지 헤더, 컨텐츠 겹침현상 수정
         var company = $('.company').offset().top
+        console.log(sct)
         if (sct >= company) { 
             $('.h1NavTop').addClass('on') 
         } else { 
