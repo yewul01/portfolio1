@@ -70,6 +70,8 @@
         $('#joBox').load(url)
     })
 
+
+    var sct;
     $(window).scroll(function (e) {
 
         var sct = $(this).scrollTop();
@@ -82,18 +84,22 @@
         $(".scrollBar").css("width", scrollPercent + "%");
         $(".scrollBar span").text(roundScroll);
 
-        // company 텍스트 애니메이션
-        var comNear = $('.company').offset().top - $(this).height()/2
-        if (sct >= comNear) {
-            $('.company h2').addClass('on')
-        } else if (sct===0) {
-            $('.company h2').removeClass('on')
+
+        if ( $('#joContainer').children().is('#join2_section') ) {
+            var join2 = $('.join2_box').offset().top
+            headerScroll(join2)
         }
+        if ( $('#joContainer').children().is('#login_section') ) {
+            var login = $('.login_box').offset().top
+            headerScroll(login)
+        }
+
 
 
         // company li 애니메이션 
         var comNear = $('.company').offset().top - $(this).height()/2 
         if (sct >= comNear) {
+            $('.company h2').addClass('on')
             $('.company .comul .comli').addClass('animate__fadeInUp')
             for (var i=0; i<$('.comul .comli').length; i++) {
                 $('.comul .comli').eq(i).css({
@@ -101,6 +107,7 @@
                 }).addClass('animate__fadeInUp')
             }
         } else if (sct===0) { 
+            $('.company h2').removeClass('on')
             $('.company .comul .comli').removeClass('animate__fadeInUp')
         }
         
@@ -148,15 +155,6 @@
             }, 300)
         }
 
-
-
-        // toTop 버튼 이벤트
-        $('.toTop').on('click',function () {
-        $('html, body').stop().animate({
-            scrollTop: '0'
-        }, 800, 'linear')
-
-        })
 
 
 
@@ -213,6 +211,14 @@
         } else { 
             $('.h1NavTop').removeClass('on') 
         }
+
+        function headerScroll(something) {
+            if (sct >= something) {
+                $('.h1NavTop').addClass('on')
+            } else {
+                $('.h1NavTop').removeClass('on')
+            }
+        }
         
     });
 
@@ -237,6 +243,14 @@
             .stop().slideUp(250)
         }
     )
+
+    // toTop 버튼 이벤트
+    $('.toTop').on('click',function () {
+        $('html, body').stop().animate({
+            scrollTop: '0'
+        }, 800, 'linear')
+
+        })
 
     
 
