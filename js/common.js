@@ -85,13 +85,34 @@
         $(".scrollBar span").text(roundScroll);
 
 
+        // 메인페이지
         if ( $('#joContainer').children().is('#join2_section') ) {
             var join2 = $('.join2_box').offset().top
             headerScroll(join2)
         }
+
+        // 회원가입
+        if ( $('#joContainer').children().is('#join2_section') ) {
+            var join2 = $('.join2_box').offset().top
+            headerScroll(join2)
+        }
+
+        // 로그인
         if ( $('#joContainer').children().is('#login_section') ) {
             var login = $('.login_box').offset().top
             headerScroll(login)
+        }
+        
+        // 오시는길
+        if ( $('#joContainer').children().is('#map_section') ) {
+            var Map = $('.map_container').offset().top
+            headerScroll(Map)
+        }
+
+        // 공지사항
+        if ( $('#joContainer').children().is('#customer_section') ) {
+            var customer = $('.notice').offset().top
+            headerScroll(customer)
         }
 
 
@@ -167,23 +188,6 @@
             $('.h1NavTop').removeClass('on') 
         }
 
-
-        // 오시는길
-        var Map = $('.map_slide').offset().top
-        if (sct >= Map) { 
-            $('.h1NavTop').addClass('on')
-        } else {
-            $('.h1NavTop').removeClass('on')
-        }
-        
-
-        // 공지사항
-        var customer = $('.cust_slide').offset().top
-        if (sct >= customer) { 
-            $('.h1NavTop').addClass('on') 
-        } else { 
-            $('.h1NavTop').removeClass('on') 
-        }
         
     
         // Q&A
@@ -195,22 +199,7 @@
         }
 
 
-        // 로그인
-        var login = $('.log_slide').offset().top
-        if (sct >= login) { 
-            $('.h1NavTop').addClass('on') 
-        } else { 
-            $('.h1NavTop').removeClass('on') 
-        }
-
         
-        // 회원가입
-        var join2 = $('.join2_slide').offset().top
-        if (sct >= join2) { 
-            $('.h1NavTop').addClass('on') 
-        } else { 
-            $('.h1NavTop').removeClass('on') 
-        }
 
         function headerScroll(something) {
             if (sct >= something) {
