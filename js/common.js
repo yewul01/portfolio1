@@ -105,7 +105,7 @@
         
         // 오시는길
         if ( $('#joContainer').children().is('#map_section') ) {
-            var Map = $('.map_container').offset().top
+            var Map = $('.mapBox').offset().top
             headerScroll(Map)
         }
 
@@ -113,6 +113,18 @@
         if ( $('#joContainer').children().is('#customer_section') ) {
             var customer = $('.notice').offset().top
             headerScroll(customer)
+        }
+
+        // 메인페이지 헤더, 컨텐츠 겹침현상 수정
+        if ( $('#joContainer').children().is('#section') ) {
+            var company = $('.company').offset().top
+            headerScroll(company)
+        }
+
+        // Q&A
+        if ( $('#joContainer').children().is('#customer2_section') ) {
+            var customer2 = $('.noticeBox').offset().top
+            headerScroll(customer2)
         }
 
 
@@ -175,29 +187,6 @@
                 opacity: '0'
             }, 300)
         }
-
-
-
-
-        // 메인페이지 헤더, 컨텐츠 겹침현상 수정
-        var company = $('.company').offset().top
-        console.log(sct)
-        if (sct >= company) { 
-            $('.h1NavTop').addClass('on') 
-        } else { 
-            $('.h1NavTop').removeClass('on') 
-        }
-
-        
-    
-        // Q&A
-        var QA = $('.cust2_slide').offset().top
-        if (sct >= QA) { 
-            $('.h1NavTop').addClass('on') 
-        } else { 
-            $('.h1NavTop').removeClass('on') 
-        }
-
 
         
 

@@ -20,6 +20,76 @@
     text-align: center;  padding-top: 15px; }
 
 
+/* 로그인 슬라이드 줌아웃 효과 */
+
+#login_section .log_slide { animation: zoomOutLog 3s both; }
+
+/* Zooming exits */
+@-webkit-keyframes zoomOutLog {
+  from {
+    opacity: 1;
+    -webkit-transform: scale3d(1.2, 1.2, 1.2);
+    transform: scale3d(1.2, 1.2, 1.2);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+}
+
+@keyframes zoomOutLog {
+ from {
+     opacity: 1;
+     -webkit-transform: scale3d(1.2, 1.2, 1.2);
+     transform: scale3d(1.2, 1.2, 1.2);
+   }
+ 
+   to {
+     opacity: 1;
+     -webkit-transform: scale3d(1.1, 1.1, 1.1);
+     transform: scale3d(1.1, 1.1, 1.1);
+   }
+}
+.animate__zoomOut {
+  -webkit-animation-name: zoomOut;
+  animation-name: zoomOut;
+}
+
+/* 로그인 슬라이드 텍스트(h2) 애니메이션 */
+#login_section .log_slide h2 { animation: fadeInDown 2s both; }
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+/* 로그인 슬라이드 텍스트(p) 애니메이션 */ 
+#login_section .log_slideInner p { animation: fadeInUp 2s both 0.5s; }
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }    
+
+
 /* 로그인 박스 */
 #login_section .login_box { padding-top: 100px; }
 #login_section .login_box h2 { font-size: 38px; color: #222; }
