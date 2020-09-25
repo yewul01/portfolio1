@@ -35,8 +35,8 @@
         line-height: 1.5;
     }
     .company .comul > div { float: left; text-align: left; }
-    .company .comul > div:nth-child(1) { width: 30%; margin-left: 19%; margin-bottom: 80px; }
-    .company .comul > div:nth-child(2) { width: 30%; margin-bottom: 80px; }
+    .company .comul > div:nth-child(1) { width: 30%; margin-left: 19%; margin-bottom: 8% }
+    .company .comul > div:nth-child(2) { width: 30%; margin-bottom: 8%; }
     .company .comul > div:nth-child(3) { width: 30%; margin-left: 19% }
     .company .comul > div:nth-child(4) { width: 30%; }
    
@@ -46,7 +46,7 @@
 
 
     
-    .product > ul > li:nth-child(1) { width: 25%; margin-left: 110px; }
+    .product > ul > li:nth-child(1) { width: 25%; margin-left: 10%; }
     .product > ul > li:nth-child(2) { width: 25%; }
     .product > ul > li:nth-child(3) { width: 25%; }
     
