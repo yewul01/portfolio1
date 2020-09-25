@@ -4,35 +4,35 @@
 
 #customer_section .cust_slideInner { 
     animation: zoomOutLog 3s both;
-    background-image: url(../images/sub_hero_img1.jpg);
+    background-image: url(../images/sub_hero_img4.jpg);
 }
     
 /* Zooming exits */
   @-webkit-keyframes zoomOutLog {
     from {
       opacity: 1;
-      -webkit-transform: scale3d(1.2, 1.2, 1.2);
-      transform: scale3d(1.2, 1.2, 1.2);
+      -webkit-transform: scale3d(1.1, 1.1, 1.1);
+      transform: scale3d(1.1, 1.1, 1.1);
     }
   
     to {
       opacity: 1;
-      -webkit-transform: scale3d(1.1, 1.1, 1.1);
-      transform: scale3d(1.1, 1.1, 1.1);
+      -webkit-transform: scale3d(1.0, 1.0, 1.0);
+      transform: scale3d(1.0, 1.0, 1.0);
     }
   }
   
   @keyframes zoomOutLog {
    from {
        opacity: 1;
-       -webkit-transform: scale3d(1.2, 1.2, 1.2);
-       transform: scale3d(1.2, 1.2, 1.2);
+       -webkit-transform: scale3d(1.1, 1.1, 1.1);
+       transform: scale3d(1.1, 1.1, 1.1);
     }
    
     to {
        opacity: 1;
-       -webkit-transform: scale3d(1.1, 1.1, 1.1);
-       transform: scale3d(1.1, 1.1, 1.1);
+       -webkit-transform: scale3d(1.0, 1.0, 1.0);
+       transform: scale3d(1.0, 1.0, 1.0);
     }
   }
   .animate__zoomOut {

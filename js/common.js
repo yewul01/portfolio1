@@ -70,7 +70,7 @@
         $('#joBox').load(url)
     })
 
-
+    // 스크롤시 헤더 스타일 변경
     var sct;
     $(window).scroll(function (e) {
 
@@ -85,31 +85,31 @@
         $(".scrollBar span").text(roundScroll);
 
 
-        // 메인페이지
+        // 메인페이지 헤더 스타일
         if ( $('#joContainer').children().is('#join2_section') ) {
             var join2 = $('.join2_box').offset().top
             headerScroll(join2)
         }
 
-        // 회원가입
+        // 회원가입 헤더 스타일
         if ( $('#joContainer').children().is('#join2_section') ) {
             var join2 = $('.join2_box').offset().top
             headerScroll(join2)
         }
 
-        // 로그인
+        // 로그인 헤더 스타일
         if ( $('#joContainer').children().is('#login_section') ) {
             var login = $('.login_box').offset().top
             headerScroll(login)
         }
         
-        // 오시는길
+        // 오시는길 헤더 스타일
         if ( $('#joContainer').children().is('#map_section') ) {
             var Map = $('.mapBox').offset().top
             headerScroll(Map)
         }
 
-        // 공지사항
+        // 공지사항 헤더 스타일
         if ( $('#joContainer').children().is('#customer_section') ) {
             var customer = $('.notice').offset().top
             headerScroll(customer)
