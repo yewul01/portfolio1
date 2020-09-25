@@ -1,6 +1,76 @@
 @charset "utf-8";
 
+/* 공지사항 슬라이드 줌아웃 효과 */
 
+#customer_section .cust_slideInner { 
+    animation: zoomOutLog 3s both;
+    background-image: url(../images/sub_hero_img1.jpg);
+}
+    
+/* Zooming exits */
+  @-webkit-keyframes zoomOutLog {
+    from {
+      opacity: 1;
+      -webkit-transform: scale3d(1.2, 1.2, 1.2);
+      transform: scale3d(1.2, 1.2, 1.2);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: scale3d(1.1, 1.1, 1.1);
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+  }
+  
+  @keyframes zoomOutLog {
+   from {
+       opacity: 1;
+       -webkit-transform: scale3d(1.2, 1.2, 1.2);
+       transform: scale3d(1.2, 1.2, 1.2);
+    }
+   
+    to {
+       opacity: 1;
+       -webkit-transform: scale3d(1.1, 1.1, 1.1);
+       transform: scale3d(1.1, 1.1, 1.1);
+    }
+  }
+  .animate__zoomOut {
+    -webkit-animation-name: zoomOut;
+    animation-name: zoomOut;
+  }
+  
+  /* 공지사항 슬라이드 텍스트(h2) 애니메이션 */
+  .cust_slide h2 { animation: fadeInDown 2s both; }
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+    
+    /* 공지사항 슬라이드 텍스트(p) 애니메이션 */ 
+    .cust_slide p { animation: fadeInUp 2s both 0.5s; }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+      }
+      
+      to {
+        opacity: 1;
+         -webkit-transform: translate3d(0, 0, 0);
+         transform: translate3d(0, 0, 0);
+      }
+  }
 
 .cust_slide .cust_slideInner { 
     background-size: cover;

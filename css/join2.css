@@ -3,6 +3,79 @@
 #join2_section { padding: 69px 0 300px; }
 
 
+/* 회원가입 슬라이드 줌아웃 효과 */
+
+#join2_section .join2_slideInner { 
+  animation: zoomOutLog 3s both;
+  background-image: url(../images/sub_hero_img1.jpg);
+}
+  
+/* Zooming exits */
+@-webkit-keyframes zoomOutLog {
+  from {
+    opacity: 1;
+    -webkit-transform: scale3d(1.2, 1.2, 1.2);
+    transform: scale3d(1.2, 1.2, 1.2);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+}
+
+@keyframes zoomOutLog {
+ from {
+     opacity: 1;
+     -webkit-transform: scale3d(1.2, 1.2, 1.2);
+     transform: scale3d(1.2, 1.2, 1.2);
+  }
+ 
+  to {
+     opacity: 1;
+     -webkit-transform: scale3d(1.1, 1.1, 1.1);
+     transform: scale3d(1.1, 1.1, 1.1);
+  }
+}
+.animate__zoomOut {
+  -webkit-animation-name: zoomOut;
+  animation-name: zoomOut;
+}
+
+/* 회원가입 슬라이드 텍스트(h2) 애니메이션 */
+.join2_slide h2 { animation: fadeInDown 2s both; }
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+  
+  /* 회원가입 슬라이드 텍스트(p) 애니메이션 */ 
+  .join2_slideInner p { animation: fadeInUp 2s both 0.5s; }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+    
+    to {
+      opacity: 1;
+       -webkit-transform: translate3d(0, 0, 0);
+       transform: translate3d(0, 0, 0);
+    }
+}
+
+
 .join2_slide .join2_slideInner { 
     background-size: cover;
     background-repeat: no-repeat;

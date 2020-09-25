@@ -7,7 +7,6 @@
     background-repeat: no-repeat;
     height: 394px;
     position: relative; }
-.log_slide .log_slideInner { background-image: url(../images/sub_hero_img1.jpg);}
 #login_section { padding: 0 0 130px; }
 #login_section .log_inner_text {
     position: absolute; top: 53%; left: 50%;
@@ -22,7 +21,10 @@
 
 /* 로그인 슬라이드 줌아웃 효과 */
 
-#login_section .log_slide { animation: zoomOutLog 3s both; }
+#login_section .log_slideInner { 
+  animation: zoomOutLog 3s both;
+  background-image: url(../images/sub_hero_img1.jpg);
+}
 
 /* Zooming exits */
 @-webkit-keyframes zoomOutLog {
