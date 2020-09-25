@@ -101,19 +101,20 @@
         font-size: 25px;
         color: #333;
         margin: 20px 0 15px;
-        font-weight: normal; }
+        font-weight: normal;
+    }
     .company .comul .comli p { 
         font-size: 15px;
         color: #7a7a7a;
-        min-height: 60px; 
+        min-height: 60px;
+        line-height: 1.5;
     }
     .company .comul .comli span {
         display: inline-block; 
         border: 1px solid #ddd;
         font-size: 15px;
         padding: 12px 28px 12px 18px;
-        margin: 30px 0 0; 
-    
+        margin: 30px 0 0;
     }
     .company .comul .comli .comBtn { min-width: 200px; }
     .company .comul .comli a { transition: all 0.5s; }
@@ -124,9 +125,9 @@
         color: #999;
         position: relative; top: 0; right: 23px;
     }
-    .company .comul > div { float: left; text-align: center; }
-    .company .comul > div:nth-child(1) { width: 35%; margin-left: 150px; }
-    .company .comul > div:nth-child(2) { width: 35%; }
+    .company .comul > div { float: left; text-align: left; }
+    .company .comul > div:nth-child(1) { width: 35%; margin-left: 150px; margin-bottom: 80px; }
+    .company .comul > div:nth-child(2) { width: 35%; margin-bottom: 80px; }
     .company .comul > div:nth-child(3) { width: 35%; margin-left: 150px; }
     .company .comul > div:nth-child(4) { width: 35%; }
    
@@ -135,8 +136,8 @@
     
 
 
-    .product .row { margin: 0 auto; }
-    .product > ul > li:nth-child(1) { width: 25%; }
+    
+    .product > ul > li:nth-child(1) { width: 25%; margin-left: 110px; }
     .product > ul > li:nth-child(2) { width: 25%; }
     .product > ul > li:nth-child(3) { width: 25%; }
     
