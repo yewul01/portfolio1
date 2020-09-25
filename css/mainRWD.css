@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+
+/* max-width:1553px(1181~1553) */
+@media screen and (max-width:1553px) {
+    #header { 
+        position: fixed; width: 100%; z-index: 999999;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1); 
+        border-bottom: 1px solid rgba(255,255,255,0.15);  
+        transition: height 0.3s border-color 0.3s background-color 0.3s; 
+    }
+    .h1NavTop { position: relative; color: #fff; background: transparent; }
+    .h1NavTop.on { color: #000; background: #fff; }
+    .h1NavTop .logo { font-size: 25px; padding: 15px 30px; }
+    .h1NavTop .nav { 
+        position: absolute; 
+        top: 0; left: 40%;
+        transform: translate(-50%); 
+        letter-spacing: 2px;
+        z-index: 99999;
+    }
+    
+
+    .nav .depth1 { position: relative; font-family: 'Titillium Web', sans-serif; width: 100%; }
+    .h1NavTop:hover { color: #000; background: #fff; transition: all 0.5s; }
+    .nav .depth1 > li { display: inline-block; position: relative; }
+    .nav .depth1 > li:hover a:after { width: 100%; height: 2px; display: block; }
+    .nav .depth1 > li > a { display: inline-block; padding: 21px 15px;  position: relative;}
+    .nav .depth1 > li > a:after {     
+        content: '';
+        position: absolute; display: none;
+        bottom: 0; left: 50%;
+        transform: translate(-50%);
+        width: 1px; height: 2px;
+        background: #653811;
+        animation: NavLiBar 0.5s both;
+    }
+    .nav .depth2 { 
+        position: absolute; top: 100%; 
+        width: 100%; padding: 20px 5px;
+        display: none; }
+    
+    
+    .depth2 > li > a:hover { color: #653811; }
+    .nav .depth2 > li { 
+        text-align: center; line-height: 2;
+        font-size: 14px; color: #8a8a8a; }
+    .decoBox { 
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%; 
+        background: #fff;
+        height: 151px;
+        display: none;
+        z-index: 999;
+        transition: all 0.5s;
+    }
+    
+    .h1NavTop .topmenu {  
+        position: absolute; top: 0; right: 0;
+        text-align: right; line-height: 59px;
+        padding-right: 15px; }
+    .h1NavTop .topmenu > a { display: inline-block; font-size: 14px; padding: 5px 8px; opacity: 0.8;}
+        
+
+
+}
+
+
+/* max-width:1180px(767~1180) */
+@media screen and (max-width:1180px) {
+    /* .row { width: 100%; } */
+    .h1NavTop .open_nav { display: block; position: absolute; top: 50%; right: 3%;
+        transform: translateY(-50%) }
+    .h1NavTop .nav .depth1 { display: none; }
+    .h1NavTop .topmenu { display: none; }
+
+    .slide .slideInner .Inner_text { position: relative; bottom: 150px; left: 82px; }
+    
+    .company { padding: 100px 0; }
+    .company h2 { text-align: center;  margin-bottom: 40px; }
+    .company span { display: block; }
+    .company h2 span:first-child { font-size: 42px; color: #222; }
+    .company h2 span:last-child { color: #777; margin-top: 10px; }
+    .company img { transition: all 0.5s; }
+    .company .imgBox { overflow: hidden; position: relative; }
+    .company .comul .comli:hover .overlay { opacity: 1; }
+    .company .imgBox .overlay { 
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        transition: all 0.5s; }
+    .company .comul .comli .comBtn:hover { background: #8a2727; color: #fff; transition: all 0.5s; }
+    .company .comul .comli:hover img { transform: scale(1.2); }
+    .company .comul .comli h3 { 
+        font-size: 25px;
+        color: #333;
+        margin: 20px 0 15px;
+        font-weight: normal; }
+    .company .comul .comli p { 
+        font-size: 15px;
+        color: #7a7a7a;
+        min-height: 60px; 
+    }
+    .company .comul .comli span {
+        display: inline-block; 
+        border: 1px solid #ddd;
+        font-size: 15px;
+        padding: 12px 28px 12px 18px;
+        margin: 30px 0 0; 
+    
+    }
+    .company .comul .comli .comBtn { min-width: 200px; }
+    .company .comul .comli a { transition: all 0.5s; }
+    .company .comul .comli a:after { 
+        content: '\f061';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        color: #999;
+        position: relative; top: 0; right: 23px;
+    }
+    .company .comul > div { float: left; text-align: center; }
+    .company .comul > div:nth-child(1) { width: 35%; margin-left: 150px; }
+    .company .comul > div:nth-child(2) { width: 35%; }
+    .company .comul > div:nth-child(3) { width: 35%; margin-left: 150px; }
+    .company .comul > div:nth-child(4) { width: 35%; }
+   
+    
+
+    
+
+
+    .product .row { margin: 0 auto; }
+    .product > ul > li:nth-child(1) { width: 25%; }
+    .product > ul > li:nth-child(2) { width: 25%; }
+    .product > ul > li:nth-child(3) { width: 25%; }
+    
+    .toTop { display: none; }
+    
+    
+    
+
+    
+    
+    
+}
