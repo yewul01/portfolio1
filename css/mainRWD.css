@@ -85,6 +85,24 @@
 
 
     /* Company */
-    .company .comul > div { display: block; }
+    .company .comul > div { float: left; text-align: left; }
+    .company .comul > div:nth-child(1) { width: 100%; margin-left: 0; margin-bottom: 0 }
+    .company .comul > div:nth-child(2) { width: 100%; margin-bottom: 0; }
+    .company .comul > div:nth-child(3) { width: 100%; margin-left: 0 }
+    .company .comul > div:nth-child(4) { width: 100%; }
+    .company .comul .comli .imgSize { width: 737px; height: 491px; padding-left: 30px; }
+    .company .comul .comli .comText { padding-left: 30px; }
+    .company .comul .comli .comText h3 { font-size: 18px; }
+    .company .comul .comli .comText p { font-size: 13px; }
+    .company .comul .comli .comText span {
+        display: inline-block; 
+        border: 1px solid #ddd;
+        font-size: 15px;
+        padding: 12px 28px 12px 18px;
+        margin: 5px 0 30px; 
+    
+    }
+
+
    
 }
