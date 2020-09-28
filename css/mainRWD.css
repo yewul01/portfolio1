@@ -58,7 +58,7 @@
 
 @media screen and (max-width:767px) {
 
-    /* 메인슬라이드 텍스트 */
+    /* 메인슬라이드 */
     .slide .Inner_text {
         width: 100%; 
         text-align: left;
@@ -66,8 +66,25 @@
         transform: translate(-50%,-50%); 
         color: #fff; font-family: sans-serif;
         animation: fadeInUp 1s both; }
-    .slide .Inner_text span { letter-spacing: 2px; font-family: 'Titillium Web', sans-serif; }
-    .slide .Inner_text h2 { font-size: 28px; font-weight: 200; line-height: 1.4; font-family: sans-serif; }
-    .slide .Inner_text p { font-size: 14px; line-height: 1.6; margin-top: 30px; opacity: 0.8; }
-    .slide .Inner_text strong { font-weight: normal; }
+    .slide .slideInner .Inner_text span { letter-spacing: 2px; font-family: 'Titillium Web', sans-serif; }
+    .slide .slideInner .Inner_text h2 { font-size: 28px; font-weight: 200; line-height: 1.4; font-family: sans-serif; }
+    .slide .slideInner .Inner_text p { font-size: 14px; line-height: 1.6; margin-top: 30px; opacity: 0.8; }
+    .slide .slideInner .Inner_text strong { font-weight: normal; }
+
+    /* 메인 슬라이드 화살표 */
+    .slide .slide-outer .arr {
+        width: 100px; height: 50px;
+        font-size: 20px; color: #000;
+        margin: 50px 0 0;
+        width: 50px; height: 50px;  
+        background: #fff;
+        transition: opacity 0.3s;
+        opacity: 0.9; }
+    .slide .slide-outer .prev { left: 0px; z-index: 999999; }
+    .slide .slide-outer .next { right: 0px; }
+
+
+    /* Company */
+    .company .comul > div { display: block; }
+   
 }
