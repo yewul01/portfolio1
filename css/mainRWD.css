@@ -25,8 +25,10 @@
     .h1NavTop .nav .depth1 { display: none; }
     .h1NavTop .topmenu { display: none; }
 
+    /* 메인슬라이드 텍스트 */
     .slide .slideInner .Inner_text { position: relative; bottom: 150px; left: 82px; }
     
+    /* Company */
     .company h2 { text-align: center;  margin-bottom: 40px; }
     .company .comul .comli p { 
         font-size: 15px;
@@ -39,21 +41,33 @@
     .company .comul > div:nth-child(3) { width: 30%; margin-left: 19% }
     .company .comul > div:nth-child(4) { width: 30%; }
 
+    /* News */
     .news .news_box_text { 
         border-bottom: 1px solid #eaeaea; padding: 42px 0;
         transition: all 0.5s; position: relative;
         width: 80%; margin-left: 10%; }
-
+    
+    /* Product */
     .product > ul > li:nth-child(1) { width: 25%; margin-left: 10%; }
     .product > ul > li:nth-child(2) { width: 25%; }
     .product > ul > li:nth-child(3) { width: 25%; }
     
     .toTop { display: none; }
     
-    
-    
+}
 
-    
-    
-    
+@media screen and (max-width:767px) {
+
+    /* 메인슬라이드 텍스트 */
+    .slide .Inner_text {
+        width: 100%; 
+        text-align: left;
+        position: absolute; top: 37.8%; left: 20%;
+        transform: translate(-50%,-50%); 
+        color: #fff; font-family: sans-serif;
+        animation: fadeInUp 1s both; }
+    .slide .Inner_text span { letter-spacing: 2px; font-family: 'Titillium Web', sans-serif; }
+    .slide .Inner_text h2 { font-size: 28px; font-weight: 200; line-height: 1.4; font-family: sans-serif; }
+    .slide .Inner_text p { font-size: 14px; line-height: 1.6; margin-top: 30px; opacity: 0.8; }
+    .slide .Inner_text strong { font-weight: normal; }
 }
