@@ -19,33 +19,31 @@
 /* max-width:1180px(767~1180) */
 @media screen and (max-width:1180px) {
     /* .row { width: 100%; } */
-    .h1NavTop .open_nav { display: block; position: absolute; top: 50%; right: 3%;
+    .h1NavTop .open_nav { 
+        display: block; position: absolute; top: 50%; right: 3%;
         transform: translateY(-50%) }
     .h1NavTop .nav .depth1 { display: none; }
     .h1NavTop .topmenu { display: none; }
 
     .slide .slideInner .Inner_text { position: relative; bottom: 150px; left: 82px; }
     
-  
     .company h2 { text-align: center;  margin-bottom: 40px; }
     .company .comul .comli p { 
         font-size: 15px;
         color: #7a7a7a;
         min-height: 60px;
-        line-height: 1.5;
-    }
+        line-height: 1.5; }
     .company .comul > div { float: left; text-align: left; }
     .company .comul > div:nth-child(1) { width: 30%; margin-left: 19%; margin-bottom: 8% }
     .company .comul > div:nth-child(2) { width: 30%; margin-bottom: 8%; }
     .company .comul > div:nth-child(3) { width: 30%; margin-left: 19% }
     .company .comul > div:nth-child(4) { width: 30%; }
-   
-    
 
-    
+    .news .news_box_text { 
+        border-bottom: 1px solid #eaeaea; padding: 42px 0;
+        transition: all 0.5s; position: relative;
+        width: 80%; margin-left: 10%; }
 
-
-    
     .product > ul > li:nth-child(1) { width: 25%; margin-left: 10%; }
     .product > ul > li:nth-child(2) { width: 25%; }
     .product > ul > li:nth-child(3) { width: 25%; }
