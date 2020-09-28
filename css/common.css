@@ -132,7 +132,7 @@ h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
     position: absolute; top: 0; right: 0;
     text-align: right; line-height: 59px;
     padding-right: 15px; }
-.h1NavTop .topmenu > a { display: inline-block; font-size: 14px; padding: 5px 8px; opacity: 0.8;}
+.h1NavTop .topmenu > a { display: inline-block; font-size: 14px; padding: 5px 8px; opacity: 0.8; z-index: 9999;}
 
 
 
