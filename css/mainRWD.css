@@ -18,20 +18,26 @@
 
 /* max-width:1180px(767~1180) */
 @media screen and (max-width:1180px) {
-
-
-    #header .open_nav { display: block; position: absolute; top: 20px; right: 30px; font-size: 20px; }
-    #header .close_nav { display: none; position: absolute; top: 20px; right: 30px; font-size: 20px; }
-
     
-    .h1NavTop .topmenu { display: none; }
-    .h1NavTop .logo { font-size: 25px; padding: 15px 30px; text-align: left; }
+    .h1NavTop .logo { font-size: 25px; padding: 15px 30px; text-align: center; }
     .h1NavTop .nav { 
-        position: absolute; top: 67px; left: 856px;
-        letter-spacing: 2px; z-index: 99999; display: block; background: #fff; color: #000; }
-    .nav .depth1 > li { display: block; position: relative; }
-    .nav .depth1 > li > a { display: block; padding: 21px 15px;  position: relative; }
-    .h1NavTop .decoBox { display: none; }
+        position: absolute; top: 70px; left: 315px;
+        letter-spacing: 2px; z-index: 99999999; display: block; 
+        background: transparent; color: #fff; }
+    .nav .depth1 > li { display: inline-block; position: relative; }
+    .nav .depth1 > li > a { display: inline-block; padding: 21px 15px;  position: relative; color: #000; }
+    .nav .depth1 > li > a:hover { color: #000; background: #fff; }
+    .h1NavTop .decoBox { 
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        height: 253px;
+        display: none;
+        z-index: 999;
+        transition: all 0.5s;
+    }
         
 
     /* 메인슬라이드 텍스트 */
