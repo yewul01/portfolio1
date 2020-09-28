@@ -18,12 +18,21 @@
 
 /* max-width:1180px(767~1180) */
 @media screen and (max-width:1180px) {
-    /* .row { width: 100%; } */
-    .h1NavTop .open_nav { 
-        display: block; position: absolute; top: 50%; right: 3%;
-        transform: translateY(-50%) }
-    .h1NavTop .nav .depth1 { display: none; }
+
+
+    #header .open_nav { display: block; position: absolute; top: 20px; right: 30px; font-size: 20px; }
+    #header .close_nav { display: none; position: absolute; top: 20px; right: 30px; font-size: 20px; }
+
+    
     .h1NavTop .topmenu { display: none; }
+    .h1NavTop .logo { font-size: 25px; padding: 15px 30px; text-align: left; }
+    .h1NavTop .nav { 
+        position: absolute; top: 67px; left: 856px;
+        letter-spacing: 2px; z-index: 99999; display: block; background: #fff; color: #000; }
+    .nav .depth1 > li { display: block; position: relative; }
+    .nav .depth1 > li > a { display: block; padding: 21px 15px;  position: relative; }
+    .h1NavTop .decoBox { display: none; }
+        
 
     /* 메인슬라이드 텍스트 */
     .slide .slideInner .Inner_text { position: relative; bottom: 150px; left: 82px; }
