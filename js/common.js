@@ -198,29 +198,32 @@
             }
         }
         
+        
+
+         
     });
 
-    $('.depth1').hover(
-        function(){
-            $(this).find('.depth2')
-            .stop().slideDown(500)
-        },
-        function(){
-            $(this).find('.depth2')
-            .stop().slideUp(500)
-        }
-    )
+    // $('.depth1').hover(
+    //     function(){
+    //         $(this).find('.depth2')
+    //         .stop().slideDown(500)
+    //     },
+    //     function(){
+    //         $(this).find('.depth2')
+    //         .stop().slideUp(500)
+    //     }
+    // )
 
-    $('.nav').hover (
-        function(){
-            $(this).next()
-            .stop().slideDown(500)
-        },
-        function(){
-            $(this).next()
-            .stop().slideUp(250)
-        }
-    )
+    // $('.nav').hover (
+    //     function(){
+    //         $(this).next()
+    //         .stop().slideDown(500)
+    //     },
+    //     function(){
+    //         $(this).next()
+    //         .stop().slideUp(250)
+    //     }
+    // )
 
     // toTop 버튼 이벤트
     $('.toTop').on('click',function () {
@@ -229,6 +232,69 @@
         }, 800, 'linear')
 
     })
+
+    // 햄버거버튼 클릭시 네비박스 나타나기
+    $('.h1NavTop .open_nav').on('click',function() {
+        $(this).next().stop().slideDown(300)
+        $(this).hide()
+        $(this).nextAll('.close_nav').css({
+            display: 'block'
+        })
+    })
+
+    // 닫기버튼 클릭시 네비박스 사라지기
+    $('.h1NavTop .close_nav').on('click',function() {
+        $(this).prev().prev().stop().slideUp(300)
+        $(this).hide()
+        $(this).prevAll('.open_nav').css({
+            display: 'block'
+        })
+        $('.depth2').hide()
+    })
+
+    // 모바일헤더 호버시 슬라이드 효과
+    $('.nav .depth1 li').hover(
+        function(){
+            winWidth = $(window).innerWidth()
+            if (winWidth > 1180) {
+                $('.nav .depth1').find('.depth2').stop().slideDown(300)
+            } else {
+                $(this).find('.depth2').stop().slideDown(300)
+            }
+        },
+        function(){
+            winWidth = $(window).innerWidth()
+            if (winWidth > 1180) {
+                $('.nav .depth1').find('.depth2').stop().slideUp(300)
+            } else {
+                $(this).find('.depth2').stop().slideUp(300)
+            }
+        }
+    )
+
+  
+
+    init()
+
+    var flag = true;
+    function init() {
+        var ww = $(window).width()
+        if (ww > 1180 && flag) {
+            $('.h1NavTop .nav').show()
+            $('.open_nav, .close_nav, .depth2').hide()
+            flag = false
+        } else if (ww <= 1180 && !flag) {
+            $('.open_nav').show()
+            $('.h1NavTop .nav, .depth2').hide()
+            flag = false
+        }
+    }
+    $(window).on('resize', function() {
+        init()
+    })
+
+    
+    
 
     
 
