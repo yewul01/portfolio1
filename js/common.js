@@ -70,6 +70,7 @@
         $('#joBox').load(url)
     })
 
+
     // 스크롤시 헤더 스타일 변경
     var sct;
     $(window).scroll(function (e) {
@@ -253,49 +254,88 @@
     })
 
     // 모바일헤더 슬라이드 Up & Down
-    $('.nav .depth1 li').hover(
-        function(){
-            winWidth = $(window).innerWidth()
-            if (winWidth > 1180) {
-                $('.nav .depth1').find('.depth2').stop().slideDown(300)
-                $('.decoBox').stop().slideDown(300)
-            } else {
-                $('.decoBox').hide()
-                $(this).find('.depth2').stop().slideDown(300)
+    // $('.nav .depth1 li').hover(
+    //     function(){
+    //         winWidth = $(window).innerWidth()
+    //         if (winWidth > 1180) {
+    //             $('.nav .depth1').find('.depth2').stop().slideDown(300)
+    //             $('.decoBox').stop().slideDown(300)
+    //         } else {
+    //             $('.decoBox').hide()
+    //             $(this).find('.depth2').stop().slideDown(300)
+    //         }
+    //     },
+    //     function(){
+    //         winWidth = $(window).innerWidth()
+    //         if (winWidth > 1180) {
+    //             $('.nav .depth1').find('.depth2').stop().slideUp(300)
+    //             $('.decoBox').stop().slideUp(400);
+    //         } else {
+    //             $('.decoBox').hide()
+    //             $(this).find('.depth2').stop().slideUp(300)
+    //         }
+    //     }
+    // )
+    
+    
+    init()
+    function init() {
+        var ww = $(window).width()
+        if (ww > 1180) {
+            $('html').addClass('pc').removeClass('mobile')
+        } else {
+            $('html').addClass('mobile').removeClass('pc')
+        }
+    }
+    $(window).resize(function(){
+        init()
+    })
+
+
+    // init()
+
+    // var flag = true;
+    // function init() {
+    //     var ww = $(window).width()
+    //     if (ww > 1180 && flag) {
+    //         $('.h1NavTop .nav').show()
+    //         $('.open_nav, .close_nav, .depth2').hide()
+    //         flag = false
+    //     } else if (ww <= 1180 && !flag) {
+    //         $('.open_nav').show()
+    //         $('.h1NavTop .nav, .depth2').hide()
+    //         flag = false
+    //     }
+    // }
+    // $(window).on('resize', function() {
+    //     init()
+    // })
+
+
+    // 모바일헤더
+    $('.depth1 > li').hover(
+        function() {
+            if ( $('html').hasClass('pc') ) {
+                $('.depth2, .decoBox').stop().slideDown(300)
             }
         },
-        function(){
-            winWidth = $(window).innerWidth()
-            if (winWidth > 1180) {
-                $('.nav .depth1').find('.depth2').stop().slideUp(300)
-                $('.decoBox').stop().slideUp(400);
-            } else {
-                $('.decoBox').hide()
-                $(this).find('.depth2').stop().slideUp(300)
+        function() {
+            if ( $('html').hasClass('pc') ) {
+                $('.depth2, .decoBox').stop().slideUp(300)
             }
         }
     )
 
-  
-
-    init()
-
-    var flag = true;
-    function init() {
-        var ww = $(window).width()
-        if (ww > 1180 && flag) {
-            $('.h1NavTop .nav').show()
-            $('.open_nav, .close_nav, .depth2').hide()
-            flag = false
-        } else if (ww <= 1180 && !flag) {
-            $('.open_nav').show()
-            $('.h1NavTop .nav, .depth2').hide()
-            flag = false
+    $('.depth1 > li').on('click',function() {
+        if ( $('html').hasClass('mobile') ) {
+            $(this).find('.depth2').stop().slideToggle(300)
+            $(this).siblings().find('.depth2').stop().slideUp(300)
         }
-    }
-    $(window).on('resize', function() {
-        init()
     })
+    
+    
+   
+    
 
     
     
