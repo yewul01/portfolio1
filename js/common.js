@@ -258,7 +258,9 @@
             winWidth = $(window).innerWidth()
             if (winWidth > 1180) {
                 $('.nav .depth1').find('.depth2').stop().slideDown(300)
+                $('.decoBox').stop().slideDown(300)
             } else {
+                $('.decoBox').hide()
                 $(this).find('.depth2').stop().slideDown(300)
             }
         },
@@ -266,7 +268,9 @@
             winWidth = $(window).innerWidth()
             if (winWidth > 1180) {
                 $('.nav .depth1').find('.depth2').stop().slideUp(300)
+                $('.decoBox').stop().slideUp(400);
             } else {
+                $('.decoBox').hide()
                 $(this).find('.depth2').stop().slideUp(300)
             }
         }
