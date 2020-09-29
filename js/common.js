@@ -252,7 +252,7 @@
         $('.depth2').hide()
     })
 
-    // 모바일헤더 호버시 슬라이드 효과
+    // 모바일헤더 슬라이드 Up & Down
     $('.nav .depth1 li').hover(
         function(){
             winWidth = $(window).innerWidth()

@@ -135,6 +135,8 @@ h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
 .h1NavTop .open_nav { display: none; }
 .h1NavTop .close_nav { display: none; }
 
+
+
 /* 푸터 구역 */
 #footer { background: #31353e; color: #fff; font-size: 14px; padding: 45px 0 60px; }
 .footerMenu { text-align: center; font-size: 15px; }
