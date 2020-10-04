@@ -332,6 +332,12 @@
             $(this).siblings().find('.depth2').stop().slideUp(300)
         }
     })
+
+    $('.nav .depth1 > li > a').on('click',function() {
+        
+        $(this).parent().addClass('active')
+        $(this).parent().siblings().removeClass('active')
+    })
     
     
    
