@@ -125,6 +125,7 @@
     .company .comul > div:nth-child(2) { width: 100%; margin-bottom: 0; }
     .company .comul > div:nth-child(3) { width: 100%; margin-left: 0 }
     .company .comul > div:nth-child(4) { width: 100%; }
+    .company .comul .comli:hover img { transform: scale(1.01); }
     .company .comul .comli .comImgSize { width: 737px; height: 491px; padding-left: 30px; }
     .company .comul .comli .comText { padding-left: 25px; }
     .company .comul .comli .comText h3 { font-size: 18px; }
@@ -136,12 +137,34 @@
         padding: 12px 28px 12px 18px;
         margin: 5px 0 30px; }
 
+
+
+
+    /* Quality 배너 애니메이션 */
+    .Quality_banner .Quality_text h2 { font-size: 36px; }
+    .Quality_banner .Quality_text p { font-size: 14px; display: inline-block; margin: 15px 0 0; }
+    .Quality_banner .overlay { 
+        position: absolute;
+        top: 0; left: 0; 
+        right: 0; bottom: 0;
+        background: rgba(0, 0, 0, 0.65); 
+    }
+
+
+    /* News 섹션 */
+    .news .news_intr { text-align: center; }
+    .news_intr h2 { font-size: 32px; color: #222; font-family: 'Titillium Web', sans-serif; }
+    .news_intr p { color: #777; font-size: 15px; display: inline-block; margin: 10px 0 40px; }
+
+
+
     /* Product */
     .product .prod_intr h2 { font-size: 32px; }
     .product .prod_intr p { font-size: 15px; }
     .product .prod_text a { font-size: 15px; }
     .product .prod_text span { font-size: 13px; }
     .product > ul > li { float: left; }
+    .product ul li:hover img { transform: scale(1.01); } 
     .product > ul > li:nth-child(1) { width: 100%; margin-left: 0%; }
     .product > ul > li:nth-child(2) { width: 100%; }
     .product > ul > li:nth-child(3) { width: 100%; }
