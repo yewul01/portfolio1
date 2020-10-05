@@ -125,8 +125,8 @@
     .company .comul > div:nth-child(2) { width: 100%; margin-bottom: 0; }
     .company .comul > div:nth-child(3) { width: 100%; margin-left: 0 }
     .company .comul > div:nth-child(4) { width: 100%; }
-    .company .comul .comli:hover img { transform: scale(1.01); }
-    .company .comul .comli img { width: ; }
+    .company .comul .comli .imgBox .comImgSize { width: 680px; height: 436px; transform: scale(1); }
+    .company .comul .comli .imgBox .comImgSize:hover { transform: scale(1.05); }
     .company .comul .comli .comImgSize { width: 737px; height: 491px; padding-left: 30px; }
     .company .comul .comli .comText { padding-left: 25px; }
     .company .comul .comli .comText h3 { font-size: 18px; }
@@ -166,12 +166,14 @@
     .product .prod_intr p { font-size: 15px; }
     .product .prod_text a { font-size: 15px; }
     .product .prod_text span { font-size: 13px; }
-    .product > ul > li { float: left; }
+    .product > ul > li { float: left; margin-top: 10px; }
     .product ul li:hover img { transform: scale(1.01); } 
     .product > ul > li:nth-child(1) { width: 100%; margin-left: 0%; }
     .product > ul > li:nth-child(2) { width: 100%; }
     .product > ul > li:nth-child(3) { width: 100%; }
-    .product > ul > li .proImgSize { width: 720px; height: 530px; padding-left: 30px; }
+    .product > ul > li .imgBox .proImgSize { width: 680px; height: 436px; transform: scale(1); margin-top: 10px; overflow: hidden; }
+    
+    
 
 
    
