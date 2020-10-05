@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
 .h1NavTop .logo { font-size: 25px; padding: 15px 30px; }
 .h1NavTop .nav { 
     position: absolute; 
-    top: 0; left: 50%;
+    top: 0; left: 45%;
     transform: translate(-50%); 
     letter-spacing: 2px;
     z-index: 99999; }

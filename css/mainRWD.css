@@ -6,12 +6,12 @@
     
     .h1NavTop .nav { 
         position: absolute; 
-        top: 0; left: 40%;
+        top: 0; left: 36%;
         transform: translate(-50%); 
         letter-spacing: 2px;
         z-index: 99999;
     }
-    .nav .depth1 > li > a { display: inline-block; padding: 21px 15px;  position: relative; }
+    .nav .depth1 > li > a { display: inline-block; padding: 21px 10px;  position: relative; }
     
 
 }
@@ -23,8 +23,8 @@
     /* 헤더 */
     .h1NavTop .logo { font-size: 25px; padding: 15px 30px; text-align: left; }
     .h1NavTop .nav { 
-        position: absolute; top: 0; width: 180px;
-        z-index: 999999; display: none; right: 0;
+        position: absolute; top: 0; left: 93%; width: 180px;
+        z-index: 999999; display: none;
         background: #fff; height: 1000px; }
     .h1NavTop .decoBox { 
         position: absolute;
