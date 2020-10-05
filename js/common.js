@@ -204,27 +204,6 @@
          
     });
 
-    // $('.depth1').hover(
-    //     function(){
-    //         $(this).find('.depth2')
-    //         .stop().slideDown(500)
-    //     },
-    //     function(){
-    //         $(this).find('.depth2')
-    //         .stop().slideUp(500)
-    //     }
-    // )
-
-    // $('.nav').hover (
-    //     function(){
-    //         $(this).next()
-    //         .stop().slideDown(500)
-    //     },
-    //     function(){
-    //         $(this).next()
-    //         .stop().slideUp(250)
-    //     }
-    // )
 
     // toTop 버튼 이벤트
     $('.toTop').on('click',function () {
@@ -253,63 +232,31 @@
         $('.depth2').hide()
     })
 
-    // 모바일헤더 슬라이드 Up & Down
-    // $('.nav .depth1 li').hover(
-    //     function(){
-    //         winWidth = $(window).innerWidth()
-    //         if (winWidth > 1180) {
-    //             $('.nav .depth1').find('.depth2').stop().slideDown(300)
-    //             $('.decoBox').stop().slideDown(300)
-    //         } else {
-    //             $('.decoBox').hide()
-    //             $(this).find('.depth2').stop().slideDown(300)
-    //         }
-    //     },
-    //     function(){
-    //         winWidth = $(window).innerWidth()
-    //         if (winWidth > 1180) {
-    //             $('.nav .depth1').find('.depth2').stop().slideUp(300)
-    //             $('.decoBox').stop().slideUp(400);
-    //         } else {
-    //             $('.decoBox').hide()
-    //             $(this).find('.depth2').stop().slideUp(300)
-    //         }
-    //     }
-    // )
     
-    
-    init()
+    // resize
+
+    var flag = true;
     function init() {
         var ww = $(window).width()
-        if (ww > 1180) {
+        if (ww > 1180 && flag) {
+            $('.h1NavTop .nav').show()
+            $('.depth1 > li').removeClass('on')
+            $('.open_nav, .close_nav, .depth2').hide()
             $('html').addClass('pc').removeClass('mobile')
-        } else {
+            flag = false
+        } else if ( ww <= 1180 && !flag ) {
+            $('.open_nav').show()
+            $('.h1NavTop .nav, .depth2').hide()
             $('html').addClass('mobile').removeClass('pc')
+            flag = true
         }
     }
-    $(window).resize(function(){
+
+    init()
+    
+    $(window).on('resize', function() {
         init()
     })
-
-
-    // init()
-
-    // var flag = true;
-    // function init() {
-    //     var ww = $(window).width()
-    //     if (ww > 1180 && flag) {
-    //         $('.h1NavTop .nav').show()
-    //         $('.open_nav, .close_nav, .depth2').hide()
-    //         flag = false
-    //     } else if (ww <= 1180 && !flag) {
-    //         $('.open_nav').show()
-    //         $('.h1NavTop .nav, .depth2').hide()
-    //         flag = false
-    //     }
-    // }
-    // $(window).on('resize', function() {
-    //     init()
-    // })
 
 
     // 모바일헤더
@@ -325,7 +272,7 @@
             }
         }
     )
-
+    
     $('.depth1 > li').on('click',function() {
         if ( $('html').hasClass('mobile') ) {
             $(this).find('.depth2').stop().slideToggle(300)
@@ -333,6 +280,7 @@
         }
     })
 
+    // 모바일헤더 글자색상
     $('.nav .depth1 > li > a').on('click',function() {
         
         $(this).parent().addClass('active')
