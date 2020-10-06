@@ -233,26 +233,32 @@
     })
 
     
-    // resize
+    // resize 이벤트
+
+    init()
 
     var flag = true;
     function init() {
-        var ww = $(window).width()
-        if (ww > 1180 && flag) {
-            $('.h1NavTop .nav').show()
-            $('.depth1 > li').removeClass('on')
-            $('.open_nav, .close_nav, .depth2').hide()
+        var ww = $(window).innerWidth()
+        if (ww > 1180) {
             $('html').addClass('pc').removeClass('mobile')
-            flag = false
-        } else if ( ww <= 1180 && !flag ) {
-            $('.open_nav').show()
-            $('.h1NavTop .nav, .depth2').hide()
+            if (flag) {
+                $('.h1NavTop .nav').show()
+                $('.depth1 > li').removeClass('on')
+                $('.open_nav, .close_nav, .depth2').hide()
+                flag = false
+            }
+        } else if (ww <= 1180) {
             $('html').addClass('mobile').removeClass('pc')
-            flag = true
+            if (!flag) {
+                $('.open_nav').show()
+                $('.h1NavTop .nav, .depth2').hide()
+                flag = true
+            }
         }
     }
 
-    init()
+
     
     $(window).on('resize', function() {
         init()
