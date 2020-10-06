@@ -70,6 +70,12 @@
         color: #7a7a7a;
         min-height: 60px;
         line-height: 1.5; }
+    .company .comul .comli .imgBox .overlay {
+        position: absolute; opacity: 0;
+        top: 0; right: 0; bottom: 0; left: 0;
+        background: rgba(0,0,0,0.3);
+        transition: all 0.5s; }
+    .company .comul .comli:hover .overlay { opacity: 1; }        
     .company .comul > div { float: left; text-align: left; }
     .company .comul > div:nth-child(1) { width: 30%; margin-left: 19%; margin-bottom: 8% }
     .company .comul > div:nth-child(2) { width: 30%; margin-bottom: 8%; }
@@ -106,21 +112,8 @@
     .slide .slideInner .Inner_text p { font-size: 14px; line-height: 1.6; margin-top: 30px; opacity: 0.8; }
     .slide .slideInner .Inner_text strong { font-weight: normal; }
 
-    /* 메인 슬라이드 화살표 */
-    .slide .slide-outer .arr {
-        width: 100px; height: 50px;
-        font-size: 20px; color: #000;
-        margin: 50px 0 0;
-        width: 50px; height: 50px;  
-        background: #fff;
-        transition: opacity 0.3s;
-        opacity: 0.9; }
-    .slide .slide-outer .prev { left: 0px; z-index: 999999; }
-    .slide .slide-outer .next { right: 0px; }
-
 
     /* Company */
-    .company .wwd { display: block; }
     .company .wwd h2 { font-size: 32px; color: #222; }
     .company .wwd p { font-size: 15px; color: #777; margin-top: 10px; }
     .company .comul > div { float: left; text-align: left; overflow: hidden; transition: all 0.5s; position: relative; }
@@ -177,12 +170,11 @@
     .product .prod_text a { font-size: 15px; }
     .product .prod_text span { font-size: 13px; }
     .product > ul > li { float: left; margin-top: 10px; }
-    .product > ul > li:hover .prod_text { transform: translateY(0); }
-    .product > ul > li:hover img { transform: scale(1.1); }
+    .product > ul > li:hover .prod_text { transform: translateY(0%); }
     .product > ul > li div { overflow: hidden; transition: all 0.5s; position: relative; }
     .product > ul > li img { height: 270px; width: 100%;  transition: all 0.5s; }
     .product > ul > li .imgBox { overflow: hidden; transition: all 0.5s; position: relative; }
-    .product > ul > li:hover .imgBox { transform: translateY(0); }
+    .product > ul > li:hover .imgBox { transform: translateY(0%); }
     .product > ul > li:nth-child(1) { width: 100%; margin-left: 0%; }
     .product > ul > li:nth-child(2) { width: 100%; }
     .product > ul > li:nth-child(3) { width: 100%; }
