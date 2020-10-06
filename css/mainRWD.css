@@ -154,9 +154,9 @@
 
     /* News 섹션 */
     .news .news_intr { text-align: center; }
-    .news_intr h2 { font-size: 32px; color: #222; font-family: 'Titillium Web', sans-serif; }
-    .news_intr p { color: #777; font-size: 15px; display: inline-block; margin: 10px 0 40px; }
-    .news .news_box_text h3 { font-size: 17px; color: #6a6a6a; transition: all 0.5s; }
+    .news .news_intr h2 { font-size: 32px; color: #222; font-family: 'Titillium Web', sans-serif; }
+    .news .news_intr p { color: #777; font-size: 15px; display: inline-block; margin: 10px 0 40px; }
+    .news .news_box_text a { font-size: 17px; color: #6a6a6a; transition: all 0.5s; }
     .news .news_box_text p { font-size: 13px; color: #aaa; margin: 8px 0 0; transition: all 0.5s; }
 
 
