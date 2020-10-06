@@ -119,16 +119,19 @@
     .company .wwd h2 { font-size: 32px; color: #222; }
     .company .wwd p { font-size: 15px; color: #777; margin-top: 10px; }
 
-    .company .comul > div { margin-left: 25px; float: left; text-align: left; overflow: hidden; transition: all 0.5s; position: relative; }
+    .company .comul > div { float: left; text-align: center; overflow: hidden; transition: all 0.5s; position: relative; }
     .company .comul > div:nth-child(1) { width: 100%; margin-left: 0; margin-bottom: 0 }
     .company .comul > div:nth-child(2) { width: 100%; margin-bottom: 0; }
     .company .comul > div:nth-child(3) { width: 100%; margin-left: 0 }
     .company .comul > div:nth-child(4) { width: 100%; }
 
+
+    .company .comul .comli > div:nth-child(2) { text-align: left; }
     .company .comul .comli:hover .overlay { opacity: 1; }
-    .company .comul .comli img { transition: all 0.5s; }
+    .company .comul .comli:hover img { transform: scale(1.01); }
+    .company .comul .comli img { transition: all 0.5s; overflow: hidden; }
     .company .comul .comli .imgBox { overflow: hidden; position: relative; }
-    .company .comul .comli .imgBox .comImgSize { width: 719px; height: 479.33px; padding-left: 30px; }
+    .company .comul .comli .imgBox .comImgSize { width: 680px; height: 470px; text-align: center; }
     .company .comul .comli .imgBox .overlay { 
         position: absolute; 
         opacity: 0;
@@ -173,8 +176,8 @@
     .product .prod_intr h2 { font-size: 32px; }
     .product .prod_intr p { font-size: 15px; }
 
-    .product > ul > li { float: left; margin-top: 10px; }
-    .product > ul > li div { overflow: hidden; transition: all 0.5s; position: relative; }
+    .product > ul > li { float: left; }
+    .product > ul > li div { overflow: hidden; transition: all 0.5s; position: relative; text-align: center; }
     .product > ul > li img { height: 270px; width: 100%;  transition: all 0.5s; }
     .product > ul > li .imgBox { overflow: hidden; transition: all 0.5s; position: relative; }
     .product > ul > li:nth-child(1) { width: 100%; margin-left: 0%; }
@@ -185,8 +188,8 @@
     .product > ul > li:hover .imgBox { transform: translateY(0%); }
     .product > ul > li:hover .prod_text { transform: translateY(0%); }
 
-    .product .prod_text a { font-size: 15px; }
-    .product .prod_text span { font-size: 13px; }
+    .product .prod_text a { font-size: 15px; text-align: left; }
+    .product .prod_text span { font-size: 13px; text-align: left; }
     
      
     
