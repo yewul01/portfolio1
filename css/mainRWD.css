@@ -120,14 +120,23 @@
 
 
     /* Company */
-    .company .comul > div { float: left; text-align: left; }
+    .company .wwd { display: block; }
+    .company .wwd h2 { font-size: 32px; color: #222; }
+    .company .wwd p { font-size: 15px; color: #777; margin-top: 10px; }
+    .company .comul > div { float: left; text-align: left; overflow: hidden; transition: all 0.5s; position: relative; }
     .company .comul > div:nth-child(1) { width: 100%; margin-left: 0; margin-bottom: 0 }
     .company .comul > div:nth-child(2) { width: 100%; margin-bottom: 0; }
     .company .comul > div:nth-child(3) { width: 100%; margin-left: 0 }
     .company .comul > div:nth-child(4) { width: 100%; }
-    .company .comul .comli .imgBox .comImgSize { width: 680px; height: 436px; transform: scale(1); }
-    .company .comul .comli .imgBox .comImgSize:hover { transform: scale(1.05); }
-    .company .comul .comli .comImgSize { width: 737px; height: 491px; padding-left: 30px; }
+    .company .comul .comli:hover .overlay { opacity: 1; }
+    .company .comul .comli > img { transition: all 0.5s; }
+    .company .comul .comli .imgBox { overflow: hidden; position: relative; }
+    .company .comul .comli .imgBox .comImgSize { width: 719px; height: 479.33px; padding-left: 30px; }
+    .company .comul .comli .imgBox .overlay { 
+        position: absolute; opacity: 0;
+        top: 0; right: 0; bottom: 0; left: 0;
+        background: rgba(0,0,0,0.3);
+        transition:  all 0.5s; }
     .company .comul .comli .comText { padding-left: 25px; }
     .company .comul .comli .comText h3 { font-size: 18px; }
     .company .comul .comli .comText p { font-size: 13px; }
@@ -142,8 +151,8 @@
 
 
     /* Quality 배너 애니메이션 */
-    .Quality_banner .Quality_text h2 { font-size: 36px; }
-    .Quality_banner .Quality_text p { font-size: 14px; display: inline-block; margin: 15px 0 0; }
+    .Quality_banner .overlay .Quality_text h2 { font-size: 36px; }
+    .Quality_banner .overlay .Quality_text p { font-size: 14px; display: inline-block; margin: 15px 0 0; }
     .Quality_banner .overlay { 
         position: absolute;
         top: 0; left: 0; 
@@ -167,12 +176,13 @@
     .product .prod_text a { font-size: 15px; }
     .product .prod_text span { font-size: 13px; }
     .product > ul > li { float: left; margin-top: 10px; }
-    .product ul li:hover img { transform: scale(1.01); } 
     .product > ul > li:nth-child(1) { width: 100%; margin-left: 0%; }
     .product > ul > li:nth-child(2) { width: 100%; }
     .product > ul > li:nth-child(3) { width: 100%; }
-    .product > ul > li .imgBox .proImgSize { width: 680px; height: 436px; transform: scale(1); margin-top: 10px; overflow: hidden; }
+    .product > ul > li .imgBox .overlay { overflow: hidden; }
+    .product > ul > li .imgBox .proImgSize { width: 640px; height: 400px; }
     
+     
     
 
 
