@@ -4,6 +4,7 @@
 /* max-width:1553px(1181~1553) */
 @media screen and (max-width:1553px) {
     
+    /* 헤더 */
     .h1NavTop .nav { 
         position: absolute; 
         top: 0; left: 36%;
@@ -63,7 +64,7 @@
     /* 메인슬라이드 텍스트 */
     .slide .slideInner .Inner_text { position: relative; bottom: 150px; left: 82px; }
     
-    /* Company */
+    /* Company 구역 */
     .company h2 { text-align: center;  margin-bottom: 40px; }
     .company .comul .comli p { 
         font-size: 15px;
@@ -75,20 +76,21 @@
         top: 0; right: 0; bottom: 0; left: 0;
         background: rgba(0,0,0,0.3);
         transition: all 0.5s; }
-    .company .comul .comli:hover .overlay { opacity: 1; }        
+    .company .comul .comli:hover .overlay { opacity: 1; }   
+
     .company .comul > div { float: left; text-align: left; }
     .company .comul > div:nth-child(1) { width: 30%; margin-left: 19%; margin-bottom: 8% }
     .company .comul > div:nth-child(2) { width: 30%; margin-bottom: 8%; }
     .company .comul > div:nth-child(3) { width: 30%; margin-left: 19% }
     .company .comul > div:nth-child(4) { width: 30%; }
 
-    /* News */
+    /* News 구역 */
     .news .news_box_text { 
         border-bottom: 1px solid #eaeaea; padding: 42px 0;
         transition: all 0.5s; position: relative;
         width: 80%; margin-left: 10%; }
     
-    /* Product */
+    /* Product 구역 */
     .product > ul > li:nth-child(1) { width: 25%; margin-left: 10%; }
     .product > ul > li:nth-child(2) { width: 25%; }
     .product > ul > li:nth-child(3) { width: 25%; }
@@ -107,26 +109,29 @@
         transform: translate(-50%,-50%); 
         color: #fff; font-family: sans-serif;
         animation: fadeInUp 1s both; }
-    .slide .slideInner .Inner_text span { letter-spacing: 2px; font-family: 'Titillium Web', sans-serif; }
+    .slide .slideInner .Inner_text span { font-size: 16px; letter-spacing: 2px; font-family: 'Titillium Web', sans-serif; }
     .slide .slideInner .Inner_text h2 { font-size: 28px; font-weight: 200; line-height: 1.4; font-family: sans-serif; }
     .slide .slideInner .Inner_text p { font-size: 14px; line-height: 1.6; margin-top: 30px; opacity: 0.8; }
     .slide .slideInner .Inner_text strong { font-weight: normal; }
 
 
-    /* Company */
+    /* Company 구역 */
     .company .wwd h2 { font-size: 32px; color: #222; }
     .company .wwd p { font-size: 15px; color: #777; margin-top: 10px; }
-    .company .comul > div { float: left; text-align: left; overflow: hidden; transition: all 0.5s; position: relative; }
+
+    .company .comul > div { margin-left: 25px; float: left; text-align: left; overflow: hidden; transition: all 0.5s; position: relative; }
     .company .comul > div:nth-child(1) { width: 100%; margin-left: 0; margin-bottom: 0 }
     .company .comul > div:nth-child(2) { width: 100%; margin-bottom: 0; }
     .company .comul > div:nth-child(3) { width: 100%; margin-left: 0 }
     .company .comul > div:nth-child(4) { width: 100%; }
+
     .company .comul .comli:hover .overlay { opacity: 1; }
-    .company .comul .comli > img { transition: all 0.5s; }
+    .company .comul .comli img { transition: all 0.5s; }
     .company .comul .comli .imgBox { overflow: hidden; position: relative; }
     .company .comul .comli .imgBox .comImgSize { width: 719px; height: 479.33px; padding-left: 30px; }
     .company .comul .comli .imgBox .overlay { 
-        position: absolute; opacity: 0;
+        position: absolute; 
+        opacity: 0;
         top: 0; right: 0; bottom: 0; left: 0;
         background: rgba(0,0,0,0.3);
         transition:  all 0.5s; }
@@ -143,7 +148,7 @@
 
 
 
-    /* Quality 배너 애니메이션 */
+    /* Quality 배너 */
     .Quality_banner .overlay .Quality_text h2 { font-size: 36px; }
     .Quality_banner .overlay .Quality_text p { font-size: 14px; display: inline-block; margin: 15px 0 0; }
     .Quality_banner .overlay { 
@@ -154,32 +159,34 @@
     }
 
 
-    /* News 섹션 */
+    /* News 구역 */
     .news .news_intr { text-align: center; }
     .news .news_intr h2 { font-size: 32px; color: #222; font-family: 'Titillium Web', sans-serif; }
     .news .news_intr p { color: #777; font-size: 15px; display: inline-block; margin: 10px 0 40px; }
-    .news .news_box_text a { font-size: 17px; color: #6a6a6a; transition: all 0.5s; }
-    .news .news_box_text p { font-size: 13px; color: #aaa; margin: 8px 0 0; transition: all 0.5s; }
+    .news > div:nth-child(2) .news_box_text h3 { font-size: 17px; color: #6a6a6a; transition: all 0.5s; }
+    .news > div:nth-child(2) .news_box_text p { font-size: 13px; color: #aaa; margin: 8px 0 0; transition: all 0.5s; }
 
 
 
-    /* Product */
+    /* Product 구역 */
     .product .prod_intr { text-align: center; transition: all 0.5s; }
     .product .prod_intr h2 { font-size: 32px; }
     .product .prod_intr p { font-size: 15px; }
-    .product .prod_text a { font-size: 15px; }
-    .product .prod_text span { font-size: 13px; }
+
     .product > ul > li { float: left; margin-top: 10px; }
-    .product > ul > li:hover .prod_text { transform: translateY(0%); }
     .product > ul > li div { overflow: hidden; transition: all 0.5s; position: relative; }
     .product > ul > li img { height: 270px; width: 100%;  transition: all 0.5s; }
     .product > ul > li .imgBox { overflow: hidden; transition: all 0.5s; position: relative; }
-    .product > ul > li:hover .imgBox { transform: translateY(0%); }
     .product > ul > li:nth-child(1) { width: 100%; margin-left: 0%; }
     .product > ul > li:nth-child(2) { width: 100%; }
     .product > ul > li:nth-child(3) { width: 100%; }
     .product > ul > li .imgBox .overlay { overflow: hidden; }
     .product > ul > li .imgBox .proImgSize { width: 640px; height: 400px; }
+    .product > ul > li:hover .imgBox { transform: translateY(0%); }
+    .product > ul > li:hover .prod_text { transform: translateY(0%); }
+
+    .product .prod_text a { font-size: 15px; }
+    .product .prod_text span { font-size: 13px; }
     
      
     

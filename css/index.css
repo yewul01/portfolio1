@@ -286,7 +286,7 @@ body { font-family: 'Titillium Web', sans-serif; }
 .product ul li { float: left; width: 31.3333%; margin: 0 1%; background: #fff; }
 .product ul li div { overflow: hidden; transition: all 0.5s; position: relative; }
 .product ul li img { height: 270px; width: 100%;  transition: all 0.5s; }
-.product ul li:hover img { transform: scale(1.1); } 
+.product ul li:hover img { transform: scale(1.1); }
 .product .imgBox { overflow: hidden; position: relative; transition: all 0.5s; }
 .product ul li .prod_text { transition: all 0.5s; }
 .product ul li:hover .overlay { opacity: 1; }
