@@ -95,6 +95,20 @@
     .product > ul > li:nth-child(3) { width: 25%; }
     
     .toTop { display: none; }
+
+    /* 푸터 */
+    #footer { background: #31353e; color: #fff; font-size: 14px; padding: 45px auto 60px; }
+    #footer .inner .footerMenu { text-align: center; }
+    #footer .inner .footerMenu a { display: inline-block; padding: 0 15px; font-size: 13px; }
+    #footer .inner .sns { text-align: center; padding: 40px 0 30px; }
+    #footer .inner .sns a { font-size: 20px; padding: 0 15px; opacity: 0.5; }
+    #footer .inner .sns a:hover { opacity: 0.8; }
+    #footer .inner .siteMap { 
+        text-align: center; position: relative; bottom: 15px; 
+        font-size: 13px; opacity: 0.7; }
+    #footer .inner .companyInfo { text-align: center; opacity: 0.7; line-height: 1.5; font-size: 13px; }
+    #footer .inner .companyInfo span { margin: 0 10px; opacity: 0.5; }
+    #footer .inner .copyright { margin: 20px 0 0; text-align: center; opacity: 0.7; font-size: 13px; }
     
 }
 
@@ -180,28 +194,18 @@
     .product > ul > li:nth-child(1) { width: 100%; margin-left: 1%; }
     .product > ul > li:nth-child(2) { width: 100%; }
     .product > ul > li:nth-child(3) { width: 100%; }
+    .product > ul > li > img { overflow: hidden; }
     .product > ul > li .imgBox { overflow: hidden; transition: all 0.5s; position: relative; width: 737px; height: 552px; }
     .product > ul > li .imgBox .proImgSize { width: 737px; height: 552px; }
-    .product > ul > li:hover .imgBox { transform: translateY(0%); }
-    .product > ul > li:hover .prod_text { transform: translateY(0%); }
+    .product > ul > li:hover .overlay { opacity: 1; }
+    .product > ul > li:hover > img { transform: scale(1.01); }
+    .product > ul > li:hover .imgBox { transform: translateY(10%); }
+    .product > ul > li:hover .prod_text { transform: translateY(10%); }
 
     .product .prod_text a { font-size: 15px; text-align: left; }
     .product .prod_text span { font-size: 13px; text-align: left; }
     
      
-    /* 푸터 */
-    #footer { background: #31353e; color: #fff; font-size: 14px; padding: 45px auto 60px; }
-    #footer .inner .footerMenu { text-align: center; }
-    #footer .inner .footerMenu a { display: inline-block; padding: 0 15px; font-size: 13px; }
-    #footer .inner .sns { text-align: center; padding: 40px 0 30px; }
-    #footer .inner .sns a { font-size: 20px; padding: 0 15px; opacity: 0.5; }
-    #footer .inner .sns a:hover { opacity: 0.8; }
-    #footer .inner .siteMap { 
-        text-align: center; position: relative; bottom: 15px; 
-        font-size: 13px; opacity: 0.7; }
-    #footer .inner .companyInfo { text-align: center; opacity: 0.7; line-height: 1.5; font-size: 13px; }
-    #footer .inner .companyInfo span { margin: 0 10px; opacity: 0.5; }
-    #footer .inner .copyright { margin: 20px 0 0; text-align: center; opacity: 0.7; font-size: 13px; }
 
 
    
