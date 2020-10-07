@@ -7,7 +7,8 @@
     /* 헤더 */
     .h1NavTop .nav { 
         position: absolute; 
-        top: 0; left: 34%;
+        top: 0; left: 36%;
+        transform: translate(-50%); 
         letter-spacing: 2px;
         z-index: 99999;
     }
@@ -46,7 +47,7 @@
         display: block; position: relative; color: #5f5f5f; padding: 21px 9px; }
     .h1NavTop .nav .depth1 li.active a { color: royalblue; }
     .h1NavTop .topmenu {  
-        position: absolute; top: 0; right: 15%;
+        position: absolute; top: 0; right: 0;
         text-align: right; line-height: 59px;
         padding-right: 15px; display: none; }
     .h1NavTop .nav .depth2 { 
@@ -129,15 +130,15 @@
     .company .comul .comli:hover .overlay { opacity: 1; }
     .company .comul .comli:hover img { transform: scale(1.01); }
     .company .comul .comli img { transition: all 0.5s; overflow: hidden; }
-    .company .comul .comli .imgBox { overflow: hidden; position: relative; margin: 0 auto; }
-    .company .comul .comli .imgBox .comImgSize { width: 680px; height: 470px; text-align: left; overflow: hidden; }
+    .company .comul .comli .imgBox { overflow: hidden; position: relative; }
+    .company .comul .comli .imgBox .comImgSize { width: 680px; height: 470px; text-align: center; }
     .company .comul .comli .imgBox .overlay { 
         position: absolute; 
         opacity: 0;
         top: 0; right: 0; bottom: 0; left: 0;
         background: rgba(0,0,0,0.3);
         transition:  all 0.5s; }
-    .company .comul .comli .comText { text-align: left; }
+    .company .comul .comli .comText { padding-left: 25px; }
     .company .comul .comli .comText h3 { font-size: 18px; }
     .company .comul .comli .comText p { font-size: 13px; }
     .company .comul .comli .comText span {
@@ -191,19 +192,7 @@
     .product .prod_text span { font-size: 13px; text-align: left; }
     
      
-    /* 푸터 */
-    #footer { background: #31353e; color: #fff; font-size: 14px; padding: 45px auto 60px; }
-    #footer .inner .footerMenu { text-align: center; }
-    #footer .inner .footerMenu a { display: inline-block; padding: 0 15px; font-size: 13px; }
-    #footer .inner .sns { text-align: center; padding: 40px 0 30px; }
-    #footer .inner .sns a { font-size: 20px; padding: 0 15px; opacity: 0.5; }
-    #footer .inner .sns a:hover { opacity: 0.8; }
-    #footer .inner .siteMap { 
-        text-align: center; position: relative; bottom: 15px; 
-        font-size: 13px; opacity: 0.7; }
-    #footer .inner .companyInfo { text-align: center; opacity: 0.7; line-height: 1.5; font-size: 13px; }
-    #footer .inner .companyInfo span { margin: 0 10px; opacity: 0.5; }
-    #footer .inner .copyright { margin: 20px 0 0; text-align: center; opacity: 0.7; font-size: 13px; }
+    
 
 
    
