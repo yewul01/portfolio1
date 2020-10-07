@@ -117,6 +117,9 @@
     border: none; color: #777;
     background: #f8f9fa; }
 .join2_form .info_content select { margin-bottom: 10px; }
+.join2_form .info_content input[id="email"] { width: 150px; height: 53px; }
+.join2_form .info_content input[id="domain"] { width: 150px; height: 53px; }
+.join2_form .info_content select[name="url"] { width: 140px; height: 53px; }
 
 .join2_form .btn { margin-top: 20px; }
 .join2_form .btn input { 
@@ -124,3 +127,38 @@
     background: #3e78ff; color: #fff;
     border: none; border-radius: 5px;
     font-size: 18px; }
+
+
+
+@media screen and (max-width:767px) {
+  
+  .join2_slide .join2_inner_text h2 { 
+    font-size: 28px; color: #fff;
+    text-align: center; }
+  .join2_slide .join2_inner_text p {
+    font-size: 14px; color: #ffffffbf; 
+    text-align: center;  padding-top: 15px; }
+
+  .join2_box .join2_form { position: relative; left: -8%; }
+
+  .join2_form .info_content input[type=text],
+  .join2_form .info_content input[type=password],
+  .join2_form .info_content select { 
+    padding: 0 1em;
+    width: 290px; height: 51px;
+    border: none; color: #777;
+    background: #f8f9fa; }
+
+  .join2_form .btn { margin-top: 20px; position: relative; left: -3%;}
+  .join2_form .btn input { 
+    width: 290px; height: 53px;
+    background: #3e78ff; color: #fff;
+    border: none; border-radius: 5px;
+    font-size: 18px; }
+  .join2_form .info_content input[id="email"] { width: 80px; height: 53px; }
+  .join2_form .info_content input[id="domain"] { width: 80px; height: 53px; }
+  .join2_form .info_content select[name="url"] { width: 80px; height: 53px; }
+
+
+
+}

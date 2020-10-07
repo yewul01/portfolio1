@@ -205,14 +205,6 @@
     });
 
 
-    // toTop 버튼 이벤트
-    $('.toTop').on('click',function () {
-        $('html, body').stop().animate({
-            scrollTop: '0'
-        }, 800, 'linear')
-
-    })
-
     // 햄버거버튼 클릭시 네비박스 나타나기
     $('.h1NavTop .open_nav').on('click',function() {
         $(this).next().stop().slideDown(300)
@@ -292,18 +284,6 @@
         $(this).parent().addClass('active')
         $(this).parent().siblings().removeClass('active')
     })
-    
-    
-   
-    
-
-    
-    
-
-    
-
-
-
 
 
 

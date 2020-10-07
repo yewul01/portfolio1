@@ -228,7 +228,13 @@
         }]
     })
     
+    // toTop 버튼 이벤트
+    $('.toTop').on('click',function () {
+        $('html, body').stop().animate({
+            scrollTop: '0'
+        }, 800, 'linear')
 
+    })
     
 
 
