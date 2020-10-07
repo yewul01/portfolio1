@@ -46,7 +46,7 @@
         display: block; position: relative; color: #5f5f5f; padding: 21px 9px; }
     .h1NavTop .nav .depth1 li.active a { color: royalblue; }
     .h1NavTop .topmenu {  
-        position: absolute; top: 0; right: 15%;
+        position: absolute; top: 0; right: 0;
         text-align: right; line-height: 59px;
         padding-right: 15px; display: none; }
     .h1NavTop .nav .depth2 { 
@@ -90,8 +90,8 @@
         width: 80%; margin-left: 10%; }
     
     /* Product 구역 */
-    .product > ul > li:nth-child(1) { width: 25%; margin-left: 10%; }
-    .product > ul > li:nth-child(2) { width: 25%; }
+    .product > ul > li:nth-child(1) { width: 25%; margin-left: 5%; margin-bottom: 8%; }
+    .product > ul > li:nth-child(2) { width: 25%; margin-bottom: 8%; }
     .product > ul > li:nth-child(3) { width: 25%; }
     
     .toTop { display: none; }
@@ -119,9 +119,9 @@
     .company .wwd p { font-size: 15px; color: #777; margin-top: 10px; }
 
     .company .comul > div { float: left; text-align: center; overflow: hidden; transition: all 0.5s; position: relative; }
-    .company .comul > div:nth-child(1) { width: 100%; margin-left: 0; margin-bottom: 0 }
+    .company .comul > div:nth-child(1) { width: 100%; margin-left: 1%; margin-bottom: 0 }
     .company .comul > div:nth-child(2) { width: 100%; margin-bottom: 0; }
-    .company .comul > div:nth-child(3) { width: 100%; margin-left: 0 }
+    .company .comul > div:nth-child(3) { width: 100%; margin-left: 1%; }
     .company .comul > div:nth-child(4) { width: 100%; }
 
 
@@ -129,8 +129,8 @@
     .company .comul .comli:hover .overlay { opacity: 1; }
     .company .comul .comli:hover img { transform: scale(1.01); }
     .company .comul .comli img { transition: all 0.5s; overflow: hidden; }
-    .company .comul .comli .imgBox { overflow: hidden; position: relative; margin: 0 auto; }
-    .company .comul .comli .imgBox .comImgSize { width: 680px; height: 470px; text-align: left; overflow: hidden; }
+    .company .comul .comli .imgBox { overflow: hidden; position: relative; width: 700px; height: 470px; }
+    .company .comul .comli .imgBox .comImgSize { width: 700px; height: 470px; text-align: left; overflow: hidden; }
     .company .comul .comli .imgBox .overlay { 
         position: absolute; 
         opacity: 0;
@@ -177,13 +177,11 @@
 
     .product > ul > li { float: left; }
     .product > ul > li div { overflow: hidden; transition: all 0.5s; position: relative; text-align: center; }
-    .product > ul > li img { height: 270px; width: 100%;  transition: all 0.5s; }
-    .product > ul > li .imgBox { overflow: hidden; transition: all 0.5s; position: relative; }
-    .product > ul > li:nth-child(1) { width: 100%; margin-left: 0%; }
+    .product > ul > li:nth-child(1) { width: 100%; margin-left: 1%; }
     .product > ul > li:nth-child(2) { width: 100%; }
     .product > ul > li:nth-child(3) { width: 100%; }
-    .product > ul > li .imgBox .overlay { overflow: hidden; }
-    .product > ul > li .imgBox .proImgSize { width: 640px; height: 400px; }
+    .product > ul > li .imgBox { overflow: hidden; transition: all 0.5s; position: relative; width: 737px; height: 552px; }
+    .product > ul > li .imgBox .proImgSize { width: 737px; height: 552px; }
     .product > ul > li:hover .imgBox { transform: translateY(0%); }
     .product > ul > li:hover .prod_text { transform: translateY(0%); }
 
