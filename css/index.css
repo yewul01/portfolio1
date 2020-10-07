@@ -110,7 +110,7 @@ body { font-family: 'Titillium Web', sans-serif; }
     transition: opacity 0.3s;
     opacity: 0.9; }
 .slide-outer .arr:hover { background: #000000bf; }
-.slide-outer .prev { left: 0px; z-index: 999999; }
+.slide-outer .prev { left: 0px; z-index: 999; }
 .slide-outer .next { right: 0px; }
 
 .open_nav { display: none; }
