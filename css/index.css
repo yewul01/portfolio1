@@ -290,8 +290,8 @@ body { font-family: 'Titillium Web', sans-serif; }
 .product .imgBox { overflow: hidden; position: relative; transition: all 0.5s; }
 .product ul li .prod_text { transition: all 0.5s; }
 .product ul li:hover .overlay { opacity: 1; }
-.product ul li:hover .imgBox { transform: translateY(-10%); }
-.product ul li:hover .prod_text { transform: translateY(-10%); }
+.product ul li:hover .imgBox { transform: translateY(-8%); }
+.product ul li:hover .prod_text { transform: translateY(-8%); }
 .product .imgBox .overlay { 
     position: absolute;
     top: 0;
