@@ -103,7 +103,7 @@
     font-size: 44px; font-family: 'Titillium Web', sans-serif; 
     text-align: center; padding: 60px 0 0; }
 .join2_form ul li { padding: 10px 0; }
-.join2_form label { display: block; }
+.join2_form label { display: inline-block; }
 .join2_form .tit_lbl { 
     margin: 19px 0 8px;  
     font-size: 14px; color: #000; 
@@ -127,6 +127,17 @@
     background: #3e78ff; color: #fff;
     border: none; border-radius: 5px;
     font-size: 18px; }
+
+
+
+@media screen and (max-width:1850px) {
+
+  /* 이메일 */
+  .join2_form .info_content input[id="email"] { width: 140px; height: 53px; }
+  .join2_form .info_content input[id="domain"] { width: 140px; height: 53px; }
+  .join2_form .info_content select[name="url"] { width: 150px; height: 53px; }
+
+}
 
 
 
