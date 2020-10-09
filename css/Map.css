@@ -43,7 +43,7 @@
     animation-name: zoomOut;
   }
   
-  /* 맵 슬라이드 텍스트(h2) 애니메이션 */
+  /* 슬라이드 텍스트(h2) 애니메이션 */
   .map_slide h2 { animation: fadeInDown 2s both; }
   @keyframes fadeInDown {
     from {
@@ -59,7 +59,7 @@
     }
   }
     
-    /* 맵 슬라이드 텍스트(p) 애니메이션 */ 
+    /* 슬라이드 텍스트(p) 애니메이션 */ 
     .map_slide p { animation: fadeInUp 2s both 0.5s; }
     @keyframes fadeInUp {
       from {
@@ -82,7 +82,7 @@
     height: 394px;
     position: relative; }
 .map_slide .map_slideInner { background-image: url(../images/sub_hero_img1.jpg);}
-#map_section { padding: 0 0 130px; }
+#map_section { padding: 0 0 300px; }
 .map_inner_text {
     position: absolute; top: 53%; left: 50%;
     transform: translate(-50%,-50%); }
@@ -127,23 +127,19 @@
     color: #ccc;
     position: relative; left: 13px; }
 
-.map_container { padding: 100px 0; }
+.map_container { padding: 100px 0; width: 100%; }
 .map_top { font-size: 38px; color: #222; text-align: center; }
 
 
 /* Map 지도 */
-.map_container { 
-    width: 1140px; margin: 0 auto; padding: 40px 0 89px; }
+.map_container { width: 55%; margin: 0 auto; padding: 40px 0 89px; }
 
 /* Map 텍스트 */
 .mapTable { 
     position: absolute; top: 50%; left: 55%;
     transform: translate(-50%,-50%);
     margin-top: 35px; border-top: 1px solid #555;
-    border-bottom: 1px solid #e5e5e5;
-    
-
-}
+    border-bottom: 1px solid #e5e5e5; }
 .mapTable td { height: 35px; line-height: 35px; text-align: left; }
 
 .mapTable table tr td:first-child { color: #333; width: 22%;}
@@ -151,3 +147,75 @@
 
 .map_left_text h3 {
     font-size: 38px; font-weight: 300; color: #333; line-height: 1.3; }
+
+
+@media screen and (max-width:705px) {
+  
+  /* 슬라이드 텍스트 */
+  .map_inner_text h2 { 
+    font-size: 28px; color: #fff;
+    text-align: center; }
+  .map_inner_text p {
+    font-size: 14px; color: #ffffffbf; 
+    text-align: center;  padding-top: 15px; }
+  
+  /* 중간 select 지점 */
+  #map_section .map_Menu_box a:nth-child(1) { 
+    display: inline-block;
+    padding: 20px 20px;
+    margin-left: 382px;
+    height: 60px;
+    border-left: 1px solid #e9e9e9;
+    border-right: 1px solid #e9e9e9;
+    display: none; }
+
+  #map_section .map_Menu_box a:nth-child(2) {
+    display: inline-block;
+    padding: 20px 25px;
+    border-right: 1px solid #e9e9e9;
+    font-family: 'Titillium Web', sans-serif;
+    color: #7a7a7a; width: 49.6%; }
+
+  #map_section .map_Menu_box a:nth-child(2):after {
+    content: '\f107';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #ccc;
+    position: relative; left: 60%;
+    font-size: 14px; }
+
+  #map_section .map_Menu_box a:nth-child(3) {
+    display: inline-block;
+    padding: 20px 25px;
+    border-right: 1px solid #e9e9e9; 
+    color: #653811; width: 49.6%; }
+
+  #map_section .map_Menu_box a:nth-child(3):after {
+    content: '\f107';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #ccc;
+    position: relative; left: 70%;
+    font-size: 14px; }
+
+  /* Map 지도 */
+  .map_container { width: 100%; margin: 0 auto; padding: 40px 0 20px; }
+  
+  /* 오시는길 */
+  .mapBox .map_top h2 { font-size: 32px; }
+  /* 원픽셀 스튜디오 사무실 */
+  .map_left_text h3 { font-size: 24px; font-weight: 300; color: #333; line-height: 1.3; }
+
+  /* 회사정보 */
+  .mapTable { 
+    position: absolute; top: 80%; left: 40%;
+    transform: translate(-50%);
+    margin-top: 35px; border-top: 1px solid #555;
+    border-bottom: 1px solid #e5e5e5; }
+  
+  .mapTable table tr td { font-size: 12px; }
+
+  
+
+
+}
