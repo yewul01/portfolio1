@@ -141,7 +141,7 @@
     }
 
     /* 메인슬라이드 텍스트 */
-    .slide .slideInner .Inner_text {
+    .slide .Inner_text {
         text-align: left;
         position: absolute;
         top: 37.8%;
@@ -151,22 +151,26 @@
         color: #fff;
         font-family: sans-serif;
     }
-    .slide .slideInner .Inner_text span {
+
+    .slide .Inner_text span {
         font-size: 16px;
         letter-spacing: 2px;
-        font-family: 'Titillium', sans-serif;
+        font-family: 'Titillium Web', sans-serif;
+        display: inline-block;
     }
-    .slide .slideInner .Inner_text h2 {
+
+    .slide .Inner_text h2 {
         font-size: 36px;
         font-weight: 200;
         line-height: 1.4;
         font-family: sans-serif;
     }
-    .slide .slideInner .Inner_text p {
+
+    .slide .Inner_text p {
         font-size: 14px;
-        font-weight: 200;
-        line-height: 1.4;
-        font-family: sans-serif;
+        line-height: 1.6;
+        margin-top: 30px;
+        opacity: 0.8;
     }
 
     /* Company 구역 */
@@ -182,45 +186,6 @@
         line-height: 1.5;
     }
 
-    .company .comul .comli .imgBox .overlay {
-        position: absolute;
-        opacity: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: rgba(0, 0, 0, 0.3);
-        transition: all 0.5s;
-    }
-
-    .company .comul .comli:hover .overlay {
-        opacity: 1;
-    }
-
-    .company .comul>div {
-        float: left;
-        text-align: left;
-    }
-
-    .company .comul>div:nth-child(1) {
-        width: 30%;
-        margin-left: 19%;
-        margin-bottom: 8%
-    }
-
-    .company .comul>div:nth-child(2) {
-        width: 30%;
-        margin-bottom: 8%;
-    }
-
-    .company .comul>div:nth-child(3) {
-        width: 30%;
-        margin-left: 19%
-    }
-
-    .company .comul>div:nth-child(4) {
-        width: 30%;
-    }
 
     /* News 구역 */
     .news .news_box_text {
@@ -233,7 +198,7 @@
     }
 
     /* Product 구역 */
-    .product>ul>li:nth-child(1) {
+    /* .product>ul>li:nth-child(1) {
         width: 25%;
         margin-left: 5%;
         margin-bottom: 8%;
@@ -246,7 +211,7 @@
 
     .product>ul>li:nth-child(3) {
         width: 25%;
-    }
+    } */
 
     .toTop {
         display: none;
@@ -316,41 +281,28 @@
 
 @media screen and (max-width:767px) {
 
-    /* 메인슬라이드 */
+    /* 메인슬라이드 텍스트 */
     .slide .Inner_text {
-        width: 100%;
-        text-align: left;
+        text-align: center;
         position: absolute;
         top: 37.8%;
-        left: 20%;
-        transform: translate(-50%, -50%);
+        left: 0%;
+        width: 100%;
+        margin-left: 0px;
+        transform: translateY(-50%);
         color: #fff;
         font-family: sans-serif;
-        animation: fadeInUp 1s both;
     }
 
-    .slide .slideInner .Inner_text span {
-        font-size: 16px;
-        letter-spacing: 2px;
-        font-family: 'Titillium Web', sans-serif;
-    }
-
-    .slide .slideInner .Inner_text h2 {
+    .slide .Inner_text h2 {
         font-size: 28px;
         font-weight: 200;
         line-height: 1.4;
         font-family: sans-serif;
     }
 
-    .slide .slideInner .Inner_text p {
-        font-size: 14px;
-        line-height: 1.6;
-        margin-top: 30px;
-        opacity: 0.8;
-    }
-
-    .slide .slideInner .Inner_text strong {
-        font-weight: normal;
+    .slide .Inner_text p {
+        display: none
     }
 
 
@@ -366,34 +318,19 @@
         margin-top: 10px;
     }
 
-    .company .comul>div {
-        float: left;
+    /* company li */
+    .company .comul .comli {
+        float: none;
         text-align: center;
         overflow: hidden;
         transition: all 0.5s;
         position: relative;
+        width: 98%;
+        margin: 0 1%;
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0%, 0);
+        transform: translate3d(0, 0%, 0);
     }
-
-    .company .comul>div:nth-child(1) {
-        width: 100%;
-        margin-left: 1%;
-        margin-bottom: 0
-    }
-
-    .company .comul>div:nth-child(2) {
-        width: 100%;
-        margin-bottom: 0;
-    }
-
-    .company .comul>div:nth-child(3) {
-        width: 100%;
-        margin-left: 1%;
-    }
-
-    .company .comul>div:nth-child(4) {
-        width: 100%;
-    }
-
 
     .company .comul .comli>div:nth-child(2) {
         text-align: left;
@@ -415,13 +352,13 @@
     .company .comul .comli .imgBox {
         overflow: hidden;
         position: relative;
-        width: 700px;
-        height: 470px;
+        /* width: 700px;
+        height: 470px; */
     }
 
     .company .comul .comli .imgBox .comImgSize {
-        width: 700px;
-        height: 470px;
+        /* width: 700px;
+        height: 470px; */
         text-align: left;
         overflow: hidden;
     }
@@ -528,9 +465,19 @@
         font-size: 15px;
     }
 
-    .product>ul>li {
-        float: left;
+    .product ul li {
+        float: none;
+        width: 98%;
+        margin: 0 1%;
+        background: #fff;
     }
+
+    .product ul li img {
+        height: auto;
+        max-width: 100%;
+        transition: all 0.5s;
+    }
+
 
     .product>ul>li div {
         overflow: hidden;
@@ -539,46 +486,22 @@
         text-align: center;
     }
 
-    .product>ul>li:nth-child(1) {
-        width: 100%;
-        margin-left: 1%;
-    }
-
-    .product>ul>li:nth-child(2) {
-        width: 100%;
-    }
-
-    .product>ul>li:nth-child(3) {
-        width: 100%;
-    }
 
     .product>ul>li>img {
         overflow: hidden;
     }
 
-    .product>ul>li .imgBox {
-        overflow: hidden;
-        transition: all 0.5s;
-        position: relative;
-        width: 737px;
-        height: 552px;
-    }
-
-    .product>ul>li .imgBox .proImgSize {
-        width: 737px;
-        height: 552px;
-    }
 
     .product>ul>li:hover .overlay {
         opacity: 1;
     }
 
     .product>ul>li:hover .imgBox {
-        transform: translateY(8%);
+        transform: translateY(0%);
     }
 
     .product>ul>li:hover .prod_text {
-        transform: translateY(8%);
+        transform: translateY(0%);
     }
 
     .product .prod_text a {
@@ -594,5 +517,17 @@
 
 
 
+
+}
+
+
+@media screen and (max-width:460px) {
+
+    .slide .Inner_text h2 {
+        font-size: 16px;
+        font-weight: 200;
+        line-height: 1.4;
+        font-family: sans-serif;
+    }
 
 }
