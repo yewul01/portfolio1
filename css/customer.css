@@ -143,7 +143,7 @@
 .notice table col:nth-child(1) { width:15% }
 .notice table col:nth-child(2) { width:60% }
 
-.search_box { padding-top:100px; }
+.search_box { padding-top:100px; position: relative; left: 367px; top: 40px; }
 .search_box select,
 .search_box input[type=text] { 
     font-size:14px; color:#666; padding:4px 12px;
@@ -193,6 +193,24 @@
   #customer_section .notice h2 { 
     font-size: 32px; color: #222; 
     text-align: center; padding: 60px 0 40px; }
+  #customer_section .notice tr th { font-size: 14px; }
+  #customer_section .notice tr td { font-size: 13px; }
+  
+  /* 검색창 + 버튼 */
+  #customer_section .search_box {
+    padding-top:100px; position: relative;
+    left: 0; top: 3%;  }
+  #customer_section .search_box select,
+  #customer_section .search_box input[type=text] { 
+      font-size:14px; color:#666; padding:4px 12px;
+      height:38px; border:1px solid #dee2e6; border-radius:3px }
+  #customer_section .search_box input[type=text] { width:160px }
+  #customer_section .search-button { position: relative; top: 0; left: 0; display: inline-block; }
+  #customer_section .search-button input[type=submit] {
+      display: block; padding: 8px 14px; background: #adb5bd; 
+      border-color: #adb5bd; color: #fff; border-radius: 3px;
+      height: 38px; transition: all 0.5s; }
+  #customer_section .search-button input[type=submit]:hover { background: #c3cbd3; }
   
 
 
