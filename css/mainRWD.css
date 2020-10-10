@@ -3,22 +3,16 @@
 
 /* max-width:1553px(1181~1553) */
 @media screen and (max-width:1553px) {
-
+    
     /* 헤더 */
-    .h1NavTop .nav {
-        position: absolute;
-        top: 0;
-        left: 34%;
+    .h1NavTop .nav { 
+        position: absolute; 
+        top: 0; left: 34%;
         letter-spacing: 2px;
         z-index: 99999;
     }
-
-    .nav .depth1>li>a {
-        display: inline-block;
-        padding: 21px 10px;
-        position: relative;
-    }
-
+    .nav .depth1 > li > a { display: inline-block; padding: 21px 10px;  position: relative; }
+    
 
 }
 
@@ -27,507 +21,195 @@
 @media screen and (max-width:1024px) {
 
     /* 헤더 */
-    .h1NavTop .logo {
-        font-size: 25px;
-        padding: 15px 30px;
-        text-align: left;
-    }
-
-    .h1NavTop .nav {
-        position: absolute;
-        top: 0;
-        left: 93%;
-        width: 250px;
-        z-index: 999999;
-        display: none;
-        background: #fff;
-        height: 1000px;
-    }
-
-    .h1NavTop .decoBox {
+    .h1NavTop .logo { font-size: 25px; padding: 15px 30px; text-align: left; }
+    .h1NavTop .nav { 
+        position: absolute; top: 0; left: 93%; width: 250px;
+        z-index: 999999; display: none;
+        background: #fff; height: 1000px; }
+    .h1NavTop .decoBox { 
         position: absolute;
         top: 100%;
         left: 0;
-        width: 100%;
+        width: 100%; 
         background: transparent;
         height: 151px;
         display: none;
         z-index: 9999;
         transition: all 0.5s;
     }
-
-    .h1NavTop .nav .depth1 {
-        position: relative;
-        font-family: 'Titillium Web', sans-serif;
-        width: 120%;
-    }
-
-    .h1NavTop .nav .depth1>li {
-        display: block;
-        position: relative;
-        width: auto;
-        height: auto;
-        margin-left: 20px;
-    }
-
-    .h1NavTop .nav .depth1>li:nth-child(1) {
-        margin-top: 65px;
-    }
-
-    .h1NavTop .nav .depth1>li>a {
-        display: block;
-        position: relative;
-        color: #5f5f5f;
-        padding: 21px 9px;
-    }
-
-    .h1NavTop .nav .depth1 li.active a {
-        color: royalblue;
-    }
-
-    .h1NavTop .topmenu {
-        position: absolute;
-        top: 0;
-        right: 0;
-        text-align: right;
-        line-height: 59px;
-        padding-right: 15px;
-        display: none;
-    }
-
-    .h1NavTop .nav .depth2 {
-        position: relative;
-        top: 100%;
-        width: 100%;
-        padding: 0 5px;
-        height: auto;
-        font-size: 13px;
-        z-index: 99999;
-        text-align: center;
-        display: none;
-    }
-
-    .h1NavTop .nav .depth2>li {
-        text-align: left;
-        line-height: 2;
-        margin-left: 2%;
-        font-size: 14px;
-        color: #8a8a8a;
-    }
+    .h1NavTop .nav .depth1 { position: relative; font-family: 'Titillium Web', sans-serif; width: 120%; }
+    .h1NavTop .nav .depth1 > li { 
+        display: block; position: relative;
+        width: auto; height: auto; margin-left: 20px; }
+    .h1NavTop .nav .depth1 > li:nth-child(1) { margin-top: 65px; }
+    .h1NavTop .nav .depth1 > li > a { 
+        display: block; position: relative; color: #5f5f5f; padding: 21px 9px; }
+    .h1NavTop .nav .depth1 li.active a { color: royalblue; }
+    .h1NavTop .topmenu {  
+        position: absolute; top: 0; right: 0;
+        text-align: right; line-height: 59px;
+        padding-right: 15px; display: none; }
+    .h1NavTop .nav .depth2 { 
+        position: relative; top: 100%;
+        width: 100%; padding: 0 5px; 
+        height: auto; font-size: 13px;
+        z-index: 99999; text-align: center;
+        display: none; }
+    .h1NavTop .nav .depth2 > li { 
+        text-align: left; line-height: 2; margin-left: 2%;
+        font-size: 14px; color: #8a8a8a; }
 
 
-    .h1NavTop .nav .depth1>li:hover a:after {
-        width: 100%;
-        height: 2px;
-        display: none;
-    }
-
-    .h1NavTop .open_nav {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        font-size: 20px;
-        z-index: 99999999;
-    }
-
-    .h1NavTop .close_nav {
-        display: none;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        font-size: 20px;
-        z-index: 99999999;
-    }
+    .h1NavTop .nav .depth1 > li:hover a:after { width: 100%; height: 2px; display: none; }
+    .h1NavTop .open_nav { display: block; position: absolute; top: 20px; right: 20px; font-size: 20px; z-index: 99999999; }
+    .h1NavTop .close_nav { display: none; position: absolute; top: 20px; right: 20px; font-size: 20px; z-index: 99999999; }
 
     /* 메인슬라이드 텍스트 */
-    .slide .Inner_text {
-        text-align: left;
-        position: absolute;
-        top: 37.8%;
-        left: 50%;
-        margin-left: -371.25px;
-        transform: translateY(-50%);
-        color: #fff;
-        font-family: sans-serif;
-    }
-
-    .slide .Inner_text span {
-        font-size: 16px;
-        letter-spacing: 2px;
-        font-family: 'Titillium Web', sans-serif;
-        display: inline-block;
-    }
-
-    .slide .Inner_text h2 {
-        font-size: 36px;
-        font-weight: 200;
-        line-height: 1.4;
-        font-family: sans-serif;
-    }
-
-    .slide .Inner_text p {
-        font-size: 14px;
-        line-height: 1.6;
-        margin-top: 30px;
-        opacity: 0.8;
-    }
-
+    .slide .slideInner .Inner_text { position: relative; bottom: 150px; left: 82px; }
+    
     /* Company 구역 */
-    .company h2 {
-        text-align: center;
-        margin-bottom: 40px;
-    }
-
-    .company .comul .comli p {
+    .company h2 { text-align: center;  margin-bottom: 40px; }
+    .company .comul .comli p { 
         font-size: 15px;
         color: #7a7a7a;
         min-height: 60px;
-        line-height: 1.5;
-    }
+        line-height: 1.5; }
+    .company .comul .comli .imgBox .overlay {
+        position: absolute; opacity: 0;
+        top: 0; right: 0; bottom: 0; left: 0;
+        background: rgba(0,0,0,0.3);
+        transition: all 0.5s; }
+    .company .comul .comli:hover .overlay { opacity: 1; }   
 
+    .company .comul > div { float: left; text-align: left; }
+    .company .comul > div:nth-child(1) { width: 30%; margin-left: 19%; margin-bottom: 8% }
+    .company .comul > div:nth-child(2) { width: 30%; margin-bottom: 8%; }
+    .company .comul > div:nth-child(3) { width: 30%; margin-left: 19% }
+    .company .comul > div:nth-child(4) { width: 30%; }
 
     /* News 구역 */
-    .news .news_box_text {
-        border-bottom: 1px solid #eaeaea;
-        padding: 42px 0;
-        transition: all 0.5s;
-        position: relative;
-        width: 80%;
-        margin-left: 10%;
-    }
-
+    .news .news_box_text { 
+        border-bottom: 1px solid #eaeaea; padding: 42px 0;
+        transition: all 0.5s; position: relative;
+        width: 80%; margin-left: 10%; }
+    
     /* Product 구역 */
-    /* .product>ul>li:nth-child(1) {
-        width: 25%;
-        margin-left: 5%;
-        margin-bottom: 8%;
-    }
-
-    .product>ul>li:nth-child(2) {
-        width: 25%;
-        margin-bottom: 8%;
-    }
-
-    .product>ul>li:nth-child(3) {
-        width: 25%;
-    } */
-
-    .toTop {
-        display: none;
-    }
+    .product > ul > li:nth-child(1) { width: 25%; margin-left: 5%; margin-bottom: 8%; }
+    .product > ul > li:nth-child(2) { width: 25%; margin-bottom: 8%; }
+    .product > ul > li:nth-child(3) { width: 25%; }
+    
+    .toTop { display: none; }
 
     /* 푸터 */
-    #footer {
-        background: #31353e;
-        color: #fff;
-        font-size: 14px;
-        padding: 45px auto 60px;
-    }
-
-    #footer .inner .footerMenu {
-        text-align: center;
-    }
-
-    #footer .inner .footerMenu a {
-        display: inline-block;
-        padding: 0 15px;
-        font-size: 13px;
-    }
-
-    #footer .inner .sns {
-        text-align: center;
-        padding: 40px 0 30px;
-    }
-
-    #footer .inner .sns a {
-        font-size: 20px;
-        padding: 0 15px;
-        opacity: 0.5;
-    }
-
-    #footer .inner .sns a:hover {
-        opacity: 0.8;
-    }
-
-    #footer .inner .siteMap {
-        text-align: center;
-        position: relative;
-        bottom: 15px;
-        font-size: 13px;
-        opacity: 0.7;
-    }
-
-    #footer .inner .companyInfo {
-        text-align: center;
-        opacity: 0.7;
-        line-height: 1.5;
-        font-size: 13px;
-    }
-
-    #footer .inner .companyInfo span {
-        margin: 0 10px;
-        opacity: 0.5;
-    }
-
-    #footer .inner .copyright {
-        margin: 20px 0 0;
-        text-align: center;
-        opacity: 0.7;
-        font-size: 13px;
-    }
-
+    #footer { background: #31353e; color: #fff; font-size: 14px; padding: 45px auto 60px; }
+    #footer .inner .footerMenu { text-align: center; }
+    #footer .inner .footerMenu a { display: inline-block; padding: 0 15px; font-size: 13px; }
+    #footer .inner .sns { text-align: center; padding: 40px 0 30px; }
+    #footer .inner .sns a { font-size: 20px; padding: 0 15px; opacity: 0.5; }
+    #footer .inner .sns a:hover { opacity: 0.8; }
+    #footer .inner .siteMap { 
+        text-align: center; position: relative; bottom: 15px; 
+        font-size: 13px; opacity: 0.7; }
+    #footer .inner .companyInfo { text-align: center; opacity: 0.7; line-height: 1.5; font-size: 13px; }
+    #footer .inner .companyInfo span { margin: 0 10px; opacity: 0.5; }
+    #footer .inner .copyright { margin: 20px 0 0; text-align: center; opacity: 0.7; font-size: 13px; }
+    
 }
 
 @media screen and (max-width:767px) {
 
-    /* 메인슬라이드 텍스트 */
+    /* 메인슬라이드 */
     .slide .Inner_text {
-        text-align: center;
-        position: absolute;
-        top: 37.8%;
-        left: 0%;
-        width: 100%;
-        margin-left: 0px;
-        transform: translateY(-50%);
-        color: #fff;
-        font-family: sans-serif;
-    }
-
-    .slide .Inner_text h2 {
-        font-size: 28px;
-        font-weight: 200;
-        line-height: 1.4;
-        font-family: sans-serif;
-    }
-
-    .slide .Inner_text p {
-        display: none
-    }
+        width: 100%; 
+        text-align: left;
+        position: absolute; top: 37.8%; left: 20%;
+        transform: translate(-50%,-50%); 
+        color: #fff; font-family: sans-serif;
+        animation: fadeInUp 1s both; }
+    .slide .slideInner .Inner_text span { font-size: 16px; letter-spacing: 2px; font-family: 'Titillium Web', sans-serif; }
+    .slide .slideInner .Inner_text h2 { font-size: 28px; font-weight: 200; line-height: 1.4; font-family: sans-serif; }
+    .slide .slideInner .Inner_text p { font-size: 14px; line-height: 1.6; margin-top: 30px; opacity: 0.8; }
+    .slide .slideInner .Inner_text strong { font-weight: normal; }
 
 
     /* Company 구역 */
-    .company .wwd h2 {
-        font-size: 32px;
-        color: #222;
-    }
+    .company .wwd h2 { font-size: 32px; color: #222; }
+    .company .wwd p { font-size: 15px; color: #777; margin-top: 10px; }
 
-    .company .wwd p {
-        font-size: 15px;
-        color: #777;
-        margin-top: 10px;
-    }
+    .company .comul > div { float: left; text-align: center; overflow: hidden; transition: all 0.5s; position: relative; }
+    .company .comul > div:nth-child(1) { width: 100%; margin-left: 1%; margin-bottom: 0 }
+    .company .comul > div:nth-child(2) { width: 100%; margin-bottom: 0; }
+    .company .comul > div:nth-child(3) { width: 100%; margin-left: 1%; }
+    .company .comul > div:nth-child(4) { width: 100%; }
 
-    /* company li */
-    .company .comul .comli {
-        float: none;
-        text-align: center;
-        overflow: hidden;
-        transition: all 0.5s;
-        position: relative;
-        width: 98%;
-        margin: 0 1%;
-        opacity: 1;
-        -webkit-transform: translate3d(0, 0%, 0);
-        transform: translate3d(0, 0%, 0);
-    }
 
-    .company .comul .comli>div:nth-child(2) {
-        text-align: left;
-    }
-
-    .company .comul .comli:hover .overlay {
-        opacity: 1;
-    }
-
-    .company .comul .comli:hover img {
-        transform: scale(1.01);
-    }
-
-    .company .comul .comli img {
-        transition: all 0.5s;
-        overflow: hidden;
-    }
-
-    .company .comul .comli .imgBox {
-        overflow: hidden;
-        position: relative;
-        /* width: 700px;
-        height: 470px; */
-    }
-
-    .company .comul .comli .imgBox .comImgSize {
-        /* width: 700px;
-        height: 470px; */
-        text-align: left;
-        overflow: hidden;
-    }
-
-    .company .comul .comli .imgBox .overlay {
-        position: absolute;
+    .company .comul .comli > div:nth-child(2) { text-align: left; }
+    .company .comul .comli:hover .overlay { opacity: 1; }
+    .company .comul .comli:hover img { transform: scale(1.01); }
+    .company .comul .comli img { transition: all 0.5s; overflow: hidden; }
+    .company .comul .comli .imgBox { overflow: hidden; position: relative; width: 700px; height: 470px; }
+    .company .comul .comli .imgBox .comImgSize { width: 700px; height: 470px; text-align: left; overflow: hidden; }
+    .company .comul .comli .imgBox .overlay { 
+        position: absolute; 
         opacity: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: rgba(0, 0, 0, 0.3);
-        transition: all 0.5s;
-    }
-
-    .company .comul .comli .comText {
-        text-align: left;
-    }
-
-    .company .comul .comli .comText h3 {
-        font-size: 18px;
-    }
-
-    .company .comul .comli .comText p {
-        font-size: 13px;
-    }
-
+        top: 0; right: 0; bottom: 0; left: 0;
+        background: rgba(0,0,0,0.3);
+        transition:  all 0.5s; }
+    .company .comul .comli .comText { text-align: left; }
+    .company .comul .comli .comText h3 { font-size: 18px; }
+    .company .comul .comli .comText p { font-size: 13px; }
     .company .comul .comli .comText span {
-        display: inline-block;
+        display: inline-block; 
         border: 1px solid #ddd;
         font-size: 15px;
         padding: 12px 28px 12px 18px;
-        margin: 5px 0 30px;
-    }
+        margin: 5px 0 30px; }
 
 
 
 
     /* Quality 배너 */
-    .Quality_banner .overlay .Quality_text h2 {
-        font-size: 36px;
-    }
-
-    .Quality_banner .overlay .Quality_text p {
-        font-size: 14px;
-        display: inline-block;
-        margin: 15px 0 0;
-    }
-
-    .Quality_banner .overlay {
+    .Quality_banner .overlay .Quality_text h2 { font-size: 36px; }
+    .Quality_banner .overlay .Quality_text p { font-size: 14px; display: inline-block; margin: 15px 0 0; }
+    .Quality_banner .overlay { 
         position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.65);
+        top: 0; left: 0; 
+        right: 0; bottom: 0;
+        background: rgba(0, 0, 0, 0.65); 
     }
 
 
     /* News 구역 */
-    .news .news_intr {
-        text-align: center;
-    }
-
-    .news .news_intr h2 {
-        font-size: 32px;
-        color: #222;
-        font-family: 'Titillium Web', sans-serif;
-    }
-
-    .news .news_intr p {
-        color: #777;
-        font-size: 15px;
-        display: inline-block;
-        margin: 10px 0 40px;
-    }
-
-    .news>div:nth-child(2) .news_box_text h3 {
-        font-size: 17px;
-        color: #6a6a6a;
-        transition: all 0.5s;
-    }
-
-    .news>div:nth-child(2) .news_box_text p {
-        font-size: 13px;
-        color: #aaa;
-        margin: 8px 0 0;
-        transition: all 0.5s;
-    }
+    .news .news_intr { text-align: center; }
+    .news .news_intr h2 { font-size: 32px; color: #222; font-family: 'Titillium Web', sans-serif; }
+    .news .news_intr p { color: #777; font-size: 15px; display: inline-block; margin: 10px 0 40px; }
+    .news > div:nth-child(2) .news_box_text h3 { font-size: 17px; color: #6a6a6a; transition: all 0.5s; }
+    .news > div:nth-child(2) .news_box_text p { font-size: 13px; color: #aaa; margin: 8px 0 0; transition: all 0.5s; }
 
 
 
     /* Product 구역 */
-    .product .prod_intr {
-        text-align: center;
-        transition: all 0.5s;
-    }
+    .product .prod_intr { text-align: center; transition: all 0.5s; }
+    .product .prod_intr h2 { font-size: 32px; }
+    .product .prod_intr p { font-size: 15px; }
 
-    .product .prod_intr h2 {
-        font-size: 32px;
-    }
+    .product > ul > li { float: left; }
+    .product > ul > li div { overflow: hidden; transition: all 0.5s; position: relative; text-align: center; }
+    .product > ul > li:nth-child(1) { width: 100%; margin-left: 1%; }
+    .product > ul > li:nth-child(2) { width: 100%; }
+    .product > ul > li:nth-child(3) { width: 100%; }
+    .product > ul > li > img { overflow: hidden; }
+    .product > ul > li .imgBox { overflow: hidden; transition: all 0.5s; position: relative; width: 737px; height: 552px; }
+    .product > ul > li .imgBox .proImgSize { width: 737px; height: 552px; }
+    .product > ul > li:hover .overlay { opacity: 1; }
+    .product > ul > li:hover .imgBox { transform: translateY(8%); }
+    .product > ul > li:hover .prod_text { transform: translateY(8%); }
 
-    .product .prod_intr p {
-        font-size: 15px;
-    }
-
-    .product ul li {
-        float: none;
-        width: 98%;
-        margin: 0 1%;
-        background: #fff;
-    }
-
-    .product ul li img {
-        height: auto;
-        max-width: 100%;
-        transition: all 0.5s;
-    }
+    .product .prod_text a { font-size: 15px; text-align: left; }
+    .product .prod_text span { font-size: 13px; text-align: left; }
+    
+     
 
 
-    .product>ul>li div {
-        overflow: hidden;
-        transition: all 0.5s;
-        position: relative;
-        text-align: center;
-    }
-
-
-    .product>ul>li>img {
-        overflow: hidden;
-    }
-
-
-    .product>ul>li:hover .overlay {
-        opacity: 1;
-    }
-
-    .product>ul>li:hover .imgBox {
-        transform: translateY(0%);
-    }
-
-    .product>ul>li:hover .prod_text {
-        transform: translateY(0%);
-    }
-
-    .product .prod_text a {
-        font-size: 15px;
-        text-align: left;
-    }
-
-    .product .prod_text span {
-        font-size: 13px;
-        text-align: left;
-    }
-
-
-
-
-
-}
-
-
-@media screen and (max-width:460px) {
-
-    .slide .Inner_text h2 {
-        font-size: 16px;
-        font-weight: 200;
-        line-height: 1.4;
-        font-family: sans-serif;
-    }
-
+   
 }
