@@ -34,14 +34,14 @@
     }
 
     .h1NavTop .nav {
-        position: absolute;
-        top: 0;
-        left: 93%;
+        position: fixed;
+        top: 68px; bottom: 0;
+        left: 93%; overflow-y: auto;
         width: 250px;
         z-index: 999999;
         display: none;
         background: #fff;
-        height: 1000px;
+        
     }
 
     .h1NavTop .decoBox {
