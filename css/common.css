@@ -286,7 +286,7 @@ h6 {
 
 .sns {
     text-align: center;
-    padding: 40px 0 30px;
+    padding: 20px 0 20px;
 }
 
 .sns a {
@@ -322,6 +322,35 @@ h6 {
     margin: 20px 0 0;
     text-align: center;
     opacity: 0.7;
+}
+
+.siteLink { display: inline-block; vertical-align: top; }
+
+.siteLink select {
+    padding-left: 10px;
+    font-size: 12px;
+    color: #000;
+    box-sizing: border-box;
+    width: 240px;
+    height: 33px;
+    border: solid 1px #c3c3c3;
+    background-color: #fff;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.frmLink { text-align: center; margin-top: 10px; }
+
+.frmLink a {
+    font-size: 14px;
+    color: #fff;
+    box-sizing: border-box;
+    width: 60px;
+    height: 36px;
+    background-color: #484848;
+    text-align: center;
+    line-height: 36px;
+    display: inline-block;
 }
 
 .introAni {
