@@ -269,10 +269,11 @@
     // 모바일화면에서 1단계메뉴 클릭했을때 2단계메뉴 보이게 하기
     $(".depth1 > li > a").on('click', function(){
         if ( $('html').hasClass('mobile') ) {
+            if ( $(this).next().is('.depth2') )
           $(this).parent().toggleClass('on')
           $(this).parent().find('.depth2').stop().slideToggle(300)
           $(this).parent().siblings().each(function(){
-              if (  $(this).find('.depth2').css('display') === 'block' ) {
+              if (  $(this).css('display') === 'block' ) {
                 $(this).find('.depth2').slideUp(300)
                 $(this).removeClass('on')
               }
