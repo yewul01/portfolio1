@@ -212,7 +212,7 @@
     var flag = true;
     function init() {
         var ww = $(window).innerWidth()
-        if (ww > 1024) {
+        if (ww > 1180) {
             $('html').addClass('pc').removeClass('mobile')
             if (flag) {
                 $('.h1NavTop .nav').show()
@@ -220,7 +220,7 @@
                 $('.open_nav, .close_nav, .depth2').hide()
                 flag = false
             }
-        } else if (ww <= 1024) {
+        } else if (ww <= 1180) {
             $('html').addClass('mobile').removeClass('pc')
             if (!flag) {
                 $('.open_nav').show()
@@ -264,38 +264,6 @@
         $(this).parent().addClass('active')
         $(this).parent().siblings().removeClass('active')
     })
-
-    // 모바일화면에서 1단계메뉴 클릭했을때 2단계메뉴 보이게 하고,
-    // 2단계 메뉴가 없으면 1단계메뉴 페이지 로드시키기
-//     $(".depth1 > li > a").on("click", function (e) {
-//       e.preventDefault();
-//       if ($("html").hasClass("mobile")) {
-//       if ($(this).next().is(".depth2")) {
-//         $(this).parent().toggleClass("on");
-//         $(this).parent().find(".depth2").stop().slideToggle(300);
-//         $(this)
-//           .parent()
-//           .siblings()
-//           .each(function () {
-//             if ($(this).find(".depth2").css("display") === "block") {
-//               $(this).find(".depth2").slideUp(300);
-//               $(this).removeClass("on");
-//             }
-//           });
-//       } else if (!$(this).next().is(".depth2")) {
-//         var url = $(this).attr("href");
-//         $("#container").remove();
-//         $("#containerBox").load(url);
-//         $(".open_nav").show();
-//         $(".logoNav .nav, .close_nav").hide();
-//         $(".depth1 > li").removeClass("on");
-//       }
-//     } else if ($("html").hasClass("pc")) {
-//       var url = $(this).attr("href");
-//       $("#container").remove();
-//       $("#containerBox").load(url);
-//     }
-//   });
 
 
     // 모바일화면에서 1단계메뉴 클릭했을때 2단계메뉴 보이게 하기
@@ -360,19 +328,6 @@
         })
         $('.depth2').hide()
     })
-
-
-    // 푸터구역의 패밀리사이트 선택 변경해서 이동하기
-    $('.frmLink a').on('click', function() {
-      var familyUrl = $('#siteLink').val()
-    if ( familyUrl === "" ) {
-        return false
-    } else { 
-        $(this).attr({
-            href: familyUrl
-        }).submit()
-    }
-  })
  
 
 
