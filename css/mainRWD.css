@@ -35,13 +35,15 @@
 
     .h1NavTop .nav {
         position: fixed;
-        top: 68px; bottom: 0;
-        left: 93%; overflow-y: auto;
+        top: 68px;
+        bottom: 0;
+        left: 93%;
+        overflow-y: auto;
         width: 250px;
         z-index: 999999;
         display: none;
         background: #fff;
-        
+
     }
 
     .h1NavTop .decoBox {
@@ -186,6 +188,46 @@
         line-height: 1.5;
     }
 
+    .company .comul .comli .imgBox .overlay {
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.3);
+        transition: all 0.5s;
+    }
+
+    .company .comul .comli:hover .overlay {
+        opacity: 1;
+    }
+
+    .company .comul>div {
+        float: left;
+        text-align: left;
+    }
+
+    .company .comul>div:nth-child(1) {
+        width: 30%;
+        margin-left: 19%;
+        margin-bottom: 8%
+    }
+
+    .company .comul>div:nth-child(2) {
+        width: 30%;
+        margin-bottom: 8%;
+    }
+
+    .company .comul>div:nth-child(3) {
+        width: 30%;
+        margin-left: 19%
+    }
+
+    .company .comul>div:nth-child(4) {
+        width: 30%;
+    }
+
 
     /* News 구역 */
     .news .news_box_text {
@@ -302,26 +344,52 @@
         margin-top: 10px;
     }
 
-    /* company li */
-    .company .comul .comli {
-        float: none;
+    .company .comul>div {
+        float: left;
         text-align: center;
         overflow: hidden;
         transition: all 0.5s;
         position: relative;
-        width: 98%;
-        margin: 0 1%;
-        opacity: 1;
-        -webkit-transform: translate3d(0, 0%, 0);
-        transform: translate3d(0, 0%, 0);
     }
+
+    .company .comul>div:nth-child(1) {
+        width: 100%;
+        margin-left: 1%;
+        margin-bottom: 0
+    }
+
+    .company .comul>div:nth-child(2) {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .company .comul>div:nth-child(3) {
+        width: 100%;
+        margin-left: 1%;
+    }
+
+    .company .comul>div:nth-child(4) {
+        width: 100%;
+    }
+
 
     .company .comul .comli>div:nth-child(2) {
         text-align: left;
     }
 
-    .company .comul .comli:hover .overlay {
+    .company .comul .comli:hover .imgBox .overlay {
         opacity: 1;
+    }
+    
+    .company .comul .comli .imgBox .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        transition: all 0.5s;
     }
 
     .company .comul .comli:hover img {
@@ -336,22 +404,15 @@
     .company .comul .comli .imgBox {
         overflow: hidden;
         position: relative;
+        width: 700px;
+        height: 470px;
     }
 
     .company .comul .comli .imgBox .comImgSize {
+        width: 700px;
+        height: 470px;
         text-align: left;
         overflow: hidden;
-    }
-
-    .company .comul .comli .imgBox .overlay {
-        position: absolute;
-        opacity: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: rgba(0, 0, 0, 0.3);
-        transition: all 0.5s;
     }
 
     .company .comul .comli .comText {
