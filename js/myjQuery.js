@@ -329,6 +329,18 @@
         })
         $('.depth2').hide()
     })
+
+    // 푸터구역의 패밀리사이트 선택 변경해서 이동하기
+    $('.frmLink a').on('click', function(){
+        var familyUrl = $('#siteLink').val()
+        if ( familyUrl === "" ) {
+          return false
+        } else {
+          $(this).attr({
+            href : familyUrl
+          })
+        }
+    })
  
 
 
