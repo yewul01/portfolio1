@@ -130,10 +130,16 @@
             headerScroll(company)
         }
 
-        // Q&A
+        // Q&A 헤더 스타일
         if ( $('#joContainer').children().is('#customer2_section') ) {
             var customer2 = $('.noticeBox').offset().top
             headerScroll(customer2)
+        }
+
+        // 제품소개 (페이지) 헤더 스타일
+        if ( $('#joContainer').children().is('#product1_section') ) {
+            var product1 = $('.mainText').offset().top
+            headerScroll(product1)
         }
 
 
