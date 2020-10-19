@@ -70,6 +70,14 @@
         $('#joBox').load(url)
     })
 
+    // 제품소개 (페이지) 화면로드
+    $('.product-list ul li:nth-child(1) a').on('click', function(e) {
+        e.preventDefault()
+        var url = $(this).attr('href')
+        $('#joContainer').remove()
+        $('#joBox').load(url)
+    })
+
 
     // 스크롤시 헤더 스타일 변경
     var sct;

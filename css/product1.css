@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+/* 제품소개1 슬라이드 줌아웃 효과 */
+
+#product1_section .product1_slideInner {
+    animation: zoomOutLog 3s both;
+    background-image: url(../images/sub_hero_img3.jpg);
+}
+
+/* Zooming exits */
+@-webkit-keyframes zoomOutLog {
+    from {
+        opacity: 1;
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: scale3d(1.0, 1.0, 1.0);
+        transform: scale3d(1.0, 1.0, 1.0);
+    }
+}
+
+@keyframes zoomOutLog {
+    from {
+        opacity: 1;
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: scale3d(1.0, 1.0, 1.0);
+        transform: scale3d(1.0, 1.0, 1.0);
+    }
+}
+
+.animate__zoomOut {
+    -webkit-animation-name: zoomOut;
+    animation-name: zoomOut;
+}
+
+/* 제품소개1 슬라이드 텍스트(h2) 애니메이션 */
+.product1_slide h2 {
+    animation: fadeInDown 2s both;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* 제품소개1 슬라이드 텍스트(p) 애니메이션 */
+.product1_slide p {
+    animation: fadeInUp 2s both 0.5s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.product1_slide .product1_slideInner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 394px;
+}
+
+#product1_section {
+    padding: 0 0 100px;
+    position: relative;
+}
+
+#product1_section .product1_slideInner {
+    position: relative;
+}
+
+#product1_section .product1_inner_text {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+#product1_section .product1_slideInner h2 {
+    font-size: 38px; color: #fff;
+    text-align: center; padding-top: 130px;
+}
+#product1_section .product1_slideInner p {
+    font-size: 15px; color: #ffffffbf;
+    text-align: center; padding-top: 15px;
+    
+}
