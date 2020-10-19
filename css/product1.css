@@ -128,3 +128,20 @@
     line-height: 1.6;
     margin-top: 15px;
 }
+
+/* 본문 */
+#product1_section .prodImgBox .prodImg {
+    position: relative;
+    text-align: center;
+    width: 25%;
+}
+#product1_section .prodImgBox .prodImg img {
+    width: 302px;
+    height: 419px;
+    display: inline-block;
+}
+/* #product1_section .prodImgBox .prodImg .photo { position: relative; }
+#product1_section .prodImgBox .prodImg .text {
+    position: absolute; bottom: 1%; left: 50%;
+    transform: translate(-50%);
+} */
