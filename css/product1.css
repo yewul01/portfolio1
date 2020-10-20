@@ -131,12 +131,8 @@
 
 /* 본문 */
 #product1_section .prodImgBox .prodImg { text-align: center; }
+#product1_section .prodImgBox .prodImg .photo { display: inline-block; }
 #product1_section .prodImgBox .prodImg .photo > a { position: relative; }
-#product1_section .prodImgBox .prodImg img {
-    width: 25%;
-    margin: 0.5% 0;
-}
-#product1_section .prodImgBox .prodImg .photo .text {
-    position: absolute; bottom: 1%; left: 50%;
-    transform: translate(-50%);
-}
+#product1_section .prodImgBox .prodImg .photo > a > img { width: 302px; height: 419px; }
+#product1_section .prodImgBox .prodImg .photo .text { background: rgba(0,0,0,0.5); }
+#product1_section .prodImgBox .prodImg .photo .text h2 { text-align: center; }
