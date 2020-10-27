@@ -131,8 +131,11 @@
 
 /* 본문 */
 #product1_section .prodImgBox .prodImg { text-align: center; }
-#product1_section .prodImgBox .prodImg .photo { display: inline-block; }
-#product1_section .prodImgBox .prodImg .photo > a { position: relative; }
-#product1_section .prodImgBox .prodImg .photo > a > img { width: 302px; height: 419px; }
-#product1_section .prodImgBox .prodImg .photo .text { background: rgba(0,0,0,0.5); }
-#product1_section .prodImgBox .prodImg .photo .text h2 { text-align: center; }
+#product1_section .prodImgBox .photo { display: inline-block; padding: 0.8%; }
+#product1_section .prodImgBox .photo > a { position: relative; }
+#product1_section .prodImgBox .photo > a > img { width: 302px; height: 419px; }
+#product1_section .prodImgBox .photo .prodtext { background: rgba(0,0,0,0.3); position: relative; }
+#product1_section .prodImgBox .photo .prodtext h2 { 
+    position: absolute; bottom: 3%; left: 28%; opacity: 0; }
+#product1_section .prodImgBox .photo:hover h2 { animation: fadeInUp 1s both; opacity: 1; }
+
