@@ -49,8 +49,8 @@ table {
 
 .row1170 {
     max-width: 1170px;
-    margin: 0 auto;
     position: relative;
+    left: 23%;
 }
 
 .cf:after {
