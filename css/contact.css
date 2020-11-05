@@ -7,35 +7,35 @@
 
 #contact_section .contact_slideInner { 
   animation: zoomOutLog 3s both;
-  background-image: url(../images/sub_hero_img1.jpg);
+  background-image: url(../images/sub_hero_img5.jpg);
 }
   
 /* Zooming exits */
 @-webkit-keyframes zoomOutLog {
   from {
     opacity: 1;
-    -webkit-transform: scale3d(1.2, 1.2, 1.2);
-    transform: scale3d(1.2, 1.2, 1.2);
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
   }
 
   to {
     opacity: 1;
-    -webkit-transform: scale3d(1.1, 1.1, 1.1);
-    transform: scale3d(1.1, 1.1, 1.1);
+    -webkit-transform: scale3d(1.0, 1.0, 1.0);
+    transform: scale3d(1.0, 1.0, 1.0);
   }
 }
 
 @keyframes zoomOutLog {
  from {
      opacity: 1;
-     -webkit-transform: scale3d(1.2, 1.2, 1.2);
-     transform: scale3d(1.2, 1.2, 1.2);
+     -webkit-transform: scale3d(1.1, 1.1, 1.1);
+     transform: scale3d(1.1, 1.1, 1.1);
   }
  
   to {
      opacity: 1;
-     -webkit-transform: scale3d(1.1, 1.1, 1.1);
-     transform: scale3d(1.1, 1.1, 1.1);
+     -webkit-transform: scale3d(1.0, 1.0, 1.0);
+     transform: scale3d(1.0, 1.0, 1.0);
   }
 }
 .animate__zoomOut {
@@ -76,6 +76,41 @@
 }
 
 
+/* 중간 select 지점 */
+.sectMenu_box { border-bottom: 1px solid #e9e9e9; }    
+.sectMenu_box a:nth-child(1) { 
+    display: inline-block;
+    padding: 20px 20px;
+    margin-left: 382px;
+    height: 60px;
+    border-left: 1px solid #e9e9e9;
+    border-right: 1px solid #e9e9e9; }
+.sectMenu_box a:nth-child(2) {
+    display: inline-block;
+    padding: 20px 25px;
+    border-right: 1px solid #e9e9e9;
+    font-family: 'Titillium Web', sans-serif;
+    color: #7a7a7a;
+}
+.sectMenu_box a:nth-child(2):after {
+    content: '\f107';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #ccc;
+    position: relative; left: 13px; }
+.sectMenu_box a:nth-child(3) {
+    display: inline-block;
+    padding: 20px 25px;
+    border-right: 1px solid #e9e9e9; 
+    color: #653811;}
+.sectMenu_box a:nth-child(3):after {
+    content: '\f107';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #ccc;
+    position: relative; left: 13px; }
+
+
 .contact_slide .contact_slideInner { 
     background-size: cover;
     background-repeat: no-repeat;
@@ -83,10 +118,10 @@
     position: relative; }
 .contact_slide .contact_slideInner { background-image: url(../images/sub_hero_img1.jpg);}
 
-#contact_section { padding: 0 0 130px; }
+#contact_section { padding: 0 0 100px; }
 
 .contact_inner_text {
-    position: absolute; top: 53%; left: 50%;
+    position: absolute; top: 50%; left: 50%;
     transform: translate(-50%,-50%); }
 .contact_inner_text h2 { 
     font-size: 36px; color: #fff;
@@ -101,7 +136,7 @@
     font-size: 38px; color: #222;
     text-align: center; 
     padding-bottom: 50px; }
-.nocontact_box { width: 56%; margin: 0 auto; }
+.nocontact_box { width: 50%; margin: 0 auto; }
 
 .contact_form ul li { padding-bottom: 15px; }
 .contact_form label { display: block; width: 100px;}
@@ -119,15 +154,6 @@
     color: #777;
     background: #f8f9fa;
     vertical-align: top; 
-}
-.contact_form .info_content select { 
-    /* select 박스 끝에 화살표 감춤(IE에서는 사용 불가) */
-    -webkit-appearance:none; 
-    -moz-appearance:none;
-    -moz-appearance:none;
-    appearance:none;
-    background: #f8f9fa url(../images/select_arrow_down.png) no-repeat 97% center;
-    
 }
 select::-ms-expand { 
     /* IE10 이상 가능 */
@@ -148,3 +174,39 @@ select::-ms-expand {
     border:none; border-radius:5px; 
     font-size:18px; margin:0 5px; }
 .contact_form .btn input[type=submit] { background:#3e78ff }
+
+@media screen and (max-width:713px) {
+
+  /* 본문 슬라이드 텍스트 */
+  #contact_section .contact_slideInner h2 { 
+    font-size: 28px; color: #fff;
+    text-align: center; padding-top: 130px; }
+  #contact_section .contact_slideInner p { 
+    font-size: 14px; color: #ffffffbf; 
+    text-align: center;  padding-top: 15px; }
+
+  /* 중간 select 지점 */
+  #contact_section .sectMenu_box a:nth-child(1) { 
+    display: inline-block;
+    padding: 20px 20px;
+    margin-left: 382px;
+    height: 60px;
+    border-left: 1px solid #e9e9e9;
+    border-right: 1px solid #e9e9e9;
+    display: none; }
+
+  #contact_section .sectMenu_box a:nth-child(2) {
+    display: inline-block;
+    padding: 20px 25px;
+    border-right: 1px solid #e9e9e9;
+    font-family: 'Titillium Web', sans-serif;
+    color: #7a7a7a; font-size: 14px; }
+  
+  #contact_section .sectMenu_box a:nth-child(3) {
+    display: inline-block;
+    padding: 20px 25px;
+    border-right: 1px solid #e9e9e9; 
+    color: #653811; font-size: 14px; }
+
+
+}

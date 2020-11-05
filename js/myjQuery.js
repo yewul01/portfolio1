@@ -141,6 +141,11 @@
             var product1 = $('.mainText').offset().top
             headerScroll(product1)
         }
+        // 문의하기 헤더 스타일
+        if ( $('#joContainer').children().is('#contact_section') ) {
+            var conatact = $('#contact_page').offset().top
+            headerScroll(conatact)
+        }
 
 
 
