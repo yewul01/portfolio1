@@ -47,12 +47,6 @@ table {
     margin: 0 auto
 }
 
-.row1170 {
-    max-width: 1170px;
-    position: relative;
-    left: 23%;
-}
-
 .cf:after {
     content: '';
     display: block;
