@@ -7,7 +7,7 @@
 
 #map_section .map_slideInner { 
     animation: zoomOutLog 3s both;
-    background-image: url(../images/sub_hero_img1.jpg);
+    
   }
     
   /* Zooming exits */

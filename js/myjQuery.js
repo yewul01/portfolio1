@@ -62,6 +62,56 @@
         $('#joBox').load(url)
     })
 
+    // 제품소개 (페이지) 화면로드
+    $('.product-list ul li:nth-child(1) a').on('click', function(e) {
+        e.preventDefault()
+        var url = $(this).attr('href')
+        $('#joContainer').remove()
+        $('#joBox').load(url)
+    })
+
+    // 푸터구역 화면로드
+    
+    // customer(공지사항) 화면로드
+    $('#footer .footerMenu a:nth-child(1)').on('click', function(e) {
+        e.preventDefault()
+        var url = $(this).attr('href')
+        $('#joContainer').remove()
+        $('#joBox').load(url)
+    })
+
+    // company(회사소개) 화면로드
+    $('#footer .footerMenu a:nth-child(2)').on('click', function(e) {
+        e.preventDefault()
+        var url = $(this).attr('href')
+        $('#joContainer').remove()
+        $('#joBox').load(url)
+    })
+
+    // business(사업소개) 화면로드
+    $('#footer .footerMenu a:nth-child(3)').on('click', function(e) {
+        e.preventDefault()
+        var url = $(this).attr('href')
+        $('#joContainer').remove()
+        $('#joBox').load(url)
+    })
+
+    // 제품소개(페이지) 화면로드
+    $('#footer .footerMenu a:nth-child(4)').on('click', function(e) {
+        e.preventDefault()
+        var url = $(this).attr('href')
+        $('#joContainer').remove()
+        $('#joBox').load(url)
+    })
+
+    // 문의하기 화면로드
+    $('#footer .footerMenu a:nth-child(5)').on('click', function(e) {
+        e.preventDefault()
+        var url = $(this).attr('href')
+        $('#joContainer').remove()
+        $('#joBox').load(url)
+    })
+
     // 사이트맵 화면로드
     $('#footer .siteMap a').on('click', function(e) {
         e.preventDefault()
@@ -70,13 +120,6 @@
         $('#joBox').load(url)
     })
 
-    // 제품소개 (페이지) 화면로드
-    $('.product-list ul li:nth-child(1) a').on('click', function(e) {
-        e.preventDefault()
-        var url = $(this).attr('href')
-        $('#joContainer').remove()
-        $('#joBox').load(url)
-    })
 
 
     // 스크롤시 헤더 스타일 변경
