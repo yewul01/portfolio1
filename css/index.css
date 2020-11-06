@@ -354,12 +354,12 @@ body {
     right: 23px;
 }
 
-/* company  텍스트 애니메이션 */
+/* what we do  텍스트 애니메이션 */
 .company h2.on {
     animation: fadeInUp 1s both;
 }
 
-/* company li 애니메이션 */
+/* what we do 애니메이션 */
 .company .comul .comli {
     float: left;
     width: 23%;

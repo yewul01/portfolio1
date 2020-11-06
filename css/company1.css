@@ -83,6 +83,7 @@
 .company1_slide .company1_slideInner {
     background-size: cover;
     background-repeat: no-repeat;
+    width: auto;
     height: 399.44px;
 }
 
@@ -138,6 +139,8 @@
 .company1-box .mainSlide {
     position: relative;
 }
+
+.company1-box .mainSlide > img { width: 1730px; }
 
 .company1-box .com1-bg-box .com1-bg-text1 {
     position: absolute;
@@ -227,7 +230,7 @@
     font-size: 28px;
     padding: 10% 0 5%;
 }
-.comTeamInfo ul li { 
+.comTeamInfo .com1ul .com1li { 
     display: inline-block;
     width: 24%;
     position: relative;
