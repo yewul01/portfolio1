@@ -44,7 +44,7 @@
 }
 
 /* 회원가입 슬라이드 텍스트(h2) 애니메이션 */
-.join2_slide h2 { animation: fadeInDown 2s both; }
+#join2_section .join2_slide h2 { animation: fadeInDown 2s both; }
 @keyframes fadeInDown {
   from {
     opacity: 0;
@@ -60,7 +60,7 @@
 }
   
   /* 회원가입 슬라이드 텍스트(p) 애니메이션 */ 
-  .join2_slideInner p { animation: fadeInUp 2s both 0.5s; }
+  #join2_section .join2_slideInner p { animation: fadeInUp 2s both 0.5s; }
   @keyframes fadeInUp {
     from {
       opacity: 0;
@@ -76,53 +76,53 @@
 }
 
 
-.join2_slide .join2_slideInner { 
+#join2_section .join2_slide .join2_slideInner { 
     background-size: cover;
     background-repeat: no-repeat;
     height: 394px;
     position: relative; }
-.join2_slide .join2_slideInner { background-image: url(../images/sub_hero_img1.jpg);}
+#join2_section .join2_slide .join2_slideInner { background-image: url(../images/sub_hero_img1.jpg);}
 
 #join2_section { padding: 0 0 130px; }
 
-.join2_inner_text {
+#join2_section .join2_inner_text {
     position: absolute; top: 53%; left: 50%;
     transform: translate(-50%,-50%); }
-.join2_inner_text h2 { 
+#join2_section .join2_inner_text h2 { 
     font-size: 36px; color: #fff;
     text-align: center; }
-.join2_inner_text p {
+#join2_section .join2_inner_text p {
     font-size: 15px; color: #ffffffbf; 
     text-align: center;  padding-top: 15px; }
 
 
-.join2_box { margin-top: 30px; }
-.join2_form { width: 25%; margin: 0 auto; }
+#join2_section .join2_box { margin-top: 30px; }
+#join2_section .join2_form { width: 25%; margin: 0 auto; }
 
-.join2_box h2 { 
+#join2_section .join2_box h2 { 
     font-size: 44px; font-family: 'Titillium Web', sans-serif; 
     text-align: center; padding: 60px 0 0; }
-.join2_form ul li { padding: 10px 0; }
-.join2_form label { display: inline-block; }
-.join2_form .tit_lbl { 
+#join2_section .join2_form ul li { padding: 10px 0; }
+#join2_section .join2_form label { display: inline-block; }
+#join2_section .join2_form .tit_lbl { 
     margin: 19px 0 8px;  
     font-size: 14px; color: #000; 
     font-family: '나눔고딕'; font-weight: 700; }
-.join2_form .tit_lbl span { font-size: 12px; color: #8e8e8e; }
-.join2_form .info_content input[type=text],
-.join2_form .info_content input[type=password],
-.join2_form .info_content select { 
+#join2_section .join2_form .tit_lbl span { font-size: 12px; color: #8e8e8e; }
+#join2_section .join2_form .info_content input[type=text],
+#join2_section .join2_form .info_content input[type=password],
+#join2_section .join2_form .info_content select { 
     padding: 0 1em;
     width: 460px; height: 51px;
     border: none; color: #777;
     background: #f8f9fa; }
-.join2_form .info_content select { margin-bottom: 10px; }
-.join2_form .info_content input[id="email"] { width: 150px; height: 53px; }
-.join2_form .info_content input[id="domain"] { width: 150px; height: 53px; }
-.join2_form .info_content select[name="url"] { width: 140px; height: 53px; }
+#join2_section .join2_form .info_content select { margin-bottom: 10px; }
+#join2_section .join2_form .info_content input[id="email"] { width: 150px; height: 53px; }
+#join2_section .join2_form .info_content input[id="domain"] { width: 150px; height: 53px; }
+#join2_section .join2_form .info_content select[name="url"] { width: 140px; height: 53px; }
 
-.join2_form .btn { margin-top: 20px; }
-.join2_form .btn input { 
+#join2_section .join2_form .btn { margin-top: 20px; }
+#join2_section .join2_form .btn input { 
     width: 460px; height: 53px;
     background: #3e78ff; color: #fff;
     border: none; border-radius: 5px;
@@ -133,9 +133,9 @@
 @media screen and (max-width:1850px) {
 
   /* 이메일 */
-  .join2_form .info_content input[id="email"] { width: 140px; height: 53px; }
-  .join2_form .info_content input[id="domain"] { width: 140px; height: 53px; }
-  .join2_form .info_content select[name="url"] { width: 150px; height: 53px; }
+  #join2_section .join2_form .info_content input[id="email"] { width: 140px; height: 53px; }
+  #join2_section .join2_form .info_content input[id="domain"] { width: 140px; height: 53px; }
+  #join2_section .join2_form .info_content select[name="url"] { width: 150px; height: 53px; }
 
 }
 
@@ -143,32 +143,33 @@
 
 @media screen and (max-width:767px) {
   
-  .join2_slide .join2_inner_text h2 { 
+  #join2_section fieldset { position: relative; right: 80%; }
+  #join2_section .join2_slide .join2_inner_text h2 { 
     font-size: 28px; color: #fff;
     text-align: center; }
-  .join2_slide .join2_inner_text p {
+  #join2_section .join2_slide .join2_inner_text p {
     font-size: 14px; color: #ffffffbf; 
     text-align: center;  padding-top: 15px; }
 
-  .join2_box .join2_form { position: relative; left: -8%; }
+  #join2_section .join2_box .join2_form { position: relative; left: -8%; }
 
-  .join2_form .info_content input[type=text],
-  .join2_form .info_content input[type=password],
-  .join2_form .info_content select { 
+  #join2_section .join2_form .info_content input[type=text],
+  #join2_section .join2_form .info_content input[type=password],
+  #join2_section .join2_form .info_content select { 
     padding: 0 1em;
     width: 290px; height: 51px;
     border: none; color: #777;
     background: #f8f9fa; }
 
-  .join2_form .btn { margin-top: 20px; position: relative; left: -3%;}
-  .join2_form .btn input { 
+  #join2_section .join2_form .btn { margin-top: 20px; position: relative; left: -3%;}
+  #join2_section .join2_form .btn input { 
     width: 290px; height: 53px;
     background: #3e78ff; color: #fff;
     border: none; border-radius: 5px;
     font-size: 18px; }
-  .join2_form .info_content input[id="email"] { width: 80px; height: 53px; }
-  .join2_form .info_content input[id="domain"] { width: 80px; height: 53px; }
-  .join2_form .info_content select[name="url"] { width: 80px; height: 53px; }
+  #join2_section .join2_form .info_content input[id="email"] { width: 80px; height: 53px; }
+  #join2_section .join2_form .info_content input[id="domain"] { width: 80px; height: 53px; }
+  #join2_section .join2_form .info_content select[name="url"] { width: 80px; height: 53px; }
 
 
 
