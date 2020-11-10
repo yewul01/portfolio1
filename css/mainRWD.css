@@ -564,6 +564,23 @@
 
 @media screen and (max-width:460px) {
 
+    /* nav 로고 */
+    .h1NavTop .logo {
+        font-size: 25px;
+        padding: 15px 3%;
+        text-align: left;
+    }
+    /* nav 햄버거버튼 */
+    .h1NavTop .open_nav {
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 93%;
+        transform: translate(-50%);
+        font-size: 20px;
+        z-index: 99999999;
+    }
+    /* 메인슬라이드 텍스트 */
     .slide .Inner_text h2 {
         font-size: 16px;
         font-weight: 200;
