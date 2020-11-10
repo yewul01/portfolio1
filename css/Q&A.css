@@ -151,11 +151,11 @@
 .notice .numlist .on { background: #ddd; }
 
 
-
+/* 글쓰기 버튼 */
 .board-write .board-btn { 
     color: #fff; border-color: #adb5bd; background: #adb5bd;
     padding: 8px 14px; font-size: 14px; border-radius: 3px; 
-    transition: all 0.5s; position: absolute; right: 19.5%;
+    transition: all 0.5s; position: absolute; right: 38%;
 }
 .board-write .board-btn:hover { background: #c3cbd3; } 
 
@@ -221,19 +221,19 @@
   .board-write .board-btn { 
     color: #fff; border-color: #adb5bd; background: #adb5bd;
     padding: 8px 14px; font-size: 14px; border-radius: 3px; 
-    transition: all 0.5s; position: absolute; bottom: 15%; }
+    transition: all 0.5s; }
   .board-write .board-btn:hover { background: #c3cbd3; }
 
   /* 검색창 + 버튼 */
   #customer2_section .search_box {
     padding-top:100px; position: relative;
-    left: 0; top: 3%;  }
+    left: 5%; top: 3%; display: inline-block; }
   #customer2_section .search_box select,
   #customer2_section .search_box input[type=text] { 
       font-size:14px; color:#666; padding:4px 12px;
       height:38px; border:1px solid #dee2e6; border-radius:3px }
   #customer2_section .search_box input[type=text] { width:160px }
-  #customer2_section .search-button { position: relative; top: 0; left: 0; display: inline-block; }
+  #customer2_section .search-button { position: relative; top: 0; left: 5%; display: inline-block; }
   #customer2_section .search-button input[type=submit] {
       display: block; padding: 8px 14px; background: #adb5bd; 
       border-color: #adb5bd; color: #fff; border-radius: 3px;
