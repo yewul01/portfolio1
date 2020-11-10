@@ -30,7 +30,7 @@
         $('#joBox').load(url)
     })
     
-    // customer(공지사항) 화면로드
+    // customer(공지사항) 화면로드 => depth2
     $('.nav ul li:nth-child(4) a').on('click', function(e) {
         e.preventDefault()
         var url = $(this).attr('href')
@@ -38,7 +38,7 @@
         $('#joBox').load(url)
     })
 
-    // customer(공지사항) 화면로드
+    // customer(공지사항) 화면로드 => depth1
     $('.customer-list ul li:nth-child(1) a').on('click', function(e) {
         e.preventDefault()
         var url = $(this).attr('href')
@@ -153,6 +153,12 @@
         if ( $('#joContainer').children().is('#login_section') ) {
             var login = $('.login_box').offset().top
             headerScroll(login)
+        }
+
+        // 회사소개 헤더 스타일
+        if ( $('#joContainer').children().is('#company1_section') ) {
+            var company1 = $('.company1-box').offset().top
+            headerScroll(company1)
         }
         
         // 오시는길 헤더 스타일

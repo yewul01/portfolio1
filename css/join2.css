@@ -150,7 +150,7 @@
     font-size: 14px; color: #ffffffbf; 
     text-align: center;  padding-top: 15px; }
 
-  #join2_section .join2_box fieldset { position: relative; right: 110%; }
+  #join2_section .join2_box fieldset { position: relative; right: 120%; }
 
   #join2_section .join2_form .info_content input[type=text],
   #join2_section .join2_form .info_content input[type=password],
@@ -160,7 +160,7 @@
     border: none; color: #777;
     background: #f8f9fa; }
 
-  #join2_section .join2_form .btn { margin-top: 20px; position: relative; left: -3%;}
+  #join2_section .join2_form .btn { margin-top: 20px; position: relative; right: 1%;}
   #join2_section .join2_form .btn input { 
     width: 290px; height: 53px;
     background: #3e78ff; color: #fff;
