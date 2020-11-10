@@ -364,7 +364,7 @@
     )
 
     // 2단계 메뉴 클릭하면 모든 화면에서 페이지 로드시킨 후, 모바일화면에서는 햄버거 버튼만 보이게 하기
-    $(".nav .depth2 > li > a").on("click", function (e) {
+    $(".nav .depth2 > li > a, .topmenu a").on("click", function (e) {
         e.preventDefault();
         var url = $(this).attr("href");
         $("#joContainer").remove();
