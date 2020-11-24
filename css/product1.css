@@ -129,7 +129,7 @@
     margin-top: 15px;
 }
 
-/* 본문 */
+/* 본문 이미지 */
 #product1_section .prodImgBox .prodImg { text-align: center; }
 #product1_section .prodImgBox .photo { display: inline-block; padding: 0.8%; }
 #product1_section .prodImgBox .photo > a { position: relative; }
