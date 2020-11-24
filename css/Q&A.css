@@ -151,11 +151,11 @@
 .notice .numlist .on { background: #ddd; }
 
 
-
+/* 글쓰기 버튼 */
 .board-write .board-btn { 
     color: #fff; border-color: #adb5bd; background: #adb5bd;
     padding: 8px 14px; font-size: 14px; border-radius: 3px; 
-    transition: all 0.5s; position: absolute; right: 19.5%;
+    transition: all 0.5s; position: absolute; right: 38%;
 }
 .board-write .board-btn:hover { background: #c3cbd3; } 
 
@@ -221,7 +221,7 @@
   .board-write .board-btn { 
     color: #fff; border-color: #adb5bd; background: #adb5bd;
     padding: 8px 14px; font-size: 14px; border-radius: 3px; 
-    transition: all 0.5s; position: absolute; bottom: 15%; }
+    transition: all 0.5s; }
   .board-write .board-btn:hover { background: #c3cbd3; }
 
   /* 검색창 + 버튼 */

@@ -30,7 +30,7 @@
         $('#joBox').load(url)
     })
     
-    // customer(공지사항) 화면로드
+    // customer(공지사항) 화면로드 => depth2
     $('.nav ul li:nth-child(4) a').on('click', function(e) {
         e.preventDefault()
         var url = $(this).attr('href')
@@ -38,7 +38,7 @@
         $('#joBox').load(url)
     })
 
-    // customer(공지사항) 화면로드
+    // customer(공지사항) 화면로드 => depth1
     $('.customer-list ul li:nth-child(1) a').on('click', function(e) {
         e.preventDefault()
         var url = $(this).attr('href')
@@ -70,8 +70,9 @@
         $('#joBox').load(url)
     })
 
-    // 푸터구역 화면로드
+
     
+    // 푸터구역 화면로드
     // customer(공지사항) 화면로드
     $('#footer .footerMenu a:nth-child(1)').on('click', function(e) {
         e.preventDefault()
@@ -163,7 +164,7 @@
         
         // 오시는길(company3) 헤더 스타일
         if ( $('#joContainer').children().is('#map_section') ) {
-            var Map = $('.map_Menu_box').offset().top
+            var Map = $('.sectMenu_box').offset().top
             headerScroll(Map)
         }
 
