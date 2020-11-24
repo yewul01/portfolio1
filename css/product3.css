@@ -1,4 +1,8 @@
 @charset "utf8";
 
-.product3-box .warning { text-align: center; padding: 130px 0; background: rgb(241, 241, 241); }
+.product3-box .warning { 
+    text-align: center;
+    padding: 176px 0;
+    background: rgb(78, 78, 78);
+}
 

@@ -137,10 +137,10 @@
         $(".scrollBar span").text(roundScroll);
 
 
-        // 메인페이지 헤더 스타일
-        if ( $('#joContainer').children().is('#join2_section') ) {
-            var join2 = $('.join2_box').offset().top
-            headerScroll(join2)
+         // 메인페이지 헤더, 컨텐츠 겹침현상 수정
+        if ( $('#joContainer').children().is('#section') ) {
+            var company = $('.company').offset().top
+            headerScroll(company)
         }
 
         // 회원가입 헤더 스타일
@@ -154,39 +154,40 @@
             var login = $('.login_box').offset().top
             headerScroll(login)
         }
+
+        // 회사소개(company1) 헤더 스타일
+        if ( $('#joContainer').children().is('#company1_section') ) {
+            var company1 = $('.sectMenu_box').offset().top
+            headerScroll(company1)
+        }
         
-        // 오시는길 헤더 스타일
+        // 오시는길(company3) 헤더 스타일
         if ( $('#joContainer').children().is('#map_section') ) {
-            var Map = $('.mapBox').offset().top
+            var Map = $('.map_Menu_box').offset().top
             headerScroll(Map)
         }
 
-        // 공지사항 헤더 스타일
+        // 제품소개 페이지(product1) 헤더 스타일
+        if ( $('#joContainer').children().is('#product1_section') ) {
+            var product1 = $('.sectMenu_box').offset().top
+            headerScroll(product1)
+        }
+
+        // 공지사항(customer1) 헤더 스타일
         if ( $('#joContainer').children().is('#customer_section') ) {
-            var customer = $('.notice').offset().top
+            var customer = $('.sectMenu_box').offset().top
             headerScroll(customer)
         }
 
-        // 메인페이지 헤더, 컨텐츠 겹침현상 수정
-        if ( $('#joContainer').children().is('#section') ) {
-            var company = $('.company').offset().top
-            headerScroll(company)
-        }
-
-        // Q&A 헤더 스타일
-        if ( $('#joContainer').children().is('#customer2_section') ) {
-            var customer2 = $('.noticeBox').offset().top
+        // Q&A(customer4) 헤더 스타일
+        if ( $('#joContainer').children().is('#customer4_section') ) {
+            var customer2 = $('.sectMenu_box').offset().top
             headerScroll(customer2)
         }
 
-        // 제품소개 (페이지) 헤더 스타일
-        if ( $('#joContainer').children().is('#product1_section') ) {
-            var product1 = $('.mainText').offset().top
-            headerScroll(product1)
-        }
         // 문의하기 헤더 스타일
         if ( $('#joContainer').children().is('#contact_section') ) {
-            var conatact = $('#contact_page').offset().top
+            var conatact = $('.sectMenu_box').offset().top
             headerScroll(conatact)
         }
 
