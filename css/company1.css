@@ -162,8 +162,12 @@
     width: 80%;
 }
 
-.company1-box .com1-bg-box .com1-bg-text2 .icon-box {
+.company1-box .com1-bg-box .com1-bg-text2 .icon-box h4 {
     font-size: 28px;
+}
+
+.company1-box .com1-bg-box .com1-bg-text2 .icon-box p {
+    font-size: 16px;
 }
 
 .company1-box .com1-bg-box .com1-bg-text2 ul li {
@@ -288,180 +292,185 @@
         padding: 0 8px;
     }
 
+    .company1-box .com1-bg-box .com1-bg-text2 .icon-box h4 {
+        font-size: 15px;
+    }
+
     /* 본문 회사 사원정보 */
 
-.comTeamInfo-box { background: #f7f7f7; width: 100%; }
-.comTeamInfo { margin: 50px 0; width: 100%; }
-.comTeamInfo > h3 { 
-    font-size: 28px;
-    padding: 10% 0 5%;
-}
-.comTeamInfo .com1ul .com1li { 
-    display: inline-block;
-    width: 47%;
-    position: relative;
-    padding: 10%;
-}
-.comTeamInfo img { width: 100%; }
-.comTeamInfo .teamInfo { 
-    background: #fff; 
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%);
-    width: 53%;
-    height: 43%;
-    padding: 3%;
-}
-.comTeamInfo .teamInfo > h4 { 
-    font-size: 17px;
-    color: #6693fb;
-}
-.comTeamInfo .teamInfo > span { 
-    font-size: 13px;
-    color: #aaa;
-}
-.comTeamInfo .teamInfo > p { 
-    font-size: 14px;
-    color: #888;
-}
+    .comTeamInfo-box { background: #f7f7f7; width: 100%; }
+    .comTeamInfo { margin: 50px 0; width: 100%; }
+    .comTeamInfo > h3 { 
+        font-size: 28px;
+        padding: 10% 0 5%;
+    }
+    .comTeamInfo .com1ul .com1li { 
+        display: inline-block;
+        width: 47%;
+        position: relative;
+        padding: 10%;
+    }
+    .comTeamInfo img { width: 100%; }
+    .comTeamInfo .teamInfo { 
+        background: #fff; 
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 53%;
+        height: 43%;
+        padding: 3%;
+    }
+    .comTeamInfo .teamInfo > h4 { 
+        font-size: 17px;
+        color: #6693fb;
+    }
+    .comTeamInfo .teamInfo > span { 
+        font-size: 13px;
+        color: #aaa;
+    }
+    .comTeamInfo .teamInfo > p { 
+        font-size: 14px;
+        color: #888;
+    }
 }
 
 
 
 @media screen and (max-width:1076px) {
     /* 본문 배경이미지 텍스트 */
-.company1-box {
-    text-align: center;
-}
+    .company1-box {
+        text-align: center;
+    }
+    
+    .company1-box h2 {
+        font-size: 23px;
+        color: #222;
+        line-height: 1.35;
+        padding: 50px 0 100px;
+    }
+    
+    .company1-box .mainSlide {
+        position: relative;
+    }
+    
+    .company1-box .mainSlide > img { width: 100%; }
+    
+    .company1-box .com1-bg-box .com1-bg-text1 {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%);
+        color: #fff;
+        width: 100%;
+    }
+    
+    .company1-box .com1-bg-box .com1-bg-text1 h3 {
+        font-weight: 300;
+        margin: 0 0 50px;
+        font-size: 16px;
+    }
+    
+    .company1-box .com1-bg-box .com1-bg-text2 {
+        color: #fff;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 80%;
+    }
+    
+    .company1-box .com1-bg-box .com1-bg-text2 .icon-box h4 {
+        font-size: 15px;
+    }
+    
+    .company1-box .com1-bg-box .com1-bg-text2 ul li {
+        display: inline-block;
+        border-left: 1px solid rgba(255, 255, 255, 0.12);
+        padding: 50px 15px;
+        width: 20%;
+        height: auto;
+    }
+    
+    .company1-box .com1-bg-box .com1-bg-text2 ul li h4 {
+        font-size: 13px;
+        margin: 25px 0 15px;
+    }
+    
+    .company1-box .com1-bg-box .com1-bg-text2 ul li p {
+        padding: 0 10px;
+    }
+    
+    /* 본문 회사정보 */
+    
+    .comInfoList { margin: 0 auto; }
+    .comInfoList > p {
+        font-size: 12px;
+        color: #555;
+        margin: 70px;
+    }
+    
+    .comInfoList .comTb {
+        text-align: center;
+        width: 60%;
+        font-size: 13px;
+        position: relative;
+        left: 19%;
+    }
+    
+    .comInfoList .comTb tr td:nth-of-type(1) {
+        padding: 18px 15px;
+        width: 20%;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        color: #222;
+    }
+    
+    .comInfoList .comTb tr td:nth-of-type(2) {
+        padding: 18px 15px;
+        width: 60%;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        color: #666;
+    }
+    
+    
+    
+    /* 본문 회사 사원정보 */
+    
+    .comTeamInfo-box { background: #f7f7f7; width: 100%; }
+    .comTeamInfo { margin: 50px 0; width: 100%; }
+    .comTeamInfo > h3 { 
+        font-size: 23px;
+        padding: 10% 0 5%;
+    }
+    .comTeamInfo .com1ul .com1li { 
+        display: inline-block;
+        width: 90%;
+        position: relative;
+    }
+    .comTeamInfo img { width: 100%; }
+    .comTeamInfo .teamInfo { 
+        background: #fff; 
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 73%;
+        height: 30%;
+        padding: 5% 8%;
+    }
+    .comTeamInfo .teamInfo > h4 { 
+        font-size: 17px;
+        color: #6693fb;
+    }
+    .comTeamInfo .teamInfo > span { 
+        font-size: 13px;
+        color: #aaa;
+    }
+    .comTeamInfo .teamInfo > p { 
+        font-size: 14px;
+        color: #888;
+    }
 
-.company1-box h2 {
-    font-size: 30px;
-    color: #222;
-    line-height: 1.35;
-    padding: 50px 0 100px;
-}
-
-.company1-box .mainSlide {
-    position: relative;
-}
-
-.company1-box .mainSlide > img { width: 100%; }
-
-.company1-box .com1-bg-box .com1-bg-text1 {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%);
-    color: #fff;
-    width: 100%;
-}
-
-.company1-box .com1-bg-box .com1-bg-text1 h3 {
-    font-weight: 300;
-    margin: 0 0 50px;
-    font-size: 22px;
-}
-
-.company1-box .com1-bg-box .com1-bg-text2 {
-    color: #fff;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%);
-    width: 80%;
-}
-
-.company1-box .com1-bg-box .com1-bg-text2 .icon-box {
-    font-size: 18px;
-}
-
-.company1-box .com1-bg-box .com1-bg-text2 ul li {
-    display: inline-block;
-    border-left: 1px solid rgba(255, 255, 255, 0.12);
-    padding: 50px 15px;
-    width: 20%;
-    height: auto;
-}
-
-.company1-box .com1-bg-box .com1-bg-text2 ul li h4 {
-    font-size: 21px;
-    margin: 25px 0 15px;
-}
-
-.company1-box .com1-bg-box .com1-bg-text2 ul li p {
-    padding: 0 10px;
-}
-
-/* 본문 회사정보 */
-
-.comInfoList { margin: 0 auto; }
-.comInfoList > p {
-    font-size: 17px;
-    color: #555;
-    margin: 70px;
-}
-
-.comInfoList .comTb {
-    text-align: center;
-    width: 60%;
-    font-size: 15px;
-    position: relative;
-    left: 19%;
-}
-
-.comInfoList .comTb tr td:nth-of-type(1) {
-    padding: 18px 15px;
-    width: 20%;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    color: #222;
-}
-
-.comInfoList .comTb tr td:nth-of-type(2) {
-    padding: 18px 15px;
-    width: 60%;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    color: #666;
-}
-
-
-
-/* 본문 회사 사원정보 */
-
-.comTeamInfo-box { background: #f7f7f7; width: 100%; }
-.comTeamInfo { margin: 50px 0; width: 100%; }
-.comTeamInfo > h3 { 
-    font-size: 28px;
-    padding: 10% 0 5%;
-}
-.comTeamInfo .com1ul .com1li { 
-    display: inline-block;
-    width: 24%;
-    position: relative;
-}
-.comTeamInfo img { width: 100%; }
-.comTeamInfo .teamInfo { 
-    background: #fff; 
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%);
-    width: 80%;
-    height: 80%;
-    padding: 5% 8%;
-}
-.comTeamInfo .teamInfo > h4 { 
-    font-size: 17px;
-    color: #6693fb;
-}
-.comTeamInfo .teamInfo > span { 
-    font-size: 13px;
-    color: #aaa;
-}
-.comTeamInfo .teamInfo > p { 
-    font-size: 14px;
-    color: #888;
-}
 }
