@@ -31,31 +31,15 @@
     })
     
     // customer(공지사항) 화면로드 => depth2
-    $('.nav ul li:nth-child(4) a').on('click', function(e) {
+    $('.nav > ul > li:nth-child(4) > a').on('click', function(e) {
         e.preventDefault()
         var url = $(this).attr('href')
         $('#joContainer').remove()
         $('#joBox').load(url)
     })
 
-    // customer(공지사항) 화면로드 => depth1
-    $('.customer-list ul li:nth-child(1) a').on('click', function(e) {
-        e.preventDefault()
-        var url = $(this).attr('href')
-        $('#joContainer').remove()
-        $('#joBox').load(url)
-    })
-
-    // customer( Q&A ) 화면로드
-    $('.customer-list ul li:nth-child(4) a').on('click', function(e) {
-        e.preventDefault()
-        var url = $(this).attr('href')
-        $('#joContainer').remove()
-        $('#joBox').load(url)
-    })
-
-    // company(오시는길) 화면로드
-    $('.company-list ul li:nth-child(3) a').on('click', function(e) {
+    // customer(공지사항),customer( Q&A ), company(오시는길) 화면로드 =>  depth1
+    $('.customer-list > ul > li > a').on('click', function(e) {
         e.preventDefault()
         var url = $(this).attr('href')
         $('#joContainer').remove()
@@ -72,46 +56,14 @@
 
 
     
-    // 푸터구역 화면로드
-    // customer(공지사항) 화면로드
-    $('#footer .footerMenu a:nth-child(1)').on('click', function(e) {
+    // 푸터메뉴 화면로드
+    $('#footer .footerMenu  a').on('click', function(e) {
         e.preventDefault()
         var url = $(this).attr('href')
         $('#joContainer').remove()
         $('#joBox').load(url)
     })
 
-    // company(회사소개) 화면로드
-    $('#footer .footerMenu a:nth-child(2)').on('click', function(e) {
-        e.preventDefault()
-        var url = $(this).attr('href')
-        $('#joContainer').remove()
-        $('#joBox').load(url)
-    })
-
-    // business(사업소개) 화면로드
-    $('#footer .footerMenu a:nth-child(3)').on('click', function(e) {
-        e.preventDefault()
-        var url = $(this).attr('href')
-        $('#joContainer').remove()
-        $('#joBox').load(url)
-    })
-
-    // 제품소개(페이지) 화면로드
-    $('#footer .footerMenu a:nth-child(4)').on('click', function(e) {
-        e.preventDefault()
-        var url = $(this).attr('href')
-        $('#joContainer').remove()
-        $('#joBox').load(url)
-    })
-
-    // 문의하기 화면로드
-    $('#footer .footerMenu a:nth-child(5)').on('click', function(e) {
-        e.preventDefault()
-        var url = $(this).attr('href')
-        $('#joContainer').remove()
-        $('#joBox').load(url)
-    })
 
     // 사이트맵 화면로드
     $('#footer .siteMap a').on('click', function(e) {
@@ -125,9 +77,9 @@
 
     // 스크롤시 헤더 스타일 변경
     var sct;
-    $(window).scroll(function (e) {
+    $(window).scroll(function () {
 
-        var sct = $(this).scrollTop();
+        sct = $(this).scrollTop();
 
         var dHeight = $(document).height();
         var wHeight = $(window).height();
@@ -210,39 +162,29 @@
         }
         
 
-        // 메인페이지 Quality 배너 애니메이션
+        // 메인페이지 Quality 배너, news 텍스트 애니메이션
         var QualNear = $('.Quality_banner').offset().top - $(this).height()/2
         if (sct >= QualNear) {
             $('.Quality_text').addClass('on')
+            $('.news_intr').addClass('on')
         } else if (sct===0) {
             $('.Quality_text').removeClass('on')
+            $('.news_intr').removeClass('on')
         }
         
 
-        // 메인페이지 news 텍스트 애니메이션
-        if (sct >= QualNear) {
-            $('.news_intr').addClass('on')
-        } else if (sct===0) {
-            $('.news_intr').removeClass('on')
-        }
-
-
-        // 메인페이지 news 더보기 버튼 애니메이션
+        // 메인페이지 news 더보기 버튼, Product 텍스트 애니메이션
         var news_intr = $('.news_intr').offset().top - $(this).height()/2
         if (sct >= news_intr) {
             $('.newsButton').addClass('on')
-        } else if (sct===0) {
-            $('.newsButton').removeClass('on')
-        }
-
-
-        // 메인페이지 Product 텍스트 애니메이션
-        if (sct >= news_intr) {
             $('.prod_intr').addClass('on')
         } else if (sct===0) {
+            $('.newsButton').removeClass('on')
             $('.prod_intr').removeClass('on')
         }
 
+    
+        // 스크롤탑 이벤트
         if (sct >= 10) {
             $('.toTop').addClass('on').stop().animate({
                 opacity: '1'
@@ -271,31 +213,38 @@
 
     
     // resize 이벤트
+    var deviceSize = 1197;
+    function scrollOX(status) {
+        $("html").css({
+          overflowY: status,
+        });
+        var htmlWidth = $("html").width();
+        return htmlWidth;
+      }
+      var swh = scrollOX("hidden"),
+        sws = scrollOX("scroll"),
+        swd = swh - sws;
+      if (swd > 0) {
+        deviceSize = deviceSize - swd;
+      }
 
     init()
-
-    var flag = true;
+    
     function init() {
         var ww = $(window).innerWidth()
-        if (ww > 1180) {
+        if (ww > deviceSize && !$("html").hasClass("pc")) {
             $('html').addClass('pc').removeClass('mobile')
-            if (flag) {
-                $('.h1NavTop .nav').show()
-                $('.depth1 > li').removeClass('on')
-                $('.open_nav, .close_nav, .depth2').hide()
-                flag = false
+            $('.h1NavTop .nav').show()
+            $('.depth1 > li').removeClass('on')
+            $('.open_nav, .close_nav, .depth2').hide()
             }
-        } else if (ww <= 1180) {
+        else if (ww <= deviceSize && !$("html").hasClass("mobile")) {
             $('html').addClass('mobile').removeClass('pc')
-            if (!flag) {
-                $('.open_nav').show()
-                $('.h1NavTop .nav, .depth2').hide()
-                flag = true
+            $('.open_nav').show()
+            $('.h1NavTop .nav, .depth2').hide()
+            flag = true
             }
         }
-    }
-
-
     
     $(window).on('resize', function() {
         init()
